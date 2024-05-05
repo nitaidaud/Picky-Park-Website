@@ -6,7 +6,7 @@ export default function LoyaltyAchievements() {
       <div className="w-full m-auto">
         <LazyLoadImage
         className="w-11/12 md:w-full m-auto"
-        src="public\Images\achievementsImg.png"
+        src="src\assets\Images\achievementsImg.png"
           alt="achievementsImg"
         />
       </div>

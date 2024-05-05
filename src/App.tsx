@@ -8,9 +8,11 @@ function App() {
   return (
     <>
       <Main />
+      
       <LazyLoadComponent>
         <Introduction />
       </LazyLoadComponent>
+
       <LazyLoadComponent>
         <Footer />
       </LazyLoadComponent>
