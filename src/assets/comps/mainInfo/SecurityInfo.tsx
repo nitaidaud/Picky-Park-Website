@@ -5,7 +5,7 @@ export default function SecurityInfo() {
     <div className="grid gap-9 text-center justify-center items-center m-auto">
       <LazyLoadImage
         className="w-2/4 m-auto"
-        src="src\assets\Images\securityImg.png"
+        src="..\..\Images\securityImg.png"
         alt="securityImg"
       />
 

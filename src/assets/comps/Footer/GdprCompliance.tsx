@@ -15,7 +15,7 @@ export default function GdprCompliance() {
 
       <LazyLoadImage
         className="w-1/2 m-auto"
-        src="src\assets\Images\GDPRImg.png"
+        src="..\..\Images\GDPRImg.png"
         alt="GDPRImg"
       />
 
