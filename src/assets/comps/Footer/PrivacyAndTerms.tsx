@@ -10,7 +10,7 @@ export default function PrivacyAndTerms() {
       <div className="buttons-container grid gap-24">
         <div className="btn-container w-fit m-auto duration-300">
           <a
-            href="..\..\PrivacyAndTermsPdf\Privacy Policy.pdf"
+            href="src\assets\PrivacyAndTermsPdf\Privacy Policy.pdf"
             target="_blank"
           >
             <span className="btn-style px-9 py-6 rounded-full text-white text-xs uppercase duration-300">
@@ -22,7 +22,7 @@ export default function PrivacyAndTerms() {
 
         <div className="btn-container w-fit m-auto duration-300">
           <a
-            href="..\..\PrivacyAndTermsPdf\Terms of USE_EULA.pdf"
+            href="src\assets\PrivacyAndTermsPdf\Terms of USE_EULA.pdf"
             target="_blank"
           >
             <span className="btn-style px-12 py-6 rounded-full text-white text-xs uppercase duration-300">
