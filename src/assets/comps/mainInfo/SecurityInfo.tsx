@@ -3,7 +3,8 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 export default function SecurityInfo() {
   return (
     <div className="grid gap-9 text-center justify-center items-center m-auto">
-      <LazyLoadImage
+      <img
+      loading="lazy"
         className="w-2/4 m-auto"
         src="..\..\Images\securityImg.png"
         alt="securityImg"

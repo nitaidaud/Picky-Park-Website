@@ -5,7 +5,8 @@ export default function PickyLogo() {
     <>
       <div className="">
         <span>
-          <LazyLoadImage
+          <img
+          loading="lazy"
             className="w-3/5 m-auto"
             src="..\..\Images\pickyLogoImg.png"
             alt="logo"

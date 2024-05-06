@@ -4,7 +4,8 @@ export default function ParkingSolution() {
   return (
     <div className="grid gap-9">
       <div id="start" className="w-3/5 m-auto">
-        <LazyLoadImage
+        <img
+        loading="lazy"
           src="..\..\Images\parkingSolutionImg.png"
           alt="introduction image"
         />

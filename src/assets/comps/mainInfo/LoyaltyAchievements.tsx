@@ -4,7 +4,8 @@ export default function LoyaltyAchievements() {
   return (
     <div className="my-32 grid gap-9">
       <div className="w-full m-auto">
-        <LazyLoadImage
+        <img
+        loading="lazy"
         className="w-11/12 md:w-full m-auto"
         src="..\..\Images\achievementsImg.png"
           alt="achievementsImg"
