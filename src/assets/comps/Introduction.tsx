@@ -5,11 +5,11 @@ import ParkingSolution from "./mainInfo/ParkingSolution";
 
 export default function Introduction() {
   return (
-    <>
+    <div className="max-w-xl m-auto">
       <ParkingSolution />
       <LoyaltyAchievements />
       <SecurityInfo />
       <GdprCompliance />
-    </>
+    </div>
   );
 }

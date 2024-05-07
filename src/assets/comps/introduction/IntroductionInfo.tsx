@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function IntroductionInfo() {
   return (
-    <div className="mx-auto my-32">
+    <div className="max-w-xl mx-auto my-32">
       <div className="grid gap-9">
         <h2 className="intro-title uppercase tracking-wide text-5xl font-black bg-clip-text">Introducing Picky</h2>
 
@@ -16,7 +16,7 @@ export default function IntroductionInfo() {
         </p>
 
         <div className="btn-container duration-300 mt-6">
-          <a href="#start">
+          <a href="#about">
             <span className="btn-style px-10 py-6 rounded-full text-white text-xs uppercase duration-300">
               what we offer?
               <span className="ml-3 opacity-40">

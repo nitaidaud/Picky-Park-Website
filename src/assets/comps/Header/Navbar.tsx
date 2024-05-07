@@ -1,9 +1,11 @@
-
 export default function Navbar() {
   return (
-    <nav className="bg-transparent backdrop-blur-xl fixed w-full z-20 top-0 start-0">
+    <nav className="bg-transparent backdrop-blur-md fixed w-full z-20 top-0 start-0">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
+        <a
+          href="#"
+          className={"flex items-center space-x-3 rtl:space-x-reverse"}
+        >
           <img
             loading="lazy"
             src="..\Images\pickyLogoImgFixed.png"
@@ -52,39 +54,43 @@ export default function Navbar() {
           id="navbar-sticky"
         >
           <ul className="nav-links flex flex-col p-4 md:p-0 mt-4 font-medium border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
-            <li className="border-2 p-2 rounded-2xl border-transparent hover:border-white hover:bg-white duration-300">
-              <a
-                href="#"
-                className="block py-2 px-3 text-white md:p-0 duration-300"
-                aria-current="page"
-              >
+            <a
+              href="#"
+              className="border-2 p-2 rounded-2xl border-transparent hover:border-white hover:bg-white duration-300"
+              aria-current="page"
+            >
+              <li className="block py-2 px-3 text-white md:p-0 duration-300 ">
                 Home
-              </a>
-            </li>
-            <li className="border-2 p-2 rounded-2xl border-transparent hover:border-white hover:bg-white duration-300">
-              <a
-                href="#"
-                className="block py-2 px-3 text-white md:p-0 duration-300"
-              >
+              </li>
+            </a>
+
+            <a
+              href="#about"
+              className="border-2 p-2 rounded-2xl border-transparent hover:border-white hover:bg-white duration-300"
+            >
+              <li className="block py-2 px-3 text-white md:p-0 duration-300 ">
                 About
-              </a>
-            </li>
-            <li className="border-2 p-2 rounded-2xl border-transparent hover:border-white hover:bg-white duration-300">
-              <a
-                href="#"
-                className="block py-2 px-3 text-white md:p-0 duration-300"
-              >
-                Services
-              </a>
-            </li>
-            <li className="border-2 p-2 rounded-2xl border-transparent hover:border-white hover:bg-white duration-300">
-              <a
-                href="#"
-                className="block py-2 px-3 text-white md:p-0 duration-300"
-              >
+              </li>
+            </a>
+
+            <a
+              href="https://apps.apple.com/il/app/picky-park/id6476976854"
+              target="_blank"
+              className="border-2 p-2 rounded-2xl border-transparent hover:border-white hover:bg-white duration-300"
+            >
+              <li className="block py-2 px-3 text-white md:p-0 duration-300 ">
+                Download
+              </li>
+            </a>
+
+            <a
+              href="#"
+              className="border-2 p-2 rounded-2xl border-transparent hover:border-white hover:bg-white duration-300"
+            >
+              <li className="block py-2 px-3 text-white md:p-0 duration-300 ">
                 Contact
-              </a>
-            </li>
+              </li>
+            </a>
           </ul>
         </div>
       </div>

@@ -15,7 +15,7 @@ html {
 }
 
 #root {
-  max-width: 740px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -30,9 +30,10 @@ body {
   background-image: linear-gradient(#004bad,#4218cb88);
 }
 
-nav .nav-links li:hover a {
+nav .nav-links a:hover li{
   color: black;
 }
+
 
 nav .contact-btn {
   border: 1px solid white;
@@ -49,19 +50,15 @@ nav .contact-btn:hover {
 }
 
 .btn-style {
-  background-color: #1d2659;
-  background-image: linear-gradient(
-    45deg,
-    #4118cb 0%,
-    rgba(29, 38, 89, 0.008) 100%
-  );
+  background-image: linear-gradient(310deg, #004bad50,#4218cb88);
   background-position: left;
   font-family: "Sora", sans-serif;
   letter-spacing: 0.375rem;
 }
 
 .btn-style:hover {
-  background-color: #8e3296 !important;
+  background-color: white;
+  color: #4218cb90;
 }
 
 .intro-title {
