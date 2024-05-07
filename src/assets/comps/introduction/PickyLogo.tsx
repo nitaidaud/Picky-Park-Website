@@ -6,8 +6,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function PickyLogo() {
   return (
     <>
-      <div className="mt-28 w-full flex justify-between">
-        <div className="w-1/2">
+      <div className="mt-28 w-full grid justify-center items-center md:flex md:justify-between text-center">
+        <div className="w-1/2 m-auto mb-16 md:mb-0">
           <h2 className="text-8xl text-balance">Parking Can Be Simpler</h2>
           <h2
             className="uppercase text-sm mt-10 text-center"
@@ -27,7 +27,7 @@ export default function PickyLogo() {
         </div>
       </div>
 
-      <div className="btn-style mt-10 w-fit m-auto p-6 rounded-full duration-300">
+      <div className="btn-style mt-24 md:mt-10 w-fit m-auto p-6 rounded-full duration-300">
         <a
           href="https://apps.apple.com/il/app/picky-park/id6476976854"
           target="_blank"
