@@ -53,10 +53,10 @@ export default function Navbar() {
           className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
           id="navbar-sticky"
         >
-          <ul className="nav-links flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 font-extralight">
+          <ul className="nav-links flex flex-col p-4 md:p-0 mt-4 border text-xs rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 font-normal">
             <a
               href="#"
-              className="border-2 p-2 rounded-2xl border-transparent hover:border-white hover:bg-white duration-300"
+              className="border-2 p-2 rounded-2xl border-transparent hover:border-white duration-300 hover:bg-opacity-40 hover:border-opacity-30"
               aria-current="page"
             >
               <li className="block py-2 px-3 text-white md:p-0 duration-300 ">
@@ -66,7 +66,7 @@ export default function Navbar() {
 
             <a
               href="#about"
-              className="border-2 p-2 rounded-2xl border-transparent hover:border-white hover:bg-white duration-300"
+              className="border-2 p-2 rounded-2xl border-transparent hover:border-white duration-300 hover:bg-opacity-40 hover:border-opacity-30"
             >
               <li className="block py-2 px-3 text-white md:p-0 duration-300 ">
                 About
@@ -76,7 +76,7 @@ export default function Navbar() {
             <a
               href="https://apps.apple.com/il/app/picky-park/id6476976854"
               target="_blank"
-              className="border-2 p-2 rounded-2xl border-transparent hover:border-white hover:bg-white duration-300"
+              className="border-2 p-2 rounded-2xl border-transparent hover:border-white duration-300 hover:bg-opacity-40 hover:border-opacity-30"
             >
               <li className="block py-2 px-3 text-white md:p-0 duration-300 ">
                 Download
@@ -85,7 +85,7 @@ export default function Navbar() {
 
             <a
               href="#"
-              className="border-2 p-2 rounded-2xl border-transparent hover:border-white hover:bg-white duration-300"
+              className="border-2 p-2 rounded-2xl border-transparent hover:border-white duration-300 hover:bg-opacity-40 hover:border-opacity-30"
             >
               <li className="block py-2 px-3 text-white md:p-0 duration-300 ">
                 Contact

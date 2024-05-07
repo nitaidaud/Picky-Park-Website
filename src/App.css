@@ -15,7 +15,7 @@ html {
 }
 
 #root {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -30,8 +30,12 @@ body {
   background-image: linear-gradient(#004bad,#4218cb88);
 }
 
+nav .nav-links a:hover{
+  background-color: #1661bd;
+}
+
 nav .nav-links a:hover li{
-  color: black;
+  color: white;
 }
 
 
