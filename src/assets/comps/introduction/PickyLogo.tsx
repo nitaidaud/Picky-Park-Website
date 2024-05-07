@@ -6,9 +6,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function PickyLogo() {
   return (
     <>
-      <div className="mt-28 w-full grid justify-center items-center md:flex md:justify-between text-center">
-        <div className="w-1/2 m-auto mb-16 md:mb-0">
-          <h2 className="text-8xl text-balance">Parking Can Be Simpler</h2>
+      <div className="mt-28 w-full grid justify-center items-center md:flex sm:justify-between text-center">
+        <div className="w-full sm:w-1/2 m-auto mb-16 md:mb-0">
+          <h2 className="text-6xl text-center sm:text-8xl sm:text-balance">Parking Can Be Simpler</h2>
           <h2
             className="uppercase text-sm mt-10 text-center"
             style={{ fontFamily: "Sora", letterSpacing: "0.5em" }}
