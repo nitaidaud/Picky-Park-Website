@@ -26,15 +26,16 @@ html {
 
 body {
   line-height: 1;
-  overflow-x: hidden;
-  background-image: linear-gradient(#004aad,#4118cb41 80%);
+  /* overflow-x: hidden; */
+  background-attachment: fixed;
+  background-image: linear-gradient(#004bad,#4218cb88);
 }
 
-body:before {
+/* body:before {
   background-attachment: scroll;
   content: "";
   display: block;
-  /* height: var(--background-height); */
+  height: var(--background-height);
   left: 0;
   pointer-events: none;
   position: fixed;
@@ -45,10 +46,10 @@ body:before {
   background-size: 100% 100%;
   background-position: center;
   background-repeat: no-repeat;
-}
+} */
 
-nav .nav-links a:hover {
-  opacity: 80%;
+nav .nav-links li:hover Link {
+  color: black;
 }
 
 nav .contact-btn {
