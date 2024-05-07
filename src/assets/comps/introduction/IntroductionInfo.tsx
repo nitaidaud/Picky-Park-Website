@@ -3,8 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function IntroductionInfo() {
   return (
-    <div className="max-w-xl mx-auto my-32">
-      <div className="grid gap-9">
+    <div className="max-w-xl mx-auto my-32 text-center">
+      <div className="grid justify-center gap-9">
         <h2 className="intro-title uppercase tracking-wide text-5xl font-black bg-clip-text">Introducing Picky</h2>
 
         <p className="paragraph-info text-white text-xl font-extralight bg-clip-text">
