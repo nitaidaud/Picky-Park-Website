@@ -7,6 +7,7 @@
 *:after {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif !important;
+  user-select: none;
 }
 
 html {
@@ -27,17 +28,29 @@ html {
 body {
   line-height: 1;
   background-attachment: fixed;
-  background-image: linear-gradient(#004bad,#4218cb88);
+  background-image: linear-gradient(#004bad, #4218cb88);
 }
 
-nav .nav-links a:hover{
+nav {
+  letter-spacing: normal;
+}
+
+/* nav .contact-us-btn{
+  font-size: 0.65em;
+} */
+
+nav .contact-us-btn a {
+  font-size: 0.65em;
+  padding: 15px 20px;
+}
+
+nav .nav-links a:hover {
   background-color: #1661bd;
 }
 
-nav .nav-links a:hover li{
+nav .nav-links a:hover li {
   color: white;
 }
-
 
 nav .contact-btn {
   border: 1px solid white;
@@ -46,15 +59,26 @@ nav .contact-btn {
 nav .contact-btn:hover {
   color: black;
   background-color: white;
-  transform: scale(115%);
+  transform: scale(110%);
 }
 
 .btn-container:hover {
   transform: scale(115%);
 }
 
+.apple-btn-style {
+  background-color: white;
+  color: black;
+  letter-spacing: normal;
+  transition: 300ms;
+}
+
+.apple-btn-style:hover{
+  opacity: 70%;
+}
+
 .btn-style {
-  background-image: linear-gradient(310deg, #004bad50,#4218cb88);
+  background-image: linear-gradient(310deg, #004bad50, #4218cb88);
   background-position: left;
   font-family: "Sora", sans-serif;
   letter-spacing: 0.375rem;

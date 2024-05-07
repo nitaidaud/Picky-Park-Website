@@ -10,15 +10,15 @@ export default function Navbar() {
             loading="lazy"
             src="..\Images\pickyLogoImgFixed.png"
             alt="Picky Logo"
-            width={100}
-            height={100}
+            width={130}
+            height={130}
           />
         </a>
 
-        <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+        <div className="contact-us-btn flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <a
             href="mailto:contact@pickyil.online"
-            className="contact-btn uppercase text-white font-medium rounded-full hover:ease-in-out hover:border-transparent text-sm px-4 py-2 text-center duration-300"
+            className="contact-btn uppercase text-white font-medium rounded-3xl hover:ease-in-out hover:border-transparent text-center duration-300"
           >
             Contact Us
           </a>
@@ -60,7 +60,7 @@ export default function Navbar() {
               aria-current="page"
             >
               <li className="block py-2 px-3 text-white md:p-0 duration-300 ">
-                Home
+                How we work?
               </li>
             </a>
 
@@ -69,7 +69,7 @@ export default function Navbar() {
               className="border-2 p-2 rounded-2xl border-transparent hover:border-white duration-300 hover:bg-opacity-40 hover:border-opacity-30"
             >
               <li className="block py-2 px-3 text-white md:p-0 duration-300 ">
-                About
+                Partners
               </li>
             </a>
 
@@ -79,7 +79,7 @@ export default function Navbar() {
               className="border-2 p-2 rounded-2xl border-transparent hover:border-white duration-300 hover:bg-opacity-40 hover:border-opacity-30"
             >
               <li className="block py-2 px-3 text-white md:p-0 duration-300 ">
-                Download
+                Pricing
               </li>
             </a>
 
@@ -88,7 +88,7 @@ export default function Navbar() {
               className="border-2 p-2 rounded-2xl border-transparent hover:border-white duration-300 hover:bg-opacity-40 hover:border-opacity-30"
             >
               <li className="block py-2 px-3 text-white md:p-0 duration-300 ">
-                Contact
+                About
               </li>
             </a>
           </ul>
