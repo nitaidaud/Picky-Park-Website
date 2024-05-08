@@ -35,7 +35,7 @@ export default function PickyLogo() {
           </div>
         </div>
 
-        <div className="flex justify-end">
+        <div className="flex justify-center xl:justify-end items-center">
           <img
             loading="lazy"
             className="w-2/3"
