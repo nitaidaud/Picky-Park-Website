@@ -35,10 +35,10 @@ export default function PickyLogo() {
           </div>
         </div>
 
-        <div className="m-auto">
+        <div className="flex justify-end">
           <img
             loading="lazy"
-            className="w-2/3 m-auto"
+            className="w-2/3"
             src="..\..\Images\PhoneExample.png"
             alt="logo"
           />
