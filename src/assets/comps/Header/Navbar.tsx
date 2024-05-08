@@ -10,6 +10,7 @@ export default function Navbar() {
             loading="lazy"
             src="..\Images\pickyLogoImgFixed.png"
             alt="Picky Logo"
+            className="w-24 2xl:w-32"
             width={130}
             height={130}
           />
