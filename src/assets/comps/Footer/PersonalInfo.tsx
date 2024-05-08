@@ -1,7 +1,7 @@
 
 export default function PersonalInfo() {
   return (
-    <div className="my-24 grid gap-16">
+    <div id="contact-info" className="my-24 grid gap-16">
       <p className=" uppercase font-bold text-white bg-clip-text">
         Founder & CEO
       </p>

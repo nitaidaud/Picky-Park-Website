@@ -13,7 +13,7 @@ function App() {
         <Introduction />
       </LazyLoadComponent>
 
-      <LazyLoadComponent>
+      <LazyLoadComponent visibleByDefault={true}>
         <Footer />
       </LazyLoadComponent>
     </>

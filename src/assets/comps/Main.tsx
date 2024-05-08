@@ -6,8 +6,8 @@ export default function Main() {
   return (
     <>
       <Navbar />
-        <PickyLogo />
-        <IntroductionInfo />
+      <PickyLogo />
+      <IntroductionInfo />
     </>
   );
 }
