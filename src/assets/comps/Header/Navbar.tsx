@@ -65,7 +65,7 @@ export default function Navbar() {
             </a>
 
             <a
-              href="#about"
+              href="#"
               className="border-2 p-2 rounded-2xl border-transparent hover:border-white duration-300 hover:bg-opacity-40 hover:border-opacity-30"
             >
               <li className="block py-2 px-3 text-white md:p-0 duration-300 ">
@@ -84,7 +84,7 @@ export default function Navbar() {
             </a>
 
             <a
-              href="#"
+              href="#about"
               className="border-2 p-2 rounded-2xl border-transparent hover:border-white duration-300 hover:bg-opacity-40 hover:border-opacity-30"
             >
               <li className="block py-2 px-3 text-white md:p-0 duration-300 ">

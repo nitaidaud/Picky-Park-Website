@@ -7,15 +7,15 @@ import Main from "./assets/comps/Main";
 function App() {
   return (
     <>
-        <Main />
+      <Main />
 
-        <LazyLoadComponent>
-          <Introduction />
-        </LazyLoadComponent>
+      <LazyLoadComponent visibleByDefault={true}>
+        <Introduction />
+      </LazyLoadComponent>
 
-        <LazyLoadComponent>
-          <Footer />
-        </LazyLoadComponent>
+      <LazyLoadComponent>
+        <Footer />
+      </LazyLoadComponent>
     </>
   );
 }
