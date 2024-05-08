@@ -18,7 +18,7 @@ export default function Navbar() {
         <div className="contact-us-btn flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <a
             href="mailto:contact@pickyil.online"
-            className="contact-btn uppercase text-white font-medium rounded-3xl hover:ease-in-out hover:border-transparent text-center duration-300"
+            className="contact-btn uppercase text-white font-medium rounded-3xl hover:ease-in-out hover:border-transparent text-center duration-300 "
           >
             Contact Us
           </a>
