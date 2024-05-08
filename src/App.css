@@ -12,6 +12,7 @@
 
 html {
   scroll-behavior: smooth;
+  
   letter-spacing: 0.25em;
 }
 
@@ -34,10 +35,6 @@ body {
 nav {
   letter-spacing: normal;
 }
-
-/* nav .contact-us-btn{
-  font-size: 0.65em;
-} */
 
 nav .contact-us-btn a {
   font-size: 0.65em;

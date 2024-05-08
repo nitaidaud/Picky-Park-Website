@@ -1,5 +1,3 @@
-// import { LazyLoadImage } from "react-lazy-load-image-component";
-
 import { faApple } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -7,9 +5,9 @@ export default function PickyLogo() {
   return (
     <>
       <div className="mt-28 w-full justify-center items-center flex flex-col xl:flex-row xl:justify-between text-center">
-        <div className="w-full xl:w-1/2 m-auto mb-16 xl:mb-0"> 
-         {/* bg-white bg-opacity-30 p-4 rounded-xl */}
-          <h2 className="text-6xl xl:text-start md:text-8xl xl:text-balance">
+        <div className="w-full xl:w-1/2 m-auto mb-16 xl:mb-0">
+          {/* bg-white bg-opacity-30 p-4 rounded-xl */}
+          <h2 className="uppercase text-6xl xl:text-start md:text-8xl xl:text-balance">
             Parking Can Be Simpler
           </h2>
           <h2
