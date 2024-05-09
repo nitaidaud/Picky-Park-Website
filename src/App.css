@@ -149,7 +149,6 @@ nav .contact-btn:hover {
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
-  /* margin: 0 auto !important; */
 }
 
 .owl-item {
@@ -159,7 +158,7 @@ nav .contact-btn:hover {
 }
 
 .owl-item img{
-  height: 2.5em;
+  height: 250px;
 }
 
 .owl-theme .owl-dots .owl-dot {

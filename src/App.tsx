@@ -25,10 +25,6 @@ function App() {
 
         938: {
           items: 3
-        },
-
-        1200: {
-          items: 4
         }
       },
       loop: true,
