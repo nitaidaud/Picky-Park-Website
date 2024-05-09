@@ -40,9 +40,9 @@ function App() {
 
   return (
     <>
-      <div className=" h-full w-full left-0 mt-11">
-      <iframe src='https://my.spline.design/911lapstogo-164067615931c022b15d8f226f7d8457/' frameBorder='0' allowFullScreen width='100%' height='100%'></iframe>
-      </div>
+      {/* <div className="h-full w-full left-0 mt-24">
+      
+      </div> */}
         <Main />
 
         <LazyLoadComponent visibleByDefault={true}>
