@@ -20,7 +20,7 @@ export default function Partners() {
 
             <div className="owl-item ">
               <div className="item">
-                <img src="..\Partners\Logos\EDA.png" alt="img" />
+                <img src="..\Partners\Logos\EDA2.png" alt="img" />
               </div>
             </div>
 

@@ -17,10 +17,6 @@ export default function PersonalInfo() {
         through technology, Noam has dedicated his expertise to redefine the
         parking experience for users around the globe
       </p>
-
-      <div className="divider"/>
-
-      
     </div>
   );
 }
