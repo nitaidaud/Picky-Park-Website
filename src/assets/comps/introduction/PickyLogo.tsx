@@ -4,9 +4,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function PickyLogo() {
   return (
     <>
-      <div className="mt-28 w-full justify-center items-center flex flex-col xl:flex-row xl:justify-between xl:items-start text-center">
-        <div className="w-full xl:w-1/2 m-auto mb-16 xl:mb-0 ">
-          {/* bg-white bg-opacity-30 p-4 rounded-xl */}
+      <div className=" mt-28 w-full justify-center items-center flex flex-col xl:flex-row xl:justify-between xl:items-start text-center relative">
+
+        <div className="w-full xl:w-1/2 mx-auto mb-16 xl:mb-0">
+
           <h2 className="uppercase text-6xl xl:text-start md:text-8xl xl:text-balance">
             Parking Can Be Simpler
           </h2>
@@ -34,21 +35,24 @@ export default function PickyLogo() {
           </div>
         </div>
 
-        <div className="flex justify-center xl:justify-end items-center">
+        <div className="flex justify-center xl:justify-end items-center w-full relative h-1/3">
+          {/* <div className="w-full absolute"> */}
           {/* <img
             loading="lazy"
             className="w-2/3"
             src="..\..\Images\parkingImg.png"
             alt="logo"
           /> */}
-          <button>
-            <iframe
-              src="https://my.spline.design/911lapstogo-164067615931c022b15d8f226f7d8457/"
-              frameBorder="0"
-              width="600px"
-              height="600px"
-            ></iframe>
-          </button>
+          
+          <div className="absolute bg-black h-10 w-36 right-3 bottom-3 rounded-full">
+            Made By NDevelop
+          </div>
+          <iframe
+            src="https://my.spline.design/911lapstogo-164067615931c022b15d8f226f7d8457/"
+            frameBorder="0"
+            width="600px"
+            height="600px"
+          ></iframe>
         </div>
       </div>
     </>
