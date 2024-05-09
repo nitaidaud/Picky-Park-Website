@@ -16,7 +16,7 @@ export default function IntroductionInfo() {
           dealing with your stuff without worry about where to park.
         </p>
 
-        <div className="btn-container duration-300 mt-6 w-fit mx-auto">
+        <div id="partners" className="btn-container duration-300 mt-6 w-fit mx-auto">
           <a href="#about">
             <span className="btn-style px-10 py-6 rounded-full text-white text-xs uppercase duration-300">
               what we offer?
