@@ -17,6 +17,8 @@
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@icon/font-awesome": "^4.7.0-2",
+    "@splinetool/react-spline": "^2.2.6",
+    "@splinetool/runtime": "^1.3.1",
     "aos": "^2.3.4",
     "font-awesome-icons": "^1.6.0",
     "owl.carousel": "^2.3.4",

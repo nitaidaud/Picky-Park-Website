@@ -1,5 +1,6 @@
 import { faApple } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Spline from "@splinetool/react-spline";
 
 export default function PickyLogo() {
   return (
@@ -38,7 +39,7 @@ export default function PickyLogo() {
           <img
             loading="lazy"
             className="w-2/3"
-            src="..\..\Images\PhoneExample.png"
+            src="..\..\Images\parkingImg.png"
             alt="logo"
           />
         </div>
