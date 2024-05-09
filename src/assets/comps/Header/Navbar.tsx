@@ -41,9 +41,9 @@ export default function Navbar() {
             >
               <path
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M1 1h15M1 7h15M1 13h15"
               />
             </svg>
@@ -66,7 +66,7 @@ export default function Navbar() {
             </a>
 
             <a
-              href="#"
+              href="#partners"
               className="border-2 p-2 rounded-2xl border-transparent hover:border-white duration-300 hover:bg-opacity-40 hover:border-opacity-30"
             >
               <li className="block py-2 px-3 text-white md:p-0 duration-300 ">
