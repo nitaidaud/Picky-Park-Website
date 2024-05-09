@@ -1,6 +1,5 @@
 import { faApple } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Spline from "@splinetool/react-spline";
 
 export default function PickyLogo() {
   return (
