@@ -26,7 +26,7 @@ function App() {
         938: {
           items: 3
         },
-        
+
         1200: {
           items: 4
         }
@@ -34,9 +34,11 @@ function App() {
       loop: true,
       lazyLoad: true,
       autoplay: true,
-      autoplayTimeout: 2000,
-      autoplaySpeed: 2000,
-      // rewind: false,
+      // autoplayTimeout: 4000,
+      autoplaySpeed: 1000,
+      slideTransition: "linear",
+      fluidSpeed: true,
+      rewind: false,
       autoplayHoverPause: true,
     });
   }, []);
