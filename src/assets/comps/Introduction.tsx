@@ -5,7 +5,7 @@ import ParkingSolution from "./mainInfo/ParkingSolution";
 
 export default function Introduction() {
   return (
-    <div className="max-w-xl mt-96 mx-auto">
+    <div id="what-we-offer" className="max-w-xl mt-96 mx-auto">
       <ParkingSolution />
       <LoyaltyAchievements />
       <SecurityInfo />
