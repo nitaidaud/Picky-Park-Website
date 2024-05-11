@@ -5,9 +5,7 @@ export default function PickyLogo() {
   return (
     <>
       <div className=" mt-28 w-full justify-center items-center flex flex-col xl:flex-row xl:justify-between xl:items-start text-center relative">
-
         <div className="w-full xl:w-1/2 mx-auto mb-16 xl:mb-0">
-
           <h2 className="uppercase text-6xl xl:text-start md:text-8xl xl:text-balance">
             Parking Can Be Simpler
           </h2>
@@ -43,9 +41,9 @@ export default function PickyLogo() {
             src="..\..\Images\parkingImg.png"
             alt="logo"
           /> */}
-          
-          <div className="absolute bg-black h-10 w-36 right-3 bottom-3 rounded-full">
-            Made By NDevelop
+
+          <div className="absolute bg-black h-10 w-36 right-3 bottom-3 rounded-full flex items-center text-balance hover:scale-110 duration-300 hover:bg-slate-500">
+            <a className="copyright-txt font-bold uppercase" href="https://www.linkedin.com/in/nitai-daud/" target="_blank"> Made By: Nitai Daud© </a>
           </div>
           <iframe
             src="https://my.spline.design/911lapstogo-164067615931c022b15d8f226f7d8457/"

@@ -86,6 +86,10 @@ nav .contact-btn:hover {
   color: #4218cb90;
 }
 
+.copyright-txt{
+  font-size: 0.7em;
+}
+
 .intro-title {
   /* background-image: linear-gradient(
     344deg,
