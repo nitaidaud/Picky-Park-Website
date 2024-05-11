@@ -48,6 +48,7 @@ export default function PickyLogo() {
           <iframe
             src="https://my.spline.design/911lapstogo-164067615931c022b15d8f226f7d8457/"
             frameBorder="0"
+            title="parking game"
             width="600px"
             height="600px"
           ></iframe>

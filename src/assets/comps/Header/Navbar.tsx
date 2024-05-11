@@ -54,24 +54,24 @@ export default function Navbar() {
           className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
           id="navbar-sticky"
         >
-          <ul className="nav-links flex flex-col p-4 md:p-0 mt-4 border text-xs rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 font-normal">
+          <div className="nav-links flex flex-col p-4 md:p-0 mt-4 border text-xs rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 font-normal">
             <a
               href="#"
               className="border-2 p-2 rounded-2xl border-transparent hover:border-white duration-300 hover:bg-opacity-40 hover:border-opacity-30"
               aria-current="page"
             >
-              <li className="block py-2 px-3 text-white md:p-0 duration-300 ">
+              <div className="block py-2 px-3 text-white md:p-0 duration-300 ">
                 How we work?
-              </li>
+              </div>
             </a>
 
             <a
               href="#partners"
               className="border-2 p-2 rounded-2xl border-transparent hover:border-white duration-300 hover:bg-opacity-40 hover:border-opacity-30"
             >
-              <li className="block py-2 px-3 text-white md:p-0 duration-300 ">
+              <div className="block py-2 px-3 text-white md:p-0 duration-300 ">
                 Partners
-              </li>
+              </div>
             </a>
 
             <a
@@ -79,20 +79,20 @@ export default function Navbar() {
               target="_blank"
               className="border-2 p-2 rounded-2xl border-transparent hover:border-white duration-300 hover:bg-opacity-40 hover:border-opacity-30"
             >
-              <li className="block py-2 px-3 text-white md:p-0 duration-300 ">
+              <div className="block py-2 px-3 text-white md:p-0 duration-300 ">
                 Pricing
-              </li>
+              </div>
             </a>
 
             <a
               href="#about"
               className="border-2 p-2 rounded-2xl border-transparent hover:border-white duration-300 hover:bg-opacity-40 hover:border-opacity-30"
             >
-              <li className="block py-2 px-3 text-white md:p-0 duration-300 ">
+              <div className="block py-2 px-3 text-white md:p-0 duration-300 ">
                 About
-              </li>
+              </div>
             </a>
-          </ul>
+          </div>
         </div>
       </div>
     </nav>
