@@ -42,13 +42,21 @@ export default function PickyLogo() {
             alt="logo"
           /> */}
 
-          <div className="absolute bg-black h-10 w-36 right-3 bottom-3 rounded-full flex items-center text-balance hover:scale-110 duration-300 hover:bg-slate-500">
-            <a className="copyright-txt font-bold uppercase" href="https://www.linkedin.com/in/nitai-daud/" target="_blank"> Made By: Nitai Daud© </a>
+          <div className="absolute bg-black h-10 w-36 right-3 bottom-3 rounded-full flex items-center text-balance hover:scale-110 duration-300 hover:bg-slate-500 play-text uppercase font-semibold">
+            Press space to start
           </div>
-          <iframe
+          {/* <iframe
             src="https://my.spline.design/911lapstogo-164067615931c022b15d8f226f7d8457/"
             frameBorder="0"
             title="parking game"
+            width="600px"
+            height="600px"
+          ></iframe> */}
+
+          <iframe
+            src="https://my.spline.design/911lapstogocopy-7cc0cfafba0fca15b5569de6d5fae99e/"
+            title="parking game"
+            frameBorder="0"
             width="600px"
             height="600px"
           ></iframe>
