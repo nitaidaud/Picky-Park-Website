@@ -7,13 +7,13 @@ export default function PickyLogo() {
       <div className=" mt-28 w-full justify-center items-center flex flex-col xl:flex-row xl:justify-between xl:items-start text-center relative">
         <div className="w-full xl:w-1/2 mx-auto mb-16 xl:mb-0">
           <h2 className="uppercase text-6xl xl:text-start md:text-8xl xl:text-balance">
-            Parking Can Be Simpler
+            stop driving <span className="text-6xl font-bold w-full text-orange-300"> in circles</span>
           </h2>
           <h2
             className="uppercase text-sm mt-10 xl:text-start"
             style={{ fontFamily: "Sora", letterSpacing: "0.5em" }}
           >
-            Future of parking.
+            Find your parking now.
           </h2>
           <div className="apple-btn-style mt-24 mx-auto xl:mx-0 xl:mt-10 min-w-fit md:w-1/2 max-w-56 px-4 py-3 rounded-2xl duration-300">
             <a
@@ -57,8 +57,8 @@ export default function PickyLogo() {
             src="https://my.spline.design/911lapstogocopy-7cc0cfafba0fca15b5569de6d5fae99e/"
             title="parking game"
             frameBorder="0"
-            width="600px"
-            height="600px"
+            width="700px"
+            height="700px"
           ></iframe>
         </div>
       </div>
