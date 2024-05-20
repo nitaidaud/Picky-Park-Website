@@ -4,6 +4,9 @@ import Footer from "./assets/comps/Footer";
 import Introduction from "./assets/comps/Introduction";
 import Main from "./assets/comps/Main";
 import { useEffect } from "react";
+import {BrowserRouter as Router } from "react-router-dom";
+import AppRouts from "./assets/comps/AppRouts";
+import Navbar from "./assets/comps/Header/Navbar";
 
 function App() {
   useEffect(() => {
@@ -43,7 +46,8 @@ function App() {
       {/* <div className="h-full w-full left-0 mt-24">
       
       </div> */}
-        <Main />
+      <Router>
+        {/* <Main />
 
         <LazyLoadComponent visibleByDefault={true}>
           <Introduction />
@@ -51,8 +55,9 @@ function App() {
 
         <LazyLoadComponent visibleByDefault={true}>
           <Footer />
-        </LazyLoadComponent>
-      
+        </LazyLoadComponent> */}
+        <AppRouts/>
+      </Router>
     </>
   );
 }

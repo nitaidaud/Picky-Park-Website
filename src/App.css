@@ -13,7 +13,6 @@
 html {
   scroll-behavior: smooth;
   letter-spacing: 0.25em;
-  
 }
 
 #root {
@@ -86,7 +85,7 @@ nav .contact-btn:hover {
   color: #4218cb90;
 }
 
-.play-text{
+.play-text {
   font-size: 0.7em;
 }
 
@@ -127,13 +126,13 @@ nav .contact-btn:hover {
 .owl-stage {
   transform: translate3d(-1527px, 0px, 0px);
   transition: all 0.25s ease 0s;
-  display: flex !important; 
+  display: flex !important;
   justify-content: center !important;
   align-items: center !important;
   margin: 0 auto !important;
 }
 
-.owl-carousel{
+.owl-carousel {
   background-image: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0),
@@ -145,7 +144,7 @@ nav .contact-btn:hover {
   left: 0;
 }
 
-.owl-stage-outer{
+.owl-stage-outer {
   width: 100%;
   margin: 0 auto !important;
 }
@@ -162,7 +161,7 @@ nav .contact-btn:hover {
   max-height: 30%;
 }
 
-.owl-item img{
+.owl-item img {
   height: 250px;
 }
 
@@ -176,6 +175,26 @@ nav .contact-btn:hover {
     #ffb800 0%,
     rgba(255, 255, 255, 0.561) 100%
   );
+}
+
+.contact-info::before {
+  position: absolute;
+  background-color: transparent;
+  display: grid;
+  padding: 1.5rem;
+  text-align: left;
+  text-transform: uppercase;
+  letter-spacing: normal;
+  gap: 2.5rem;
+  justify-content: center;
+  justify-items: center;
+}
+
+.contact-info:hover::before {
+  background-color: rgba(0, 0, 0, 0.832);
+  height: 100%;
+  width: 100%;
+  content: "Noam Cohen, the driving force and innovative mind behind the groundbreaking parking app Picky is a fresh entrepreneur and visionary in the tech industry. With a passion for simplifying everyday challenges through technology, Noam has dedicated his expertise to redefine the parking experience for users around the globe";
 }
 
 .download-btn {
@@ -196,4 +215,57 @@ nav .contact-btn:hover {
 
 .contact-links a:hover {
   transform: translateY(-15px);
+}
+
+.footer-info {
+  letter-spacing: normal;
+  color: #004bad70;
+}
+
+.footer-info a{
+  transition: all 0.2s;
+}
+
+.footer-copyright a:hover{
+  color: black;
+}
+
+.footer-info h3{
+  font-size: 0.7rem !important;
+}
+
+.footer-info .glass {
+  background: white;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.1)
+  );
+  backdrop-filter: blur(0.5rem);
+}
+
+.footer-info h2 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.footer-info ul {
+  margin-top: 2.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  text-align: left;
+}
+
+.footer-info li {
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+.footer-info h3 {
+  font-size: 0.7rem;
+}
+
+.footer-info li:hover {
+  transform: scale(110%);
 }

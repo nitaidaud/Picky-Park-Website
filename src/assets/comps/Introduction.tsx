@@ -9,7 +9,6 @@ export default function Introduction() {
       <ParkingSolution />
       <LoyaltyAchievements />
       <SecurityInfo />
-      <GdprCompliance />
     </div>
   );
 }
