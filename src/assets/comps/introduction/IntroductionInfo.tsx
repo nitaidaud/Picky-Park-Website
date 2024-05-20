@@ -1,6 +1,3 @@
-import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 export default function IntroductionInfo() {
   return (
     <div id="about" className="max-w-xl mx-auto my-32 text-center">
