@@ -1,12 +1,7 @@
 import "./App.css";
-import { LazyLoadComponent } from "react-lazy-load-image-component";
-import Footer from "./assets/comps/Footer";
-import Introduction from "./assets/comps/Introduction";
-import Main from "./assets/comps/Main";
 import { useEffect } from "react";
 import {BrowserRouter as Router } from "react-router-dom";
 import AppRouts from "./assets/comps/AppRouts";
-import Navbar from "./assets/comps/Header/Navbar";
 
 function App() {
   useEffect(() => {
