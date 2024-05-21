@@ -32,11 +32,11 @@ export default function IntroductionInfo() {
             </p>
           </div>
         </div>
-        <div
-          id="partners"
-          className="btn-container duration-300  w-fit mx-auto"
-        ></div>
       </div>
+      <div
+        id="partners"
+        className="btn-container duration-300  w-fit mx-auto"
+      ></div>
     </div>
   );
 }
