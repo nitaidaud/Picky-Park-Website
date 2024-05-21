@@ -62,7 +62,7 @@ export default function FooterInfo() {
       </div>
 
       <div className="footer-copyright grid justify-center gap-5 lg:gap-0 lg:flex text-white w-full lg:justify-between absolute py-3 text-center font-bold">
-        <div className="h-full w-full flex justify-center gap-3">
+        <div className="h-full w-full flex justify-center gap-3 text-white">
           <a href="../../PrivacyAndTermsPdf/PrivacyPolicy.pdf" target="_blank">
             <h3>Privacy & Policy</h3>
           </a>
@@ -77,14 +77,14 @@ export default function FooterInfo() {
 
         {/* <iframe src='https://my.spline.design/futuristicmapinterface-c5f1295287515a3aade1f9a6a7c980d5/' frameBorder='0' width='500000' height='100%'></iframe> */}
 
-        <h3 className="h-full w-full">
-          Powered By:{" "}
+        <h3 className="h-full w-full text-white">
+          Powered By:
           <a href="https://www.linkedin.com/in/nitai-daud/" target="_blank">
-            Nitai Daud{" "}
+            Nitai Daud
           </a>
         </h3>
 
-        <h3 className="h-full w-full">2024 Picky. All Rights Reserved</h3>
+        <h3 className="h-full w-full text-white">2024 Picky. All Rights Reserved</h3>
       </div>
     </div>
   );
