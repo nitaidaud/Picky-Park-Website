@@ -217,20 +217,11 @@ nav .contact-btn:hover {
   letter-spacing: normal;
   color: white;
   z-index: 100;
-  background: rgba(0, 0, 0, 0.359);
+  background: rgba(0, 0, 0, 0.30);
 }
 
-/* .footer-info::before {
-  left: 0;
-  content: "";
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.359);
-  position: absolute;
-} */
-
 .footer-copyright{
-  background: rgba(0, 0, 0, 0.359);
+  background: rgba(0, 0, 0, 0.30);
 }
 
 .footer-copyright a{
