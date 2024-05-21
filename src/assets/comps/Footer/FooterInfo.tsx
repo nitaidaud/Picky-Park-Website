@@ -6,8 +6,8 @@ import DownloadBtn from "./DownloadBtn";
 export default function FooterInfo() {
   return (
     <div className="footer-info absolute w-full left-0">
-      <div className="grid lg:flex justify-center items-center lg:items-stretch lg:justify-around h-fit w-11/12 mx-auto bg-white bg-opacity-10 backdrop-blur-3xl rounded-full glass my-20">
-        <div className="my-12 w-2/5 flex flex-col items-center justify-between gap-3">
+      <div className="grid lg:flex justify-center items-center lg:items-stretch lg:justify-around h-fit w-11/12 mx-auto bg-white bg-opacity-10 backdrop-blur-3xl rounded-full glass my-20 gap-20 lg:gap-0">
+        <div className="my-12 w-full lg:w-2/5 flex flex-col items-center justify-between gap-3">
           <div>
             <img
               src="..\Images\pickyLogoImgFixed.png"
@@ -28,7 +28,7 @@ export default function FooterInfo() {
           </a>
         </div>
 
-        <div className="my-12 w-2/5 grid justify-start items-center gap-5 text-center ms-20">
+        <div className="my-12 w-full lg:w-2/5 grid lg:justify-start lg:items-center gap-5 text-center lg:ms-20">
           <h2>Contact Us</h2>
           <div className="grid gap-6">
             <div>
@@ -48,14 +48,12 @@ export default function FooterInfo() {
             </div>
           </div>
         </div>
-        <div className="w-1/5 text-balance flex flex-col justify-center text-start items-start">
-          <div>
-            <h3>
-              <span className="font-semibold">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Excepturi, quia!M Lorem ipsum dolor sit amet.
-              </span>
-            </h3>
+        <div className="w-full lg:w-2/5 2xl:w-1/5 text-balance flex flex-col justify-center lg:text-start lg:items-start gap-5 lg:gap-0">
+          <div className="w-fit">
+            <p className="font-semibold lg:text-xs">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Excepturi, quia!M Lorem ipsum dolor sit amet.
+            </p>
           </div>
           <div>
             <DownloadBtn />
