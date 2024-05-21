@@ -75,8 +75,6 @@ export default function FooterInfo() {
           </a>
         </div>
 
-        {/* <iframe src='https://my.spline.design/futuristicmapinterface-c5f1295287515a3aade1f9a6a7c980d5/' frameBorder='0' width='500000' height='100%'></iframe> */}
-
         <h3 className="h-full w-full text-white">
           Powered By:
           <a href="https://www.linkedin.com/in/nitai-daud/" target="_blank">
@@ -84,7 +82,9 @@ export default function FooterInfo() {
           </a>
         </h3>
 
-        <h3 className="h-full w-full text-white">2024 Picky. All Rights Reserved</h3>
+        <h3 className="h-full w-full text-white">
+          2024 Picky. All Rights Reserved
+        </h3>
       </div>
     </div>
   );

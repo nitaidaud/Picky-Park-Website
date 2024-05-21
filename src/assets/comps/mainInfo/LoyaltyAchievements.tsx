@@ -2,8 +2,8 @@
 
 export default function LoyaltyAchievements() {
   return (
-    <div className="my-32 grid gap-9">
-      <div className="w-full m-auto">
+    <div className="my-32 grid gap-9 w-5/6 mx-auto">
+      <div className="w-2/3 m-auto">
         <img
         loading="lazy"
         className="w-11/12 md:w-full m-auto"

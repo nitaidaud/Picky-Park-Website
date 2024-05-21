@@ -2,7 +2,7 @@
 
 export default function SecurityInfo() {
   return (
-    <div className="grid gap-9 text-center justify-center items-center m-auto">
+    <div className="w-1/2 grid gap-9 text-center justify-center items-center m-auto h-screen">
       <img
       loading="lazy"
         className="w-2/4 m-auto"

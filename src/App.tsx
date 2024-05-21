@@ -38,19 +38,7 @@ function App() {
 
   return (
     <>
-      {/* <div className="h-full w-full left-0 mt-24">
-      
-      </div> */}
       <Router>
-        {/* <Main />
-
-        <LazyLoadComponent visibleByDefault={true}>
-          <Introduction />
-        </LazyLoadComponent>
-
-        <LazyLoadComponent visibleByDefault={true}>
-          <Footer />
-        </LazyLoadComponent> */}
         <AppRouts/>
       </Router>
     </>
