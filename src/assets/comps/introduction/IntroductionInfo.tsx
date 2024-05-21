@@ -32,14 +32,6 @@ export default function IntroductionInfo() {
             </p>
           </div>
         </div>
-        {/* <iframe
-          src="https://my.spline.design/futuristicmapinterfacecopy-7f013d08ae55acc971f9eaccfea6ac66/"
-          frameBorder="0"
-          loading="lazy"
-          width="100%"
-          height="100%"
-          className="absolute left-0 -z-10"
-        ></iframe> */}
         <div
           id="partners"
           className="btn-container duration-300  w-fit mx-auto"
