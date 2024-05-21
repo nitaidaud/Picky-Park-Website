@@ -7,7 +7,7 @@ export default function DownloadBtn() {
             <img src="..\Images\AppStoreBtn.png" alt="App store button" width={120} />
         </a>
 
-        <a>
+        <a href="https://apps.apple.com/il/app/picky-park/id6476976854" target="_blank">
             <img src="..\Images\GooglePlayBtn.png" alt="Google play button" width={120}/>
         </a>
     </div>
