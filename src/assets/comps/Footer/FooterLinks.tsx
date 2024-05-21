@@ -21,7 +21,7 @@ export default function FooterLinks(props: {
       >
         {displayIcons.Email && (
           <a
-            className="py-2 px-3 border-2 rounded-full text-black border-black duration-300 hover:bg-opacity-40"
+            className="py-2 px-3 border-2 rounded-full text-white border-white duration-300 hover:bg-opacity-40"
             href="mailto:contact@pickyil.online"
             target="_blank"
             aria-label="Email"
@@ -43,7 +43,7 @@ export default function FooterLinks(props: {
 
         {displayIcons.WhatsApp && (
           <a
-            className="py-2 px-3 border-2 rounded-full text-black border-black duration-300 hover:bg-opacity-40"
+            className="py-2 px-3 border-2 rounded-full text-white border-white duration-300 hover:bg-opacity-40"
             href="https://wa.me/+972544646135"
             target="_blank"
             aria-label="Send WhatsApp"
