@@ -1,5 +1,0 @@
-{
-  "rewrites": [
-    { "source": "../../../GDPR", "destination": "/GDPRInfo.tsx" }
-  ]
-}
