@@ -1,5 +1,5 @@
 {
   "rewrites": [
-    { "source": "src/assets/comps/GDPR", "destination": "/GDPRInfo.tsx" }
+    { "source": "/src/assets/comps/GDPR", "destination": "/GDPRInfo.tsx" }
   ]
 }
