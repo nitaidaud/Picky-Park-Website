@@ -5,7 +5,7 @@ import ParkingSolution from "./mainInfo/ParkingSolution";
 
 export default function Introduction() {
   return (
-    <div id="what-we-offer" className="grid gap-20 mt-96 mx-auto">
+    <div id="what-we-offer" className="flex flex-col gap-32 mt-96 mx-auto">
       <ParkingSolution />
       <LoyaltyAchievements />
       <SecurityInfo />

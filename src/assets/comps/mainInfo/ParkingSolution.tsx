@@ -2,7 +2,7 @@
 
 export default function ParkingSolution() {
   return (
-    <div className="grid gap-9 h-screen">
+    <div className="grid gap-9 h-full">
       <div className="w-2/5 m-auto">
         <img
           width={"100%"}

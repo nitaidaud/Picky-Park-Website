@@ -90,12 +90,12 @@ nav .contact-btn:hover {
   font-size: 0.7em;
 }
 
-.introduction::before{
+.introduction::before {
   position: absolute;
   content: "";
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 255, 255, 0.3);
+  /* background-color: rgb(221, 218, 248); */
   left: 0;
   z-index: -10;
 }
@@ -108,9 +108,30 @@ nav .contact-btn:hover {
 .paragraph-info {
   letter-spacing: 0.05em !important;
   font-family: "Poppins", sans-serif;
-  background-image: linear-gradient(0deg, #ffffff 0%, #ffffff 100%);
-  -webkit-text-fill-color: transparent;
+  /* background-image: linear-gradient(0deg, #ffffff 0%, #ffffff 100%); */
+  /* -webkit-text-fill-color: transparent; */
 }
+
+/* .test-bg {
+  background-image: radial-gradient(
+    rgba(201, 206, 220, 0.803) 40%,
+    rgba(245, 245, 255, 0.641)
+  );
+
+  -webkit-box-shadow: -1px 6px 59px -11px rgba(122, 122, 122, 1);
+  -moz-box-shadow: -1px 6px 59px -11px rgba(122, 122, 122, 1);
+  box-shadow: -1px 6px 59px -11px rgba(122, 122, 122, 1);
+  background-image: linear-gradient(
+    rgba(78, 117, 234, 0.803) 40%,
+    rgba(194, 196, 241, 0.5)
+  );
+
+  backdrop-filter: blur(50px) !important;
+  -webkit-backdrop-filter: blur(500px);
+  filter: blur(5px);
+
+  -webkit-filter: blur(5px);
+} */
 
 .parking-title {
   background-image: linear-gradient(
@@ -227,14 +248,14 @@ nav .contact-btn:hover {
   letter-spacing: normal;
   color: white;
   z-index: 100;
-  background: rgba(0, 0, 0, 0.30);
+  background: rgba(0, 0, 0, 0.3);
 }
 
-.footer-copyright{
-  background: rgba(0, 0, 0, 0.30);
+.footer-copyright {
+  background: rgba(0, 0, 0, 0.3);
 }
 
-.footer-copyright a{
+.footer-copyright a {
   z-index: 100;
 }
 
