@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function PickyLogo() {
   return (
     <>
-      <div className="bg-indigo-500 pt-32">
+      <div className="bg-indigo-500 pt-32 h-full min-h-screen">
         <div className="w-2/3 m-auto justify-center items-center flex flex-col xl:flex-row xl:justify-between xl:items-start text-center relative">
           <div className="w-full xl:w-1/2 :w-1/6 mx-auto mb-16 xl:mb-0">
             <h2 className="uppercase text-6xl xl:text-start md:text-8xl xl:text-balance">
