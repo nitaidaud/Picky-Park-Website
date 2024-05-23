@@ -2,7 +2,7 @@
 
 export default function LoyaltyAchievements() {
   return (
-    <div className="bg-black bg-opacity-80 h-screen min-h-fit">
+    <div className="bg-black bg-opacity-80 h-full min-h-screen py-16">
       <div className="grid gap-9 h-full w-1/2 mx-auto items-center justify-center">
         <div className="w-2/3 m-auto">
           <img
