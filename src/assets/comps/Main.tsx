@@ -12,7 +12,7 @@ export default function Main() {
       <Navbar />
       <PickyLogo />
       <IntroductionInfo />
-      <Partners />
+      {/* <Partners /> */}
 
       <LazyLoadComponent visibleByDefault={true}>
         <Introduction />

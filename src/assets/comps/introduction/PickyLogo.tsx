@@ -57,15 +57,16 @@ export default function PickyLogo() {
             width="600px"
             height="600px"
           ></iframe> */}
-
-            <iframe
-              className="hidden xl:block max-w-sm 2xl:max-w-xl"
-              src="https://my.spline.design/911lapstogocopy-7cc0cfafba0fca15b5569de6d5fae99e/"
-              title="parking game"
-              frameBorder="0"
-              width="900px"
-              height="700px"
-            ></iframe>
+            <div>
+              <iframe
+                className="hidden xl:block"
+                src="https://my.spline.design/911lapstogocopy-7cc0cfafba0fca15b5569de6d5fae99e/"
+                title="parking game"
+                frameBorder="0"
+                width="900px"
+                height="700px"
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>
