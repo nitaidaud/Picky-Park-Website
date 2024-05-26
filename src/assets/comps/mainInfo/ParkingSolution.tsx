@@ -3,8 +3,8 @@
 export default function ParkingSolution() {
   return (
     <div className="w-full m-auto h-full min-h-screen pb-16 flex justify-center">
-      <div className="grid gap-9 h-full mx-auto w-2/3">
-        <div className="w-2/6 m-auto">
+      <div className="grid gap-9 h-full mx-auto w-full 2xl:w-2/3">
+        <div className="w-full md:w-1/2 lg:w-2/6 m-auto">
           <img
             width={"100%"}
             height={"100%"}
@@ -13,8 +13,8 @@ export default function ParkingSolution() {
             alt="introduction image"
           />
         </div>
-        <div className="flex justify-between items-center gap-3 w-full text-balance h-full">
-          <div className="grid w-3/5 gap-9 h-full m-auto">
+        <div className="flex justify-between items-center gap-3 w-full text-balance h-full text-center">
+          <div className="grid w-full px-4 2xl:w-3/5 gap-9 h-full m-auto">
             <h2 className="intro-title parking-title uppercase tracking-tight text-5xl font-black bg-clip-text">
               Effortless Parking Solutions
             </h2>
