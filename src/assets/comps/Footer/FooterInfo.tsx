@@ -48,14 +48,16 @@ export default function FooterInfo() {
             </div>
           </div>
         </div>
-        <div className="w-full lg:w-2/5 2xl:w-1/5 text-balance flex flex-col justify-center lg:text-start lg:items-start gap-5 lg:gap-0">
-          <div className="w-fit">
+        <div className="w-full my-auto lg:w-2/5 2xl:w-1/5 text-balance flex flex-col justify-center lg:text-start lg:items-start gap-5">
+          <div className="w-fit h-2/3">
             <p className="font-semibold lg:text-xs">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Excepturi, quia!M Lorem ipsum dolor sit amet.
+              Website Is Under Construction, We Invite You To Download Our Application And Find Your Next Park.
+              <br/>
+              <br/>
+              We Would Happy To Be In Touch, You Can Contact Us For Help
             </p>
           </div>
-          <div>
+          <div className="h-1/3 p-6 lg:p-0">
             <DownloadBtn />
           </div>
         </div>

@@ -14,7 +14,7 @@ export default function ParkingSolution() {
           />
         </div>
         <div className="flex justify-between items-center gap-3 w-full text-balance h-full">
-          <div className="grid w-3/5 gap-9 h-full">
+          <div className="grid w-3/5 gap-9 h-full m-auto">
             <h2 className="intro-title parking-title uppercase tracking-tight text-5xl font-black bg-clip-text">
               Effortless Parking Solutions
             </h2>
@@ -26,7 +26,7 @@ export default function ParkingSolution() {
             </p>
           </div>
 
-          <div className="grid w-2/5 gap-9 h-full">
+          {/* <div className="grid w-2/5 gap-9 h-full">
             <h2 className="intro-title parking-title uppercase tracking-tight text-5xl font-black bg-clip-text">
               Lorem, ipsum dolor.
             </h2>
@@ -36,7 +36,7 @@ export default function ParkingSolution() {
               blanditiis esse sequi. Cupiditate nemo, dolorem expedita nobis
               ducimus odio fugiat!
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

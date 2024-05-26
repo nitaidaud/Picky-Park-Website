@@ -19,7 +19,7 @@ export default function IntroductionInfo() {
             </p>
           </div>
 
-          <div className="test-bg flex flex-col justify-center gap-9 w-full lg:w-1/2 p-3 rounded-lg">
+          {/* <div className="test-bg flex flex-col justify-center gap-9 w-full lg:w-1/2 p-3 rounded-lg">
             <h2 className="intro-title uppercase tracking-wide text-5xl font-black bg-clip-text">
               Lorem, ipsum dolor.
             </h2>
@@ -30,7 +30,7 @@ export default function IntroductionInfo() {
               earum aspernatur expedita, libero hic modi beatae nesciunt.
               Laborum obcaecati itaque rerum minima modi.
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
       <div
