@@ -44,7 +44,7 @@ export default function FooterLinks(props: {
         {displayIcons.WhatsApp && (
           <a
             className="py-2 px-3 border-2 rounded-full text-white border-white duration-300 hover:bg-opacity-40"
-            href="https://wa.me/+972544646135"
+            href="https://wa.me/+97246293050"
             target="_blank"
             aria-label="Send WhatsApp"
           >
