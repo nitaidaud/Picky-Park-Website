@@ -5,7 +5,7 @@ import PersonalInfo from "./Footer/PersonalInfo";
 
 export default function Footer() {
   return (
-    <div className="max-w-xl m-auto">
+    <div className="max-w-xl m-auto animate-block">
       <PersonalInfo />
       <FooterInfo />
     </div>

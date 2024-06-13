@@ -2,7 +2,7 @@
 
 export default function SecurityInfo() {
   return (
-    <div className="h-full min-h-screen bg-stone-500 bg-opacity-80 flex justify-center py-16">
+    <div className="h-full min-h-screen bg-stone-500 bg-opacity-80 flex justify-center py-16 animate-block">
       <div className="w-full 2xl:w-2/3 mx-auto flex flex-col text-center justify-center items-start gap-10">
         <div className="mx-auto w-full md:w-2/3">
           <img

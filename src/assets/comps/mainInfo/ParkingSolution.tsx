@@ -2,7 +2,7 @@
 
 export default function ParkingSolution() {
   return (
-    <div className="w-full m-auto h-full min-h-screen pb-16 flex justify-center">
+    <div className="w-full m-auto h-full min-h-screen pb-16 flex justify-center animate-block">
       <div className="grid gap-9 h-full mx-auto w-full 2xl:w-2/3">
         <div className="w-1/2 sm:w-1/3 lg:w-2/6 m-auto">
           <img
