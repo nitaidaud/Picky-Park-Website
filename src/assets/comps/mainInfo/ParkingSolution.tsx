@@ -20,7 +20,7 @@ export default function ParkingSolution() {
             </h2>
             <p className="paragraph-info text-white  text-xl font-extralight bg-clip-text">
               Picky takes the stress out of parking by providing users with
-              real-time information on available parking spaces. The app 's
+              real-time information on available parking spaces. The app's
               user-friendly interface ensures a smooth experience, guiding you
               to the closest and most convenient spots effortlessly.
             </p>
