@@ -13,7 +13,7 @@ export default function LoyaltyAchievements() {
           />
         </div>
 
-        <div className="grid gap-9">
+        <div className="grid gap-9 animate-block">
           <h2 className="intro-title achievements-title uppercase tracking-tight text-5xl font-black bg-clip-text">
             Earn Parking coins with Every Park!
           </h2>

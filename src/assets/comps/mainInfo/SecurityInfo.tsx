@@ -13,7 +13,7 @@ export default function SecurityInfo() {
           />
         </div>
 
-        <div className="w-full flex flex-col gap-10 justify-center items-center">
+        <div className="w-full flex flex-col gap-10 justify-center items-center animate-block">
           <h2 className="intro-title w-4/5 parking-title uppercase tracking-tight text-5xl font-black bg-clip-text">
             Security and Privacy Our Top Priorities
           </h2>

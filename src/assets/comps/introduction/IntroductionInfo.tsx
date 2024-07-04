@@ -8,11 +8,11 @@ export default function IntroductionInfo() {
       <div className="flex flex-col lg:flex-row justify-center items-center lg:gap-9 h-full">
         <div className="grid lg:flex justify-center items-center text-balance h-full gap-20">
           <div className="test-bg  flex flex-col justify-center gap-9 w-full lg:w-1/2 p-3 rounded-lg">
-            <h2 className="intro-title uppercase tracking-wide text-5xl font-black bg-clip-text">
+            <h2 className="intro-title uppercase tracking-wide text-5xl font-black bg-clip-text animate-block">
               Introducing Picky
             </h2>
 
-            <p className="paragraph-info text-white text-xl font-extralight bg-clip-text">
+            <p className="paragraph-info text-white text-xl font-extralight bg-clip-text animate-block">
               the innovative startup app that revolutionizes parking simplicity
               and adds an exciting twist by letting users earn valuable coins
               every time they share a park. With Picky, finding and securing a
