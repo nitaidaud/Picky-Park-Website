@@ -2,7 +2,7 @@ export default function IntroductionInfo() {
   return (
     <div
       id="about"
-      className="introduction mx-auto my-32 text-center h-screen bg-indigo-400 animate-block"
+      className="introduction mx-auto my-32 text-center h-screen bg-indigo-400"
     >
       {/* <div className="h-24"></div> */}
       <div className="flex flex-col lg:flex-row justify-center items-center lg:gap-9 h-full">
