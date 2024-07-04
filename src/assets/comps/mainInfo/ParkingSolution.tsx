@@ -14,7 +14,7 @@ export default function ParkingSolution() {
           />
         </div>
         <div className="flex justify-between items-center gap-3 w-full text-balance h-full text-center">
-          <div className="grid w-full px-4 2xl:w-3/5 gap-9 h-full m-auto">
+          <div className="grid w-full px-4 2xl:w-3/5 gap-9 h-full m-auto animate-block">
             <h2 className="intro-title parking-title uppercase tracking-tight text-5xl font-black bg-clip-text">
               Effortless Parking Solutions
             </h2>
