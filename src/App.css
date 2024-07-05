@@ -67,9 +67,11 @@ body {
 }
 
 .animate-block {
-  animation: appear linear;
   animation-timeline: view();
+  animation: appear linear;
   animation-range: entry 0% cover 20%;
+  -moz-animation: appear linear;
+  -webkit-animation: appear linear;
 }
 
 nav {
@@ -153,30 +155,7 @@ nav .contact-btn:hover {
 .paragraph-info {
   letter-spacing: 0.05em !important;
   font-family: "Poppins", sans-serif;
-  /* background-image: linear-gradient(0deg, #ffffff 0%, #ffffff 100%); */
-  /* -webkit-text-fill-color: transparent; */
 }
-
-/* .test-bg {
-  background-image: radial-gradient(
-    rgba(201, 206, 220, 0.803) 40%,
-    rgba(245, 245, 255, 0.641)
-  );
-
-  -webkit-box-shadow: -1px 6px 59px -11px rgba(122, 122, 122, 1);
-  -moz-box-shadow: -1px 6px 59px -11px rgba(122, 122, 122, 1);
-  box-shadow: -1px 6px 59px -11px rgba(122, 122, 122, 1);
-  background-image: linear-gradient(
-    rgba(78, 117, 234, 0.803) 40%,
-    rgba(194, 196, 241, 0.5)
-  );
-
-  backdrop-filter: blur(50px) !important;
-  -webkit-backdrop-filter: blur(500px);
-  filter: blur(5px);
-
-  -webkit-filter: blur(5px);
-} */
 
 .parking-title {
   background-image: linear-gradient(
@@ -225,18 +204,15 @@ nav .contact-btn:hover {
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
-}
-
-.owl-item {
   height: 150px;
   max-width: 100%;
   max-height: 30%;
 }
 
-.owl-item img {
+.owl-carousel .owl-item img {
   height: 250px;
+  width: 250px;
 }
-
 .owl-theme .owl-dots .owl-dot {
   display: none !important;
 }
