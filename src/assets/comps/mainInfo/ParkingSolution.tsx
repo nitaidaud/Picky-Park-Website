@@ -2,7 +2,7 @@
 
 export default function ParkingSolution() {
   return (
-    <div className="w-full m-auto h-full min-h-screen pb-16 flex justify-center animate-block">
+    <div className="w-full m-auto h-full  md:min-h-screen pb-16 flex justify-center animate-block">
       <div className="grid gap-9 h-full mx-auto w-full 2xl:w-2/3">
         <div className="w-1/2 sm:w-1/3 lg:w-2/6 m-auto">
           <img
@@ -14,11 +14,11 @@ export default function ParkingSolution() {
           />
         </div>
         <div className="flex justify-between items-center gap-3 w-full text-balance h-full text-center">
-          <div className="grid w-full px-4 2xl:w-3/5 gap-9 h-full m-auto animate-block">
-            <h2 className="intro-title parking-title uppercase tracking-tight text-5xl font-black bg-clip-text">
+          <div className="grid w-full px-4 2xl:w-3/5 gap-9 h-full m-auto ">
+            <h2 className="intro-title parking-title uppercase tracking-tight text-5xl font-black bg-clip-text animate-block">
               Effortless Parking Solutions
             </h2>
-            <p className="paragraph-info text-white  text-xl font-extralight bg-clip-text">
+            <p className="paragraph-info text-white  text-xl font-extralight bg-clip-text animate-block">
               Picky takes the stress out of parking by providing users with
               real-time information on available parking spaces. The app's
               user-friendly interface ensures a smooth experience, guiding you

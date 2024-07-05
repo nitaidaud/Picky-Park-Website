@@ -13,12 +13,12 @@ export default function LoyaltyAchievements() {
           />
         </div>
 
-        <div className="grid gap-9 animate-block">
-          <h2 className="intro-title achievements-title uppercase tracking-tight text-5xl font-black bg-clip-text">
+        <div className="grid gap-9">
+          <h2 className="intro-title achievements-title uppercase tracking-tight text-5xl font-black bg-clip-text animate-block">
             Earn Parking coins with Every Park!
           </h2>
 
-          <p className="paragraph-info text-white tracking-widest text-xl font-extralight bg-clip-text">
+          <p className="paragraph-info text-white tracking-widest text-xl font-extralight bg-clip-text animate-block">
             Picky values your loyalty. Each time you use the app to locate and
             reserve a parking space, you earn PickyCoins – your key to unlocking
             a world of rewards. Accumulate these coins and choose from a range

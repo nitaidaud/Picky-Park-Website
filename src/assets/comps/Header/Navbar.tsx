@@ -2,9 +2,10 @@ export default function Navbar() {
   return (
     <nav className="bg-transparent backdrop-blur-3xl fixed w-full z-20 top-0 start-0">
       <div className="w-full 2xl:w-4/5 flex flex-wrap items-center justify-between mx-auto p-4">
+      {/* //TODO: convert links to comps! */}
         <a
           href="#"
-          className={"flex items-center space-x-3 rtl:space-x-reverse"}
+          className="flex items-center space-x-3 rtl:space-x-reverse"
         >
           <img
             loading="lazy"
