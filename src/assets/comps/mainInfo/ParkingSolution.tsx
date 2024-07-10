@@ -9,13 +9,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function ParkingSolution() {
   return (
-    <div className="w-full m-auto h-full md:h-full p-32 flex items-center justify-center animate-block tracking-normal">
-      <div className="grid grid-cols-2 gap-2 h-full mx-auto w-full 2xl:w-2/3 px-5">
-        <div className="flex justify-between items-center gap-3 w-full text-balance h-full text-center bg-indigo-950 rounded-3xl">
-          <div className="flex flex-col justify-center items-start w-full px-4 2xl:w-4/5 gap-10 lg:gap-16 xl:gap-20 h-full mx-auto ">
-            <div className="flex justify-start items-center gap-4 w-full">
+    <div className="w-full m-auto h-full py-24 xl:p-32 flex items-center justify-center animate-block tracking-normal snap-start">
+      <div className="grid sm:grid-cols-2 gap-2 h-full mx-auto w-full 2xl:w-2/3 px-5">
+
+        <div className="flex justify-between items-center gap-3 w-full text-balance h-full text-center bg-indigo-950 rounded-3xl order-last sm:order-first py-14 sm:p-0">
+
+          <div className="flex flex-col justify-center items-start w-full px-4 2xl:w-4/5 gap-10 lg:gap-16 h-full mx-auto">
+
+            <div className="flex justify-center sm:justify-start items-center gap-4 w-1/2 mx-auto sm:w-full">
+
               <div className="bg-indigo-900 px-2 py-3 min-w-max w-1/5 rounded-xl justify-center items-center">
-                <FontAwesomeIcon icon={faParking} size="2x" />
+
+                <FontAwesomeIcon icon={faParking} size="2x" className="min-w-14"/>
               </div>
 
               <div className="flex flex-col text-start">
@@ -30,9 +35,10 @@ export default function ParkingSolution() {
               </div>
             </div>
 
-            <div className="flex justify-start items-center gap-4 w-full">
+            <div className="flex justify-center sm:justify-start items-center gap-4 w-1/2 mx-auto sm:w-full">
+            
               <div className="bg-indigo-900 px-2 py-3 min-w-max w-1/5 rounded-xl justify-center items-center">
-                <FontAwesomeIcon icon={faStreetView} size="2x" />
+                <FontAwesomeIcon icon={faStreetView} size="2x" className="min-w-14" />
               </div>
 
               <div className="flex flex-col text-start">
@@ -48,9 +54,9 @@ export default function ParkingSolution() {
               </div>
             </div>
 
-            <div className="flex justify-start items-center gap-4 w-full">
+            <div className="flex justify-center sm:justify-start items-center gap-4 w-1/2 mx-auto sm:w-full">
               <div className="bg-indigo-900 px-2 py-3 min-w-max w-1/5 rounded-xl justify-center items-center">
-                <FontAwesomeIcon icon={faPeopleArrows} size="2x" />
+                <FontAwesomeIcon icon={faPeopleArrows} size="2x" className="min-w-14" />
               </div>
 
               <div className="flex flex-col text-start">
@@ -65,9 +71,9 @@ export default function ParkingSolution() {
               </div>
             </div>
 
-            <div className="flex justify-start items-center gap-4 w-full">
+            <div className="flex justify-center sm:justify-start items-center gap-4 w-1/2 mx-auto sm:w-full">
               <div className="bg-indigo-900 px-2 py-3 min-w-max w-1/5 rounded-xl justify-center items-center">
-                <FontAwesomeIcon icon={faCompass} size="2x" />
+                <FontAwesomeIcon icon={faCompass} size="2x" className="min-w-14" />
               </div>
 
               <div className="flex flex-col text-start">
@@ -83,9 +89,9 @@ export default function ParkingSolution() {
               </div>
             </div>
 
-            <div className="flex justify-start items-center gap-4 w-full">
+            <div className="flex justify-center sm:justify-start items-center gap-4 w-1/2 mx-auto sm:w-full">
               <div className="bg-indigo-900 px-2 py-3 min-w-max w-1/5 rounded-xl justify-center items-center">
-                <FontAwesomeIcon icon={faMobileScreenButton} size="2x" />
+                <FontAwesomeIcon icon={faMobileScreenButton} size="2x" className="min-w-14" />
               </div>
 
               <div className="flex flex-col text-start">
