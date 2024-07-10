@@ -26,7 +26,7 @@ export default function ParkingSolution() {
             </p>
           </div>
 
-          {/* <div className="grid w-2/5 gap-9 h-full">
+          <div className="grid w-2/5 gap-9 h-full">
             <h2 className="intro-title parking-title uppercase tracking-tight text-5xl font-black bg-clip-text">
               Lorem, ipsum dolor.
             </h2>
@@ -35,8 +35,9 @@ export default function ParkingSolution() {
               amet quas molestias ipsa iste eius doloribus labore, eos
               blanditiis esse sequi. Cupiditate nemo, dolorem expedita nobis
               ducimus odio fugiat!
+              sad sdad d saasdsadsad sad as 
             </p>
-          </div> */}
+          </div>
         </div>
       </div>
     </div>
