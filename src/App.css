@@ -13,6 +13,7 @@
 html {
   scroll-behavior: smooth;
   letter-spacing: 0.25em;
+  scroll-snap-type: y mandatory;
 }
 
 #root {

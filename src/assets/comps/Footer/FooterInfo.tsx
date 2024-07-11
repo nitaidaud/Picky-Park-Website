@@ -83,7 +83,7 @@ export default function FooterInfo() {
           </a>
         </h3>
 
-        <h3 className="h-full w-full text-white">
+        <h3 className="h-full w-full text-white snap-end">
           2024 Picky. All Rights Reserved
         </h3>
       </div>
