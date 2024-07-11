@@ -5,7 +5,7 @@ import DownloadBtn from "./DownloadBtn";
 
 export default function FooterInfo() {
   return (
-    <div className="footer-info absolute w-full left-0 animate-block snap-end">
+    <div className="footer-info absolute w-full left-0 animate-block">
       <div className="grid lg:flex justify-center items-center lg:items-stretch lg:justify-around h-fit w-11/12 mx-auto bg-white bg-opacity-10 backdrop-blur-3xl rounded-full glass my-20 gap-20 lg:gap-0">
         <div className="my-12 w-full lg:w-2/5 flex flex-col items-center justify-between gap-3">
           <div>
@@ -83,7 +83,7 @@ export default function FooterInfo() {
           </a>
         </h3>
 
-        <h3 className="h-full w-full text-white">
+        <h3 className="h-full w-full text-white snap-end">
           2024 Picky. All Rights Reserved
         </h3>
       </div>
