@@ -58,7 +58,7 @@ export default function PickyLogo() {
             height="600px"
           ></iframe> */}
             <div>
-              <iframe
+              {/* <iframe
                 src="https://my.spline.design/911lapstogocopy-7cc0cfafba0fca15b5569de6d5fae99e/"
                 className="hidden 2xl:block"
                 frameBorder="0"
@@ -66,7 +66,8 @@ export default function PickyLogo() {
                 loading="lazy"
                 width="750px"
                 height="600px"
-              ></iframe>
+              ></iframe> */}
+              <iframe src='https://my.spline.design/911lapstogo-164067615931c022b15d8f226f7d8457/' frameBorder='0' width='100%' height='100%'></iframe>
             </div>
           </div>
         </div>
