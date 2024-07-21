@@ -1,7 +1,8 @@
 import "./App.css";
 import { useEffect } from "react";
-import {BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import AppRouts from "./assets/comps/AppRouts";
+import "owl.carousel";
 
 function App() {
   useEffect(() => {
@@ -39,7 +40,7 @@ function App() {
   return (
     <>
       <Router>
-        <AppRouts/>
+        <AppRouts />
       </Router>
     </>
   );

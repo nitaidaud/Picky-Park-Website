@@ -1,7 +1,6 @@
 import PartnerImg from "./PartnerImg";
 
 export default function Partners() {
-  
   const partners = [
     "../Partners/Logos/AppleLogo.png",
     "../Partners/Logos/GoogleLogo.png",
@@ -17,7 +16,7 @@ export default function Partners() {
         <div className="owl-stage-outer">
           <div className="owl-stage">
             {partners.map((partner) => {
-              return <PartnerImg partner={partner} />;
+              return <PartnerImg partner={partner} key={partner} />;
             })}
           </div>
         </div>
