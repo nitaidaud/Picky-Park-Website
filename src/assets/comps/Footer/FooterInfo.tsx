@@ -5,8 +5,8 @@ import DownloadBtn from "./DownloadBtn";
 
 export default function FooterInfo() {
   return (
-    <div className="footer-info absolute w-full left-0 animate-block">
-      <div className="grid lg:flex justify-center items-center lg:items-stretch lg:justify-around h-fit w-11/12 mx-auto bg-white bg-opacity-10 backdrop-blur-3xl rounded-full glass my-20 gap-20 lg:gap-0">
+    <div className="footer-info absolute w-full left-0">
+      <div className="grid lg:flex justify-center items-center lg:items-stretch lg:justify-around h-fit w-11/12 mx-auto bg-white bg-opacity-10 backdrop-blur-3xl rounded-full glass my-20 gap-20 lg:gap-0 snap-start">
         <div className="my-12 w-full lg:w-2/5 flex flex-col items-center justify-between gap-3">
           <div>
             <img
@@ -51,9 +51,10 @@ export default function FooterInfo() {
         <div className="w-full my-auto lg:w-2/5 2xl:w-1/5 text-balance flex flex-col justify-center lg:text-start lg:items-start gap-5">
           <div className="w-fit h-2/3">
             <p className="font-semibold lg:text-xs">
-              Website Is Under Construction, We Invite You To Download Our Application And Find Your Next Park.
-              <br/>
-              <br/>
+              Website Is Under Construction, We Invite You To Download Our
+              Application And Find Your Next Park.
+              <br />
+              <br />
               We Would Happy To Be In Touch, You Can Contact Us For Help
             </p>
           </div>
@@ -79,7 +80,9 @@ export default function FooterInfo() {
 
         <h3 className="h-full w-full text-white">
           Powered By:
-          <a href="https://www.linkedin.com/in/nitai-daud/" target="_blank"> Nitai Daud
+          <a href="https://www.linkedin.com/in/nitai-daud/" target="_blank">
+            {" "}
+            Nitai Daud
           </a>
         </h3>
 

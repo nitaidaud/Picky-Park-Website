@@ -39,11 +39,11 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`bg-transparent backdrop-blur-3xl fixed w-full top-0 start-0 md:h-fit ${
+      className={`bg-transparent backdrop-blur-3xl fixed w-full top-0 start-0 lg:h-fit ${
         isOpen ? "h-full" : "h-fit"
       }`}
     >
-      <div className="w-full 2xl:w-4/5 flex flex-wrap items-start md:items-center justify-between mx-auto p-4 h-full">
+      <div className="w-full 2xl:w-4/5 flex flex-wrap items-start lg:items-center justify-between mx-auto p-4 h-full">
         {/* <div> */}
         <a
           href="#"
@@ -61,12 +61,12 @@ export default function Navbar() {
         </a>
         {/* </div> */}
 
-        <div className="contact-us-btn flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+        <div className="contact-us-btn items-center flex lg:order-2 space-x-3 lg:space-x-0 rtl:space-x-reverse">
           <ContactUsBtn />
 
           <FontAwesomeIcon
             icon={hamburgerIcon}
-            className="inline-flex my-auto items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            className="hamburgerBtn inline-flex my-auto items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-controls="navbar-sticky"
             aria-expanded="false"
             onClick={() => setIsOpen(!isOpen)}
@@ -75,23 +75,23 @@ export default function Navbar() {
 
         <div
           className={`
-            md:items-center
-            md:justify-between
             w-full 
             h-full
-            md:flex 
-            md:w-auto 
-            md:order-1 
+            lg:items-center
+            lg:justify-between
+            lg:flex 
+            lg:w-auto 
+            lg:order-1 
             ${isOpen ? "flex" : "hidden h-0"}`}
           id="navbar-sticky"
         >
-          <div className="nav-links flex flex-col mt-24 gap-10 p-4 md:p-0 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 font-normal w-full">
+          <div className="nav-links flex flex-col justify-evenly gap-3 text-3xl sm:justify-stretch sm:gap-10 sm:mt-24 p-4 lg:p-0 rounded-lg lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 font-normal w-full">
             {navLinks.map(({ content, href, target }) => {
               return (
                 <button
                   key={content}
                   onClick={toggleOpen}
-                  className="border-2 p-8 md:p-2 rounded-2xl border-transparent hover:border-white duration-300 hover:bg-opacity-40 hover:border-opacity-30"
+                  className="border-2 p-8 lg:p-2 rounded-2xl border-transparent hover:border-white duration-300 hover:bg-opacity-40 hover:border-opacity-30"
                 >
                   <HeaderLink content={content} href={href} target={target} />
                 </button>

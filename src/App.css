@@ -13,7 +13,7 @@
 html {
   scroll-behavior: smooth;
   letter-spacing: 0.25em;
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y mandatory; */
 }
 
 #root {
@@ -76,6 +76,12 @@ body {
 nav {
   letter-spacing: normal;
   z-index: 200;
+  height: fit-content;
+  transition: all 0.3s linear;
+}
+
+nav .hamburgerBtn:hover ~ nav{
+  height: 100%;
 }
 
 nav .contact-us-btn a {
