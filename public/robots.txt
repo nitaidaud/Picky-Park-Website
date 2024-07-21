@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Disallow access to any private or admin areas if they exist
+Disallow: /admin/
+Disallow: /private/
+
+# Allow crawling of static assets
+Allow: /assets/
+
+# If you have a sitemap, uncomment and update the following line
+Sitemap: https://pickyil.online/sitemap.xml
+
+# Prevent indexing of any search result pages if they exist
+Disallow: /search
+
+# Crawl-delay directive (optional, use if you want to limit crawl rate)
+# Crawl-delay: 10
