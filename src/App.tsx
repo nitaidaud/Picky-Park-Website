@@ -2,10 +2,11 @@ import "./App.css";
 import { useEffect } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import AppRouts from "./assets/comps/AppRouts";
-import "owl.carousel";
 
 function App() {
+
   useEffect(() => {
+    
     const owl = $(".owl-carousel");
     owl.owlCarousel({
       responsive: {
