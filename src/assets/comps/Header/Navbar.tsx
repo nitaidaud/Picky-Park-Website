@@ -89,15 +89,11 @@ export default function Navbar() {
             {navLinks.map(({ content, href, target }) => {
               return (
                 <button
+                  key={content}
                   onClick={toggleOpen}
                   className="border-2 p-8 md:p-2 rounded-2xl border-transparent hover:border-white duration-300 hover:bg-opacity-40 hover:border-opacity-30"
                 >
-                  <HeaderLink
-                    key={content}
-                    content={content}
-                    href={href}
-                    target={target}
-                  />
+                  <HeaderLink content={content} href={href} target={target} />
                 </button>
               );
             })}
