@@ -1,6 +1,7 @@
 import PartnerImg from "./PartnerImg";
 
 export default function Partners() {
+  
   const partners = [
     "../Partners/Logos/AppleLogo.png",
     "../Partners/Logos/GoogleLogo.png",
