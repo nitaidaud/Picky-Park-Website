@@ -17,9 +17,7 @@ html {
 }
 
 #root {
-  /* max-width: 1300px; */
   margin: 0 auto;
-  /* padding: 2rem; */
   text-align: center;
   line-height: 1.5;
   font-weight: 400;
@@ -29,7 +27,6 @@ html {
 body {
   line-height: 1;
   background-attachment: fixed;
-  /* background-image: linear-gradient(#004bad, #4218cb88); */
   background-color: rgb(99 102 241);
   z-index: -10;
 }
@@ -37,7 +34,7 @@ body {
 @keyframes appear {
   from {
     opacity: 0;
-    clip-path: inset(0 0 100% 100%);
+    clip-path: inset(100% 100% 100% 100%);
   }
   to {
     opacity: 1;
@@ -48,8 +45,9 @@ body {
 @-moz-keyframes appear {
   from {
     opacity: 0;
-    clip-path: inset(100% 100% 0 0);
+    clip-path: inset(100% 100% 100% 100%);
   }
+
   to {
     opacity: 1;
     clip-path: inset(0 0 0 0);
@@ -59,7 +57,7 @@ body {
 @-ms-keyframes appear {
   from {
     opacity: 0;
-    clip-path: inset(100% 100% 0 0);
+    clip-path: inset(100% 100% 100% 100%);
   }
   to {
     opacity: 1;
@@ -80,7 +78,7 @@ nav {
   transition: all 0.3s linear;
 }
 
-nav .hamburgerBtn:hover ~ nav{
+nav .hamburgerBtn:hover ~ nav {
   height: 100%;
 }
 
@@ -143,13 +141,11 @@ nav .contact-btn:hover {
   content: "";
   width: 100%;
   height: 100%;
-  /* background-color: rgb(221, 218, 248); */
   left: 0;
   z-index: -10;
 }
 
 .intro-title {
-  /* background-image: linear-gradient(60deg, #2081ff87, #3d02ff, #4218cb88); */
   background-image: linear-gradient(
     344deg,
     #ffb800 0%,
