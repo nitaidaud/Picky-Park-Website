@@ -1,27 +1,22 @@
 import "./App.css";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import AppRouts from "./assets/comps/AppRouts";
+import { useEffect, useMemo } from "react";
 
 function App() {
-
-  useEffect(() => {
-    
-    const owl = $(".owl-carousel");
-    owl.owlCarousel({
+  const options = useMemo<OwlCarousel.Options>(
+    () => ({
       responsive: {
         0: {
           items: 1,
         },
-
         480: {
           items: 1,
         },
-
         768: {
           items: 2,
         },
-
         938: {
           items: 3,
         },
@@ -35,8 +30,14 @@ function App() {
       fluidSpeed: true,
       rewind: false,
       autoplayHoverPause: true,
-    });
-  }, []);
+    }),
+    [],
+  );
+
+  useEffect(() => {
+    const owl = $(".owl-carousel");
+    owl.owlCarousel(options);
+  }, [options]);
 
   return (
     <>
