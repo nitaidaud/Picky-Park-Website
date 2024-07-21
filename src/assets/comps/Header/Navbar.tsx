@@ -39,7 +39,7 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`bg-transparent backdrop-blur-3xl fixed w-full z-20 top-0 start-0 md:h-fit ${
+      className={`bg-transparent backdrop-blur-3xl fixed w-full top-0 start-0 md:h-fit ${
         isOpen ? "h-full" : "h-fit"
       }`}
     >
