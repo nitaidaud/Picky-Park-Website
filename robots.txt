@@ -9,7 +9,7 @@ Disallow: /private/
 Allow: /assets/
 
 # If you have a sitemap, uncomment and update the following line
-# Sitemap: https://pickyil.online/sitemap.xml
+Sitemap: https://pickyil.online/sitemap.xml
 
 # Prevent indexing of any search result pages if they exist
 Disallow: /search
