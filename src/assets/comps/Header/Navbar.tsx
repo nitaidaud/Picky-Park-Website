@@ -77,7 +77,8 @@ export default function Navbar() {
           <div className="nav-links flex flex-col p-4 md:p-0 mt-4 border text-xs rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 font-normal w-full">
             {navLinks.map(({ content, href, target }) => {
               return (
-                <button onClick={toggleOpen}>
+                <button onClick={toggleOpen}
+                className="border-2 p-2 rounded-2xl border-transparent hover:border-white duration-300 hover:bg-opacity-40 hover:border-opacity-30">
                   <HeaderLink
                     key={content}
                     content={content}
