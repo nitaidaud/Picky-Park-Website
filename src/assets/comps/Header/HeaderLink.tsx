@@ -13,7 +13,7 @@ export default function HeaderLink(props: {
       href={href}
       aria-current="page"
     >
-      <div className="block py-2 px-3 text-white md:p-0 duration-300 text-5xl md:text-base">
+      <div className="block py-2 px-3 text-white md:p-0 duration-300 text-5xl md:text-xs">
         {content}
       </div>
     </a>

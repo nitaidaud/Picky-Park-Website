@@ -85,12 +85,12 @@ export default function Navbar() {
             ${isOpen ? "flex" : "hidden h-0"}`}
           id="navbar-sticky"
         >
-          <div className="nav-links flex flex-col my-auto md:my-0 p-4 md:p-0 mt-4 text-xs rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 font-normal w-full">
+          <div className="nav-links flex flex-col mt-24 gap-10 p-4 md:p-0 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 font-normal w-full">
             {navLinks.map(({ content, href, target }) => {
               return (
                 <button
                   onClick={toggleOpen}
-                  className="border-2 p-2 rounded-2xl border-transparent hover:border-white duration-300 hover:bg-opacity-40 hover:border-opacity-30"
+                  className="border-2 p-8 md:p-2 rounded-2xl border-transparent hover:border-white duration-300 hover:bg-opacity-40 hover:border-opacity-30"
                 >
                   <HeaderLink
                     key={content}
