@@ -10,17 +10,21 @@ export default function Partners() {
   ];
 
   return (
-    <div className="min-h-full">
-      <h2 className="uppercase text-3xl font-semibold">Our Partners</h2>
-      <div className="owl-carousel owl-theme owl-loaded owl-drag mt-11 snap-center">
-        <div className="owl-stage-outer">
-          <div className="owl-stage">
-            {partners.map((partner) => {
-              return <PartnerImg partner={partner} key={partner} />;
-            })}
+    <div className="min-h-screen flex flex-col gap-10 justify-center items-center">
+      <div>
+        <h2 className="uppercase text-3xl font-semibold">Our Partners</h2>
+      </div>
+      <div>
+        <div className="owl-carousel owl-theme owl-loaded owl-drag mt-11 snap-center">
+          <div className="owl-stage-outer">
+            <div className="owl-stage">
+              {partners.map((partner) => {
+                return <PartnerImg partner={partner} key={partner} />;
+              })}
+            </div>
           </div>
+          <div className="owl-nav disabled"></div>
         </div>
-        <div className="owl-nav disabled"></div>
       </div>
     </div>
   );

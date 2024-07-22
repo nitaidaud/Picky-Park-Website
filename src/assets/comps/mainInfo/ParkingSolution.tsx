@@ -9,10 +9,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function ParkingSolution() {
   return (
-    <div className="w-full m-auto h-full py-24 xl:p-32 flex items-center justify-center animate-block tracking-normal snap-start">
+    <div className="fourth-slide w-full m-auto h-full py-24 xl:p-32 flex items-center justify-center animate-block tracking-normal snap-start">
       <div className="grid sm:grid-cols-2 gap-2 h-full mx-auto w-full 2xl:w-2/3 px-5">
 
-        <div className="flex justify-between items-center gap-3 w-full text-balance h-full text-center bg-indigo-950 rounded-3xl order-last sm:order-first py-14 sm:p-0">
+        <div className="flex justify-between items-center gap-3 w-full text-balance h-full text-center bg-indigo-950 rounded-3xl order-last sm:order-first py-14 sm:p-0 bg-opacity-50">
 
           <div className="flex flex-col justify-center items-start sm:w-full px-4 2xl:w-4/5 gap-10 lg:gap-16 h-full mx-auto">
 
@@ -106,21 +106,10 @@ export default function ParkingSolution() {
                 </div>
               </div>
             </div>
-
-            {/* <h2 className="intro-title parking-title uppercase tracking-tight text-5xl font-black bg-clip-text animate-block">
-              Effortless Parking Solutions
-            </h2>
-
-            <p className="paragraph-info text-white  text-xl font-extralight bg-clip-text animate-block">
-              Picky takes the stress out of parking by providing users with
-              real-time information on available parking spaces. The app's
-              user-friendly interface ensures a smooth experience, guiding you
-              to the closest and most convenient spots effortlessly.
-            </p> */}
           </div>
         </div>
 
-        <div className="bg-indigo-950 rounded-3xl h-full w-full mx-auto py-20">
+        <div className="bg-indigo-950 bg-opacity-50 rounded-3xl h-full w-full mx-auto py-20">
           <img
             width={"100%"}
             height={"100%"}
