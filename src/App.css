@@ -13,8 +13,8 @@
 html {
   scroll-behavior: smooth;
   letter-spacing: 0.25em;
-  scroll-snap-type: y proximity;
-  /* scroll-snap-type: y mandatory; */
+  /* scroll-snap-type: y proximity; */
+  scroll-snap-type: y mandatory;
   scroll-snap-stop: normal;
 }
 
