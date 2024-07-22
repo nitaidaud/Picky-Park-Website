@@ -4,7 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function PickyLogo() {
   return (
     <>
-      <div className="bg-indigo-500 pt-0 md:pt-32 h-full min-h-screen flex justify-center items-center snap-start">
+      {/* bg-indigo-500 */}
+      <div className="pt-0 md:pt-32 h-full min-h-screen flex justify-center items-center snap-start">
         <div className="w-2/3 m-auto justify-center items-center flex flex-col 2xl:flex-row 2xl:justify-between 2xl:items-start text-center relative">
           <div className="w-full 2xl:w-1/2 mx-auto mb-16 2xl:mb-0">
             <h2 className="uppercase text-6xl 2xl:text-start md:text-8xl 2xl:text-balance">
@@ -47,17 +48,11 @@ export default function PickyLogo() {
             alt="logo"
           /> */}
 
-            <div className="hidden 2xl:flex absolute bg-black h-10 w-36 right-3 bottom-3 rounded-full items-center text-balance hover:scale-110 duration-300 hover:bg-slate-500 play-text uppercase font-semibold">
+            {/* <div className="hidden 2xl:flex absolute bg-black h-10 w-36 right-3 bottom-3 rounded-full items-center text-balance hover:scale-110 duration-300 hover:bg-slate-500 play-text uppercase font-semibold">
               Press space to start
-            </div>
-            {/* <iframe
-            src="https://my.spline.design/911lapstogo-164067615931c022b15d8f226f7d8457/"
-            frameBorder="0"
-            title="parking game"
-            width="600px"
-            height="600px"
-          ></iframe> */}
-            <div>
+            </div> */}
+            
+            {/* <div>
               <iframe
                 src="https://my.spline.design/911lapstogocopy-7cc0cfafba0fca15b5569de6d5fae99e/"
                 // src="https://my.spline.design/911lapstogo-164067615931c022b15d8f226f7d8457/"
@@ -68,7 +63,7 @@ export default function PickyLogo() {
                 width="750px"
                 height="600px"
               ></iframe>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
