@@ -13,7 +13,9 @@
 html {
   scroll-behavior: smooth;
   letter-spacing: 0.25em;
+  scroll-snap-type: y proximity;
   /* scroll-snap-type: y mandatory; */
+  scroll-snap-stop: normal;
 }
 
 #root {
@@ -22,7 +24,6 @@ html {
   line-height: 1.5;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.87);
-  background: url("../public//Images/firstSlideBg.png") 100% fixed;
 }
 
 body {
@@ -30,6 +31,16 @@ body {
   background-attachment: fixed;
   background-color: rgb(99 102 241);
   z-index: -10;
+}
+
+.first-slide{
+  background: url("/src/assets/Images/firstSlideBg.png") no-repeat;
+}
+
+.fourth-slide{
+  background: url("/src/assets/Images/fourthSlideBg.png") no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 @keyframes appear {
@@ -137,14 +148,14 @@ nav .contact-btn:hover {
   font-size: 0.7em;
 }
 
-.introduction::before {
+/* .introduction::before {
   position: absolute;
   content: "";
   width: 100%;
   height: 100%;
   left: 0;
   z-index: -10;
-}
+} */
 
 .intro-title {
   background-image: linear-gradient(
