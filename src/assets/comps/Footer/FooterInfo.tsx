@@ -5,8 +5,8 @@ import DownloadBtn from "./DownloadBtn";
 
 export default function FooterInfo() {
   return (
-    <div className="footer-info absolute w-full left-0">
-      <div className="grid lg:flex justify-center items-center lg:items-stretch lg:justify-around h-fit w-11/12 mx-auto bg-white bg-opacity-10 backdrop-blur-3xl rounded-full glass my-20 gap-20 lg:gap-0 snap-start">
+    <div className="footer-info absolute w-full left-0 snap-center">
+      <div className="grid lg:flex justify-center items-center lg:items-stretch lg:justify-around h-fit w-11/12 mx-auto bg-white bg-opacity-10 backdrop-blur-3xl rounded-full glass my-20 gap-20 lg:gap-0">
         <div className="my-12 w-full lg:w-2/5 flex flex-col items-center justify-between gap-3">
           <div>
             <img
