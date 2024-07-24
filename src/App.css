@@ -29,7 +29,7 @@ html {
 body {
   line-height: 1;
   background-attachment: fixed;
-  background-color: rgb(99 102 241);
+  /* background-color: rgb(99 102 241); */
   z-index: -10;
 }
 
