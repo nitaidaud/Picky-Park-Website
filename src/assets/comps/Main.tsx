@@ -13,10 +13,10 @@ export default function Main() {
       <Navbar />
       <PickyLogo />
       <IntroductionInfo />
-      <Partners />
+      <Introduction />
 
       <LazyLoadComponent visibleByDefault={true}>
-        <Introduction />
+        <Partners />
       </LazyLoadComponent>
 
       <LazyLoadComponent visibleByDefault={true}>

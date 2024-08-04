@@ -34,13 +34,38 @@ body {
 }
 
 .first-slide{
-  background: url("/src/assets/Images/firstSlideBg.png") no-repeat;
+  background: url("/src/assets/Images/firstSlideBg.png");
+  background-size: cover;
+  /* background-position: top left !important; */
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.third-slide{
+  background-image: url('../public/Images/streetBg.jpeg');
+  background-position: center;
+  background-size: auto 150%;
+  background-repeat: no-repeat;
+  letter-spacing: 0.05em !important;
 }
 
 .fourth-slide{
-  background: url("/src/assets/Images/fourthSlideBg.png") no-repeat;
+  background: url("../public/Images/streetBg.jpeg") no-repeat;
   background-size: cover;
   background-position: center;
+  letter-spacing: 0.05em !important;
+}
+
+.fifth-slide{
+  background: url("../public/Images/streetBg.jpeg") no-repeat;
+  background-size: auto 120%;
+  background-position: center;
+  letter-spacing: 0.05em !important;
+}
+
+.partners-slide{
+  /* background: url("../public/Images/partnersBg.png") no-repeat; */
+  background-color: #1661bd;
 }
 
 @keyframes appear {
@@ -96,7 +121,7 @@ nav .hamburgerBtn:hover ~ nav {
 
 nav .contact-us-btn a {
   font-size: 0.65em;
-  padding: 15px 20px;
+  padding: 10px 20px;
 }
 
 nav .nav-links a:hover {
@@ -148,6 +173,9 @@ nav .contact-btn:hover {
   font-size: 0.7em;
 }
 
+.introduction{
+  background-color: #59b5ff;
+}
 /* .introduction::before {
   position: absolute;
   content: "";
