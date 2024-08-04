@@ -12,6 +12,7 @@ export default function FooterLinks(props: {
   const iconSize = props.iconSize;
   const gap = props.gap;
   const displayIcons = props.displayIcons;
+  
   return (
     <div className="grid gap-14 mx-auto">
       {/* <div className="divider mb-6" /> */}

@@ -10,7 +10,7 @@ export default function Partners() {
   ];
 
   return (
-    <div className="partners-slide snap-start">
+    <div id="partners" className="partners-slide snap-start">
       <div className="h-screen flex flex-col justify-center items-center">
         <div>
           <div>

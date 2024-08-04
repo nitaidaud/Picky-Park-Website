@@ -30,6 +30,7 @@ body {
   line-height: 1;
   background-attachment: fixed;
   /* background-color: rgb(99 102 241); */
+  background-color: #59b5ff;
   z-index: -10;
 }
 
@@ -65,7 +66,7 @@ body {
 
 .partners-slide{
   /* background: url("../public/Images/partnersBg.png") no-repeat; */
-  background-color: #1661bd;
+  background-color: #59b5ff;
 }
 
 @keyframes appear {
@@ -185,6 +186,15 @@ nav .contact-btn:hover {
   z-index: -10;
 } */
 
+.picky-park-title{
+  background-image: linear-gradient(
+    145deg,
+    #a762b3 0%,
+    rgba(255, 255, 255, 0.561) 100%
+  );
+  -webkit-text-fill-color: transparent;
+}
+
 .intro-title {
   background-image: linear-gradient(
     344deg,
@@ -205,6 +215,14 @@ nav .contact-btn:hover {
     #a762b3 0%,
     rgba(255, 255, 255, 0.561) 100%
   );
+}
+
+.second-dot{
+  animation-delay: 0.2s !important;
+}
+
+.third-dot{
+  animation-delay: 0.3s !important;
 }
 
 @keyframes slide {
@@ -265,26 +283,6 @@ nav .contact-btn:hover {
     #ffb800 0%,
     rgba(255, 255, 255, 0.561) 100%
   );
-}
-
-.contact-info::before {
-  position: absolute;
-  background-color: transparent;
-  display: grid;
-  padding: 1.5rem;
-  text-align: left;
-  text-transform: uppercase;
-  letter-spacing: normal;
-  gap: 2.5rem;
-  justify-content: center;
-  justify-items: center;
-}
-
-.contact-info:hover::before {
-  background-color: rgba(0, 0, 0, 0.832);
-  height: 100%;
-  width: 100%;
-  content: "Noam Cohen, the driving force and innovative mind behind the groundbreaking parking app Picky is a fresh entrepreneur and visionary in the tech industry. With a passion for simplifying everyday challenges through technology, Noam has dedicated his expertise to redefine the parking experience for users around the globe";
 }
 
 .download-btn {

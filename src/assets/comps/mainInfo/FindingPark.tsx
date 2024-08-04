@@ -11,7 +11,9 @@ export default function FindingPark() {
         <div>
           <h2 className="p-3 bg-white rounded-xl text-black font-semibold">
             Finding Your Parking
-            <h2 className="animate-bounce max-h-1.5 inline-block">...</h2>
+            <h2 className="animate-bounce max-h-2 inline-block">.</h2>
+            <h2 className="animate-bounce max-h-2 inline-block delay-75 second-dot">.</h2>
+            <h2 className="animate-bounce max-h-2 inline-block delay-150 third-dot">.</h2>
           </h2>
         </div>
       </div>
