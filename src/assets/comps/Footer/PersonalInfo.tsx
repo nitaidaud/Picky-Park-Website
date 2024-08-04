@@ -1,33 +1,52 @@
-import FooterLinks from "./FooterLinks";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Employee } from "../../models/Employee";
+import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
-export default function PersonalInfo() {
+export default function PersonalInfo(props: { team: Employee[] }) {
+  const team: Employee[] = props.team;
+
   return (
-    <div
-      id="contact-info"
-      className="contact-info before:duration-500 before:w-full before:h-full before:text-sm before:sm:text-base before:text-balance before:rounded-md before:font-bold relative my-24 mx-auto grid gap-10 bg-white bg-opacity-20 p-6 w-4/5 min-w-min md:w-9/12 rounded-md shadow-md shadow-slate-700 animate-block snap-center"
-    >
-      <h2 className="intro-title max-w-fit parking-title uppercase -tracking-tight text-7xl font-black bg-clip-text">
-        Noam Cohen
-      </h2>
-      <p className="w-fit mx-auto uppercase font-bold text-white bg-clip-text">
-        Founder & CEO
-      </p>
-
-      <div className="mt-10 z-10 mb-12">
-        <FooterLinks
-          iconSize="xl"
-          gap={10}
-          displayIcons={{ WhatsApp: false, Email: false, LinkedIn: true }}
-        />
+    <div className="w-full h-fit min-h-screen snap-start p-32">
+      <div className="w-full">
+        <h2 className="text-5xl font-bold bg-clip-text picky-park-title ">Meet Our Team:</h2>
       </div>
+      <div className="lg:flex items-center justify-around">
+        {team.map(({ name, image, role, linkedIn }) => {
+          return (
+            <div className="h-full w-full grid justify-center items-center gap-10">
+              <div
+                id="contact-info"
+                className="contact-info mt-20 m-auto h-full w-full animate-block snap-start"
+              >
+                <img
+                  src={image}
+                  alt="img"
+                  className="w-full lg:min-w-40 lg:max-w-40 mx-auto rounded-full border-2 border-purple-400"
+                />
+              </div>
+              <div className="w-full text-center flex flex-col justify-center items-center">
+                <h2 className="intro-title max-w-fit parking-title uppercase -tracking-tight text-4xl font-black bg-clip-text">
+                  {name}
+                </h2>
+                <p className="w-fit mx-auto uppercase font-bold text-white bg-clip-text">
+                  {role}
+                </p>
 
-      {/* <p className="paragraph-info text-white tracking-widest text-lg text-left text-balance font-extralight bg-clip-text">
-        Noam Cohen, the driving force and innovative mind behind the
-        groundbreaking parking app Picky is a fresh entrepreneur and visionary
-        in the tech industry. With a passion for simplifying everyday challenges
-        through technology, Noam has dedicated his expertise to redefine the
-        parking experience for users around the globe
-      </p> */}
+                <div className="mt-10 z-10 mb-12">
+                  <a
+                    className="p-4 border-2 rounded-full text-white duration-300 hover:text-blue-500 hover:border-blue-500"
+                    href={linkedIn}
+                    target="_blank"
+                    aria-label="LinkedIn"
+                  >
+                    <FontAwesomeIcon icon={faLinkedinIn} size={"xl"} />
+                  </a>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }
