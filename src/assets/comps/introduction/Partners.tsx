@@ -10,7 +10,7 @@ export default function Partners() {
   ];
 
   return (
-    <div id="partners" className="partners-slide snap-start">
+    <div  className="partners-slide">
       {/* move id to owel? */}
       <div className="h-screen flex flex-col justify-center items-center">
         <div>
@@ -18,7 +18,7 @@ export default function Partners() {
             <h2 className="uppercase text-3xl font-semibold">Our Partners</h2>
           </div>
           <div>
-            <div className="owl-carousel owl-theme owl-loaded owl-drag mt-11 snap-center">
+            <div id="partners" className="owl-carousel owl-theme owl-loaded owl-drag mt-11 snap-center">
               <div className="owl-stage-outer">
                 <div className="owl-stage">
                   {partners.map((partner) => {
