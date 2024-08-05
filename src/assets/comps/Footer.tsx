@@ -22,7 +22,7 @@ export default function Footer() {
     },
     {
       name: "Omer Levin",
-      role: "UI/UX Designer",
+      role: "Product Leader",
       image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg9oGWxcOTZlq87JkJKKXBwUjBN_je1qXsGA&usqp=CAU",
       description: "dasdasdasdasdasd asd asdasda sfsadfsadf asdf gsdagsdagsdagsdgsda",
       linkedIn: "https://www.linkedin.com/in/nitai-daud/"
