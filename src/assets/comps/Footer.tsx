@@ -9,7 +9,8 @@ export default function Footer() {
     {
       name: "Noam Cohen",
       role: "Founder & CEO",
-      image: "https://media.licdn.com/dms/image/v2/D4D03AQG10eW0GjMLFA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1708934670392?e=1728518400&v=beta&t=E77RdS83FTpQihxi7z10EMMOaoh1YMlpuKsziYhoNm0",
+      // image: "https://media.licdn.com/dms/image/v2/D4D03AQG10eW0GjMLFA/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1708934670392?e=1728518400&v=beta&t=E77RdS83FTpQihxi7z10EMMOaoh1YMlpuKsziYhoNm0",
+      image:"../public/Images/profilePic/noamPic.jpg",
       description: "Noam Cohen, the driving force and innovative mind behind the groundbreaking parking app Picky is a fresh entrepreneur and visionary in the tech industry. With a passion for simplifying everyday challenges through technology, Noam has dedicated his expertise to redefine the parking experience for users around the globe",
       linkedIn: "https://www.linkedin.com/in/noamcohenn/"
     },
@@ -23,7 +24,7 @@ export default function Footer() {
     {
       name: "Omer Levin",
       role: "Product Leader",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg9oGWxcOTZlq87JkJKKXBwUjBN_je1qXsGA&usqp=CAU",
+      image: "../public/Images/profilePic/omerPic.jpg",
       description: "dasdasdasdasdasd asd asdasda sfsadfsadf asdf gsdagsdagsdagsdgsda",
       linkedIn: "https://www.linkedin.com/in/nitai-daud/"
     },
