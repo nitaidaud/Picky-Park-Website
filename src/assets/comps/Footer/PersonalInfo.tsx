@@ -27,7 +27,7 @@ export default function PersonalInfo(props: { team: Employee[] }) {
                 <img
                   src={image}
                   alt="img"
-                  className="w-2/3 lg:min-w-40 lg:max-w-40 mx-auto rounded-full border-2 border-purple-400"
+                  className="w-full xl:w-2/3 max-w-64 lg:min-w-40 lg:max-w-40 mx-auto rounded-full border-2 border-purple-400"
                 />
               </div>
               <div className="w-full text-center flex flex-col justify-center items-center">
