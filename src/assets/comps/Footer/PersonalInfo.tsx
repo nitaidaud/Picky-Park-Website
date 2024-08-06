@@ -6,14 +6,14 @@ export default function PersonalInfo(props: { team: Employee[] }) {
   const team: Employee[] = props.team;
 
   return (
-    <div className="w-full h-fit min-h-screen snap-start p-32">
+    <div className="w-full h-fit min-h-screen snap-start p-16 py-32 lg:p-32">
       <div className="w-full">
-        <h2 className="text-5xl font-bold bg-clip-text picky-park-title ">Meet Our Team:</h2>
+        <h2 className="text-6xl font-bold bg-clip-text picky-park-title">Meet Our Team:</h2>
       </div>
       <div className="lg:flex items-center justify-around">
         {team.map(({ name, image, role, linkedIn }) => {
           return (
-            <div className="h-full w-full grid justify-center items-center gap-10">
+            <div className={`h-full w-full grid justify-center items-center gap-10 bg-white bg-opacity-30 my-16 lg:m-5 rounded-xl shadow-xl drop-shadow-xl ${name == "Nitai Daud" ? "order-first" : ""} hover:shadow-2xl duration-200`}>
               <div
                 id="contact-info"
                 className="contact-info mt-20 m-auto h-full w-full animate-block snap-start"
@@ -21,11 +21,11 @@ export default function PersonalInfo(props: { team: Employee[] }) {
                 <img
                   src={image}
                   alt="img"
-                  className="w-full lg:min-w-40 lg:max-w-40 mx-auto rounded-full border-2 border-purple-400"
+                  className="w-2/3 lg:min-w-40 lg:max-w-40 mx-auto rounded-full border-2 border-purple-400"
                 />
               </div>
               <div className="w-full text-center flex flex-col justify-center items-center">
-                <h2 className="intro-title max-w-fit parking-title uppercase -tracking-tight text-4xl font-black bg-clip-text">
+                <h2 className="max-w-fit picky-park-title uppercase -tracking-tight text-4xl font-black bg-clip-text">
                   {name}
                 </h2>
                 <p className="w-fit mx-auto uppercase font-bold text-white bg-clip-text">
