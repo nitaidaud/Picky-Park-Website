@@ -8,12 +8,18 @@ export default function PersonalInfo(props: { team: Employee[] }) {
   return (
     <div className="w-full h-fit min-h-screen snap-start p-16 py-32 lg:p-32">
       <div className="w-full">
-        <h2 className="text-6xl font-bold bg-clip-text picky-park-title">Meet Our Team:</h2>
+        <h2 className="text-6xl font-bold text-white drop-shadow-xl">
+          Meet Our Team:
+        </h2>
       </div>
       <div className="lg:flex items-center justify-around">
         {team.map(({ name, image, role, linkedIn }) => {
           return (
-            <div className={`h-full w-full grid justify-center items-center gap-10 bg-white bg-opacity-30 my-16 lg:m-5 rounded-xl shadow-xl drop-shadow-xl ${name == "Nitai Daud" ? "order-first" : ""} hover:shadow-2xl duration-200`}>
+            <div
+              className={`h-full w-full grid justify-center items-center gap-10 bg-white bg-opacity-30 my-16 lg:m-5 rounded-xl shadow-xl drop-shadow-xl ${
+                name == "Nitai Daud" ? "order-first" : ""
+              } hover:shadow-2xl duration-200`}
+            >
               <div
                 id="contact-info"
                 className="contact-info mt-20 m-auto h-full w-full animate-block snap-start"
@@ -25,10 +31,10 @@ export default function PersonalInfo(props: { team: Employee[] }) {
                 />
               </div>
               <div className="w-full text-center flex flex-col justify-center items-center">
-                <h2 className="max-w-fit picky-park-title uppercase -tracking-tight text-4xl font-black bg-clip-text">
+                <h2 className="max-w-fit picky-park-title uppercase -tracking-tight text-4xl font-black bg-clip-text drop-shadow-xl">
                   {name}
                 </h2>
-                <p className="w-fit mx-auto uppercase font-bold text-white bg-clip-text">
+                <p className="w-fit tracking-wider mx-auto uppercase text-white bg-clip-text drop-shadow-xl">
                   {role}
                 </p>
 

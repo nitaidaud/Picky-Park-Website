@@ -5,7 +5,7 @@ import FindingPark from "./mainInfo/FindingPark";
 export default function Introduction() {
   return (
     // <div id="what-we-offer" className="flex flex-col mt-96 mx-auto">
-    <div id="what-we-offer" className=" flex flex-col mx-auto">
+    <div id="what-we-offer" className="flex flex-col mx-auto">
       <MeetPicky />
       <FindingPark />
       <ParkingSolution />

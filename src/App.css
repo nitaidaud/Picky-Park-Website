@@ -12,7 +12,7 @@
 
 html {
   scroll-behavior: smooth;
-  letter-spacing: 0.25em;
+  /* letter-spacing: 0.25em; */
   /* scroll-snap-type: y proximity; */
   scroll-snap-type: y mandatory;
   scroll-snap-stop: normal;
@@ -43,6 +43,15 @@ body {
 }
 
 .third-slide{
+  /* background-image: url('../public/Images/streetBg.jpeg');
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: transform 0.1s ease-out;
+  letter-spacing: 0.05em !important; */
   background-image: url('../public/Images/streetBg.jpeg');
   background-position: center;
   background-size: auto 150%;
@@ -64,10 +73,10 @@ body {
   letter-spacing: 0.05em !important;
 }
 
-.partners-slide{
-  /* background: url("../public/Images/partnersBg.png") no-repeat; */
+/* .partners-slide{
+  background: url("../public/Images/partnersBg.png") no-repeat;
   background-color: #59b5ff;
-}
+} */
 
 @keyframes appear {
   from {
@@ -245,19 +254,21 @@ nav .contact-btn:hover {
 }
 
 .owl-carousel {
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0),
-    rgba(255, 255, 255, 0.2),
-    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.9),
     rgba(0, 0, 0, 0)
-  );
+  ); */
+  background-color: rgba(255, 255, 255, 0.5);
   position: absolute !important;
   left: 0;
 }
 
 .owl-stage-outer {
   width: 100%;
+  height: 120px;
   margin: 0 auto !important;
 }
 
@@ -310,11 +321,13 @@ nav .contact-btn:hover {
   letter-spacing: normal;
   color: white;
   z-index: 100;
-  background: rgba(0, 0, 0, 0.3);
+  /* background: rgba(0, 0, 0, 0.3); */
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .footer-copyright {
-  background: rgba(0, 0, 0, 0.3);
+  /* background: rgba(0, 0, 0, 0.3); */
+  background: rgba(255, 255, 255, 0.3);
 }
 
 .footer-copyright a {
