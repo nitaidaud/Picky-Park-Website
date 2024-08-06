@@ -14,7 +14,7 @@ html {
   scroll-behavior: smooth;
   /* letter-spacing: 0.25em; */
   /* scroll-snap-type: y proximity; */
-  scroll-snap-type: y mandatory;
+  /* scroll-snap-type: y mandatory; */
   scroll-snap-stop: normal;
 }
 
@@ -54,9 +54,20 @@ body {
   letter-spacing: 0.05em !important; */
   background-image: url('../public/Images/streetBg.jpeg');
   background-position: center;
-  background-size: auto 150%;
+  background-size: cover;
   background-repeat: no-repeat;
   letter-spacing: 0.05em !important;
+  
+  animation: shrink 5s alternate;
+  animation-timeline: View();
+}
+@keyframes shrink {
+  0% {
+    background-size: 100% 100%;
+  }
+  100% {
+    background-size: 150% 150%;
+  }
 }
 
 .fourth-slide{

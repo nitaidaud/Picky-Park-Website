@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function PickyLogo() {
   return (
     <>
-      {/* bg-indigo-500 */}
       <div className="first-slide w-full 2xl:pt-0  pt-20 h-full min-h-screen flex justify-center items-center snap-start">
         <div className="w-2/3 m-auto justify-center items-center flex flex-col 2xl:flex-row 2xl:justify-between 2xl:items-start text-center relative">
           <div className="w-full 2xl:w-1/2 mx-auto mb-16 2xl:mb-0">
@@ -51,7 +50,7 @@ export default function PickyLogo() {
             {/* <div className="hidden 2xl:flex absolute bg-black h-10 w-36 right-3 bottom-3 rounded-full items-center text-balance hover:scale-110 duration-300 hover:bg-slate-500 play-text uppercase font-semibold">
               Press space to start
             </div> */}
-            
+
             {/* <div>
               <iframe
                 src="https://my.spline.design/911lapstogocopy-7cc0cfafba0fca15b5569de6d5fae99e/"
