@@ -10,16 +10,16 @@ export default function Partners() {
   ];
 
   return (
-    <div className="partners-slide">
+    <div className="partners-slide w-full absolute">
       <div className="flex flex-col justify-center items-center">
         <div>
-          <div>
+          {/* <div>
             <h2 className="uppercase text-5xl font-semibold">Our Partners</h2>
-          </div>
+          </div> */}
           <div>
             <div
               id="partners"
-              className="owl-carousel mt-10 owl-theme owl-loaded owl-drag snap-center"
+              className="owl-carousel owl-theme owl-loaded owl-drag snap-center"
             >
               <div className="owl-stage-outer flex items-center">
                 <div className="owl-stage">
