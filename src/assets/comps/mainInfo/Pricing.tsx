@@ -25,7 +25,7 @@ export default function Pricing() {
         <div className="flex justify-center items-start h-full w-2/3 mx-auto gap-10">
           {pricingCards.map(({ title, price }) => {
             return (
-              <div className="p-5 w-full rounded-xl shadow-xl bg-white bg-opacity-70 h-4/5 min-h-fit hover:scale-105 duration-300">
+              <div key={title + price} className="p-5 w-full rounded-xl shadow-xl bg-white bg-opacity-70 h-4/5 min-h-fit hover:scale-105 duration-300">
                 <div
                   className={`w-full h-2/6 ${
                     title == "Starter"
