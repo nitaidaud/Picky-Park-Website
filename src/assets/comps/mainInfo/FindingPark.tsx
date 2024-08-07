@@ -11,6 +11,9 @@ export default function FindingPark() {
 
   const [firstDuration, setFirstDuration] = useState<number>();
   const [firstCurrentTime, setFirstCurrentTime] = useState<number>();
+  const [isFirstPlay, setIsFirstPlay] = useState(true);
+  const [isSecPlay, setIsSecPlay] = useState(false);
+  const [isThirdPlay, setIsThirdPlay] = useState(false);
 
   const [secDuration, setSecDuration] = useState<number>();
   const [secCurrentTime, setSecCurrentTime] = useState<number>();
@@ -29,6 +32,9 @@ export default function FindingPark() {
     ) {
       firstRef.current?.play();
       thirdRef.current?.pause();
+      setIsFirstPlay(true)
+      setIsSecPlay(false)
+      setIsThirdPlay(false)
       setTimeout(() => {
         thirdRef.current!.currentTime = 0;
       }, 3000);
@@ -43,6 +49,9 @@ export default function FindingPark() {
     ) {
       thirdRef.current?.play();
       secRef.current?.pause();
+      setIsFirstPlay(false)
+      setIsSecPlay(false)
+      setIsThirdPlay(true)
       setTimeout(() => {
         secRef.current!.currentTime = 0;
       }, 3000);
@@ -56,19 +65,15 @@ export default function FindingPark() {
     ) {
       secRef.current?.play();
       firstRef.current?.pause();
+      setIsFirstPlay(false)
+      setIsSecPlay(true)
+      setIsThirdPlay(false)
       setTimeout(() => {
         firstRef.current!.currentTime = 0;
       }, 3000);
       setFirstCurrentTime(0);
     }
-  }, [
-    firstCurrentTime,
-    firstDuration,
-    secCurrentTime,
-    secDuration,
-    thirdCurrentTime,
-    thirdDuration,
-  ]);
+  }, [firstCurrentTime, firstDuration, isFirstPlay, isSecPlay, isThirdPlay, secCurrentTime, secDuration, thirdCurrentTime, thirdDuration]);
 
   return (
     <div className="fourth-slide h-screen snap-start w-full flex flex-col justify-center items-center">
@@ -78,7 +83,7 @@ export default function FindingPark() {
         </h2>
       </div>
       <div className="h-1/2 w-2/3 xl:flex justify-center items-center">
-        <div className="w-1/2 hover:scale-110 duration-200">
+        <div className={`w-1/2 duration-200 ${isFirstPlay ? "scale-110" : "scale-100"}`}>
           <div className="w-full flex justify-center items-center relative">
             <div className="w-2/3 h-full absolute">
               <img src={iPhone} className="w-full" alt="iPhone" />
@@ -101,7 +106,7 @@ export default function FindingPark() {
           </div>
         </div>
 
-        <div className="w-1/2 hover:scale-110 duration-200">
+        <div className={`w-1/2 duration-200 ${isSecPlay ? "scale-110" : "scale-100"}`}>
           <div className="w-full flex justify-center items-center relative">
             <div className="w-2/3 h-full absolute">
               <img src={iPhone} className="w-full" alt="iPhone" />
@@ -123,7 +128,7 @@ export default function FindingPark() {
           </div>
         </div>
 
-        <div className="w-1/2 hover:scale-110 duration-200">
+        <div className={`w-1/2 duration-200 ${isThirdPlay ? "scale-110" : "scale-100"}`}>
           <div className="w-full flex justify-center items-center relative">
             <div className="w-2/3 h-full absolute">
               <img src={iPhone} className="w-full" alt="iPhone" />
