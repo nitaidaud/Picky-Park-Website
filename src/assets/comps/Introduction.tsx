@@ -1,6 +1,7 @@
 import ParkingSolution from "./mainInfo/ParkingSolution";
 import MeetPicky from "./mainInfo/MeetPicky";
 import FindingPark from "./mainInfo/FindingPark";
+import Pricing from "./mainInfo/Pricing";
 
 export default function Introduction() {
   return (
@@ -8,7 +9,8 @@ export default function Introduction() {
     <div id="what-we-offer" className="flex flex-col mx-auto">
       <MeetPicky />
       <FindingPark />
-      <ParkingSolution />
+      <Pricing />
+      {/* <ParkingSolution /> */}
       {/* <LoyaltyAchievements /> */}
       {/* <SecurityInfo /> */}
     </div>
