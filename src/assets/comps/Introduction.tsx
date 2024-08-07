@@ -1,4 +1,4 @@
-import ParkingSolution from "./mainInfo/ParkingSolution";
+
 import MeetPicky from "./mainInfo/MeetPicky";
 import FindingPark from "./mainInfo/FindingPark";
 import Pricing from "./mainInfo/Pricing";
