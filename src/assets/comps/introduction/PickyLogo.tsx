@@ -5,7 +5,7 @@ export default function PickyLogo() {
   return (
     <>
       <div className="first-slide w-full 2xl:pt-0 pt-20 h-screen flex justify-center items-center snap-start">
-        <div className="w-2/3 m-auto justify-center items-center flex flex-col 2xl:flex-row 2xl:justify-between 2xl:items-start text-center relative h-2/3">
+        <div className="w-2/3 m-auto justify-center items-center flex flex-col 2xl:flex-row 2xl:justify-between 2xl:items-start text-center relative 2xl:h-2/3">
           <div className="w-full 2xl:w-1/2 mx-auto mb-16 2xl:mb-0">
             <h2 className="uppercase text-6xl 2xl:text-start md:text-8xl 2xl:text-balance">
               stop driving{" "}
