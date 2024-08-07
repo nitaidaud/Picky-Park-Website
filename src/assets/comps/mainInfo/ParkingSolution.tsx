@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function ParkingSolution() {
   return (
-    <div className="fifth-slide w-full m-auto h-full py-24 xl:p-32 flex items-center justify-center animate-block tracking-normal snap-center">
+    <div className="fifth-slide w-full m-auto h-full py-24 xl:p-32 flex items-center justify-center tracking-normal snap-center">
       <div className="grid sm:grid-cols-2 gap-2 h-full mx-auto w-full 2xl:w-2/3 px-5">
 
         <div className="flex justify-between items-center gap-3 w-full text-balance h-full text-center bg-indigo-950 rounded-3xl order-last sm:order-first py-14 sm:p-0 bg-opacity-50">

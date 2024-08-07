@@ -34,15 +34,48 @@ body {
   z-index: -10;
 }
 
-.first-slide{
+@keyframes zoom-in {
+  0% {
+    background-size: 100% 100%;
+  }
+  100% {
+    background-size: 150% 150%;
+  }
+}
+
+@keyframes zoom-out {
+  0% {
+    background-size: 150% 150%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
+@keyframes zoom-out-half {
+  0% {
+    background-size: 100% 100%;
+  }
+  100% {
+    background-size: 125% 125%;
+  }
+}
+
+.first-slide {
   background: url("/src/assets/Images/firstSlideBg.png");
   background-size: cover;
   /* background-position: top left !important; */
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-.third-slide{
+.second-slide {
+  background-color: #59b5ff;
+  background-attachment: fixed;
+}
+
+.third-slide {
   /* background-image: url('../public/Images/streetBg.jpeg');
   position: absolute;
   top: 0;
@@ -52,42 +85,36 @@ body {
   background-repeat: no-repeat;
   transition: transform 0.1s ease-out;
   letter-spacing: 0.05em !important; */
-  background-image: url('../public/Images/streetBg.jpeg');
+  background-image: url("../public/Images/streetBg.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   letter-spacing: 0.05em !important;
-  
-  animation: shrink 5s alternate;
+
+  animation: zoom-in 5s alternate;
   animation-timeline: View();
 }
-@keyframes shrink {
-  0% {
-    background-size: 100% 100%;
-  }
-  100% {
-    background-size: 150% 150%;
-  }
-}
 
-.fourth-slide{
+.fourth-slide {
   background: url("../public/Images/streetBg.jpeg") no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
+  animation: zoom-out 5s alternate;
+  animation-timeline: View();
   letter-spacing: 0.05em !important;
 }
 
-.fifth-slide{
+.fifth-slide {
   background: url("../public/Images/streetBg.jpeg") no-repeat;
   background-size: auto 120%;
   background-position: center;
+  background-attachment: fixed;
+  animation: zoom-out-half 5s alternate;
+  animation-timeline: View();
   letter-spacing: 0.05em !important;
 }
-
-/* .partners-slide{
-  background: url("../public/Images/partnersBg.png") no-repeat;
-  background-color: #59b5ff;
-} */
 
 @keyframes appear {
   from {
@@ -121,12 +148,6 @@ body {
     opacity: 1;
     clip-path: inset(0 0 0 0);
   }
-}
-
-.animate-block {
-  animation: appear linear;
-  animation-timeline: view();
-  animation-range: entry 0% cover 20%;
 }
 
 nav {
@@ -194,9 +215,6 @@ nav .contact-btn:hover {
   font-size: 0.7em;
 }
 
-.introduction{
-  background-color: #59b5ff;
-}
 /* .introduction::before {
   position: absolute;
   content: "";
@@ -206,7 +224,7 @@ nav .contact-btn:hover {
   z-index: -10;
 } */
 
-.picky-park-title{
+.picky-park-title {
   background-image: linear-gradient(
     145deg,
     #a762b3 0%,
@@ -238,11 +256,11 @@ nav .contact-btn:hover {
   );
 }
 
-.second-dot{
+.second-dot {
   animation-delay: 0.2s !important;
 }
 
-.third-dot{
+.third-dot {
   animation-delay: 0.3s !important;
 }
 

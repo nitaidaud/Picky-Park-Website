@@ -12,7 +12,7 @@ export default function IntroductionInfo() {
   return (
     <div
       id="about"
-      className="introduction flex justify-center items-center text-start h-screen snap-start w-full"
+      className="second-slide flex justify-center items-center text-start h-screen snap-start w-full"
     >
       <div className="h-full lg:h-3/4 lg:flex mx-auto w-full lg:w-4/5 items-center justify-center gap-10 p-5 lg:bg-black lg:bg-opacity-70 rounded-xl">
         <div className="w-full grid gap-10 lg:mt-0 max-w-5xl">
