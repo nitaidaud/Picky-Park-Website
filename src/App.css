@@ -283,6 +283,10 @@ nav .contact-btn:hover {
   }
 }
 
+.partners-slide{
+  bottom: 126px;
+}
+
 .owl-stage {
   transform: translate3d(-1527px, 0px, 0px);
   transition: all 0.25s ease 0s;

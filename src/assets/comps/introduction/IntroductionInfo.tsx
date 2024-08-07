@@ -129,13 +129,15 @@ export default function IntroductionInfo() {
           </div>
         </div>
         <div className="max-w-5xl">
-          <video
-            src={video}
-            className="mx-auto mt-32 lg:mt-0 rounded-2xl"
-            autoPlay={true}
-            muted
-            loop
-          />
+          <a href="http://youtube.com" target="_blank">
+            <video
+              src={video}
+              className="mx-auto mt-32 lg:mt-0 rounded-2xl"
+              autoPlay={true}
+              muted
+              loop
+            />
+          </a>
         </div>
       </div>
     </div>
