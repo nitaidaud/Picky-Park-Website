@@ -10,17 +10,16 @@ export default function FindingPark() {
         <div className="w-1/2">
           <div className="w-full flex justify-center items-center relative">
             <div className="w-2/3 h-full absolute">
-              <img
-                src={iPhone}
-                className="w-full"
-                alt="iPhone"
-              />
+              <img src={iPhone} className="w-full" alt="iPhone" />
             </div>
             <video
               src={ShareParkingFirst}
+              playsInline
               className="w-7/12 mx-auto mt-4"
               autoPlay={true}
               width={50}
+              preload="auto"
+              muted
               loop
             />
           </div>
@@ -29,17 +28,14 @@ export default function FindingPark() {
         <div className="w-1/2">
           <div className="w-full flex justify-center items-center relative">
             <div className="w-2/3 h-full absolute">
-              <img
-                src={iPhone}
-                className="w-full"
-                alt="iPhone"
-              />
+              <img src={iPhone} className="w-full" alt="iPhone" />
             </div>
             <video
               src={SearchParkingSecond}
               className="w-7/12 mx-auto mt-4"
               autoPlay={true}
               width={50}
+              muted
               loop
             />
           </div>
@@ -48,17 +44,14 @@ export default function FindingPark() {
         <div className="w-1/2">
           <div className="w-full flex justify-center items-center relative">
             <div className="w-2/3 h-full absolute">
-              <img
-                src={iPhone}
-                className="w-full"
-                alt="iPhone"
-              />
+              <img src={iPhone} className="w-full" alt="iPhone" />
             </div>
             <video
               src={CalcRouteThird}
               className="w-7/12 mx-auto mt-4"
               autoPlay={true}
               width={50}
+              muted
               loop
             />
           </div>
