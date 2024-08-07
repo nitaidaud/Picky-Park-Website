@@ -7,7 +7,7 @@ export default function FindingPark() {
   return (
     <div className="fourth-slide h-screen snap-start w-full flex flex-col justify-center items-center"> 
       <div className="h-1/4 flex justify-center items-center">
-        <h2 className="our-workflow bg-clip-text text-5xl font-bold">Our Workflow</h2>
+        <h2 className="our-workflow bg-clip-text text-6xl font-bold">Our Workflow</h2>
       </div>
       <div className="h-1/2 w-2/3 xl:flex justify-center items-center">
         <div className="w-1/2 hover:scale-110 duration-200">
