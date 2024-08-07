@@ -16,6 +16,7 @@ export default function PersonalInfo(props: { team: Employee[] }) {
         {team.map(({ name, image, role, linkedIn }) => {
           return (
             <div
+              key={name + role}
               className={`h-full w-full grid justify-center items-center gap-10 bg-white bg-opacity-30 my-16 lg:m-5 rounded-xl shadow-xl drop-shadow-xl ${
                 name == "Nitai Daud" ? "order-first" : ""
               } hover:shadow-2xl duration-200`}

@@ -52,19 +52,9 @@ body {
   }
 }
 
-@keyframes zoom-out-half {
-  0% {
-    background-size: 100% 100%;
-  }
-  100% {
-    background-size: 125% 125%;
-  }
-}
-
 .first-slide {
   background: url("/src/assets/Images/firstSlideBg.png");
   background-size: cover;
-  /* background-position: top left !important; */
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -76,15 +66,6 @@ body {
 }
 
 .third-slide {
-  /* background-image: url('../public/Images/streetBg.jpeg');
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  transition: transform 0.1s ease-out;
-  letter-spacing: 0.05em !important; */
   background-image: url("../public/Images/streetBg.jpeg");
   background-position: center;
   background-size: cover;
@@ -101,18 +82,16 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  animation: zoom-out 5s alternate;
+  animation: zoom-out-half 5s alternate;
   animation-timeline: View();
   letter-spacing: 0.05em !important;
 }
 
 .fifth-slide {
   background: url("../public/Images/streetBg.jpeg") no-repeat;
-  background-size: auto 120%;
+  background-size: auto 150%;
   background-position: center;
   background-attachment: fixed;
-  /* animation: zoom-out-half 5s alternate; */
-  /* animation-timeline: View(); */
   letter-spacing: 0.05em !important;
 }
 
