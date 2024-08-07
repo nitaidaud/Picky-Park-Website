@@ -1,6 +1,7 @@
 import CalcRouteThird from "../../Videos/simulatorVideos/CalcRouteThird.mp4";
 import ShareParkingFirst from "../../Videos/simulatorVideos/ShareParkingFirst.mp4";
 import SearchParkingSecond from "../../Videos/simulatorVideos/SearchParkingSecond.mp4";
+import iPhone from "../../Videos/simulatorVideos/iPhone.png";
 
 export default function FindingPark() {
   return (
@@ -10,7 +11,7 @@ export default function FindingPark() {
           <div className="w-full flex justify-center items-center relative">
             <div className="w-2/3 h-full absolute">
               <img
-                src="src/assets/Videos/simulatorVideos/iPhone.png"
+                src={iPhone}
                 className="w-full"
                 alt="iPhone"
               />
@@ -29,7 +30,7 @@ export default function FindingPark() {
           <div className="w-full flex justify-center items-center relative">
             <div className="w-2/3 h-full absolute">
               <img
-                src="src/assets/Videos/simulatorVideos/iPhone.png"
+                src={iPhone}
                 className="w-full"
                 alt="iPhone"
               />
@@ -48,7 +49,7 @@ export default function FindingPark() {
           <div className="w-full flex justify-center items-center relative">
             <div className="w-2/3 h-full absolute">
               <img
-                src="src/assets/Videos/simulatorVideos/iPhone.png"
+                src={iPhone}
                 className="w-full"
                 alt="iPhone"
               />
