@@ -11,7 +11,9 @@ export default function Main() {
     <>
       <Navbar />
       <PickyLogo />
-      <Partners/>
+      <div className="relative">
+        <Partners />
+      </div>
       <IntroductionInfo />
 
       <LazyLoadComponent visibleByDefault={true}>
