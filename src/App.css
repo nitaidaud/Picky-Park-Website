@@ -116,6 +116,16 @@ body {
   letter-spacing: 0.05em !important;
 }
 
+.pricing-title{
+    background-image: linear-gradient(
+    344deg,
+    #ffb800 0%,
+    rgba(255, 255, 255, 0.561) 100%
+  );
+  -webkit-text-fill-color: transparent;
+ 
+}
+
 @keyframes appear {
   from {
     opacity: 0;

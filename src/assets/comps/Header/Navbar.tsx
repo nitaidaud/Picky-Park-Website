@@ -24,9 +24,8 @@ export default function Navbar() {
     },
     {
       content: "Pricing",
-      href: "https://apps.apple.com/il/app/picky-park/id6476976854",
+      href: "#pricing",
       isOpen: isOpen,
-      target: "_blank",
     },
     {
       content: "About",
