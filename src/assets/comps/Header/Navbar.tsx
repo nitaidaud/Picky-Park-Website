@@ -14,7 +14,7 @@ export default function Navbar() {
   const navLinks: navLinks[] = [
     {
       content: "How We Work?",
-      href: "#",
+      href: "#workflow",
       isOpen: isOpen,
     },
     {
@@ -43,12 +43,12 @@ export default function Navbar() {
       }`}
     >
       <div className="w-full 2xl:w-4/5 flex flex-wrap items-start lg:items-center justify-between mx-auto p-4 h-full">
-        {/* <div> */}
         <a
           href="#"
           className="flex items-center space-x-3 rtl:space-x-reverse"
           onClick={() => setIsOpen(false)}
         >
+        {/* <div> */}
           <img
             loading="lazy"
             src="..\Images\pickyLogoImgFixed.png"
@@ -87,13 +87,14 @@ export default function Navbar() {
           <div className="nav-links flex flex-col justify-evenly gap-3 text-3xl sm:justify-stretch sm:gap-10 sm:mt-24 p-4 lg:p-0 rounded-lg lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 font-normal w-full">
             {navLinks.map(({ content, href, target }) => {
               return (
-                <button
+                <a
+                  href={href}
                   key={content}
                   onClick={toggleOpen}
                   className="border-2 p-8 lg:p-2 rounded-2xl border-transparent hover:border-white duration-300 hover:bg-opacity-40 hover:border-opacity-30"
                 >
                   <HeaderLink content={content} href={href} target={target} />
-                </button>
+                </a>
               );
             })}
           </div>

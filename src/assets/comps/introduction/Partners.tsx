@@ -10,7 +10,7 @@ export default function Partners() {
   ];
 
   return (
-    <div className="partners-slide w-full absolute">
+    <div className="partners-slide w-full absolute snap-start">
       <div className="flex flex-col justify-center items-center">
         <div>
           {/* <div>
@@ -18,8 +18,8 @@ export default function Partners() {
           </div> */}
           <div>
             <div
-              id="partners"
-              className="owl-carousel owl-theme owl-loaded owl-drag snap-center"
+              
+              className="owl-carousel owl-theme owl-loaded owl-drag"
             >
               <div className="owl-stage-outer flex items-center">
                 <div className="owl-stage">

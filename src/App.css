@@ -164,10 +164,6 @@ nav .contact-us-btn a {
   padding: 10px 20px;
 }
 
-nav .nav-links a:hover {
-  background-color: #1661bd;
-}
-
 nav .nav-links a:hover li {
   color: white;
 }
