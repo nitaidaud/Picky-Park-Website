@@ -3,7 +3,6 @@ import ShareParkingFirst from "../../Videos/simulatorVideos/ShareParkingFirst.mp
 import SearchParkingSecond from "../../Videos/simulatorVideos/SearchParkingSecond.mp4";
 import iPhone from "../../Videos/simulatorVideos/iPhone.png";
 import { useEffect, useRef, useState } from "react";
-import { isMainThread, threadId } from "worker_threads";
 
 export default function FindingPark() {
   const firstRef = useRef<HTMLVideoElement>(null);
