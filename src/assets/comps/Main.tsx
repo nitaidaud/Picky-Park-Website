@@ -1,4 +1,3 @@
-import PickyLogo from "./introduction/PickyLogo";
 import IntroductionInfo from "./introduction/IntroductionInfo";
 import Navbar from "./Header/Navbar";
 import { LazyLoadComponent } from "react-lazy-load-image-component";
