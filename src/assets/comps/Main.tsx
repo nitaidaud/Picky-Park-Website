@@ -4,16 +4,14 @@ import Navbar from "./Header/Navbar";
 import { LazyLoadComponent } from "react-lazy-load-image-component";
 import Introduction from "./Introduction";
 import Footer from "./Footer";
-import Partners from "./introduction/Partners";
+import FirstSlide from "./introduction/FirstSlide";
 
 export default function Main() {
   return (
     <>
       <Navbar />
-      <PickyLogo />
-      <div className="relative">
-        <Partners />
-      </div>
+      {/* <PickyLogo /> */}
+      <FirstSlide />
       <IntroductionInfo />
 
       <LazyLoadComponent visibleByDefault={true}>

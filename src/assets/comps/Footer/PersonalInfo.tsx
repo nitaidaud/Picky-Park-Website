@@ -6,13 +6,16 @@ export default function PersonalInfo(props: { team: Employee[] }) {
   const team: Employee[] = props.team;
 
   return (
-    <div className="w-full h-fit min-h-screen snap-start p-16 py-32 lg:p-32">
+    <div
+      id="contact-info"
+      className="w-full h-full min-h-fit snap-start p-16 py-32 2xl:grid items-center gap-10"
+    >
       <div className="w-full">
         <h2 className="text-6xl font-bold text-white drop-shadow-xl">
           Meet Our Team:
         </h2>
       </div>
-      <div className="lg:flex items-center justify-around">
+      <div className="lg:flex items-center justify-around h-full">
         {team.map(({ name, image, role, linkedIn }) => {
           return (
             <div
@@ -21,10 +24,7 @@ export default function PersonalInfo(props: { team: Employee[] }) {
                 name == "Nitai Daud" ? "order-first" : ""
               } hover:shadow-2xl duration-200`}
             >
-              <div
-                id="contact-info"
-                className="contact-info mt-20 m-auto h-full w-full animate-block snap-start"
-              >
+              <div className="contact-info mt-20 m-auto h-full w-full animate-block snap-start">
                 <img
                   src={image}
                   alt="img"
@@ -32,7 +32,7 @@ export default function PersonalInfo(props: { team: Employee[] }) {
                 />
               </div>
               <div className="w-full text-center flex flex-col justify-center items-center">
-                <h2 className="max-w-fit picky-park-title uppercase -tracking-tight text-4xl font-black bg-clip-text drop-shadow-xl">
+                <h2 className="max-w-fit picky-park-title uppercase text-4xl font-black bg-clip-text drop-shadow-xl">
                   {name}
                 </h2>
                 <p className="w-fit tracking-wider mx-auto uppercase text-white bg-clip-text drop-shadow-xl">

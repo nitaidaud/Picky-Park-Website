@@ -22,8 +22,6 @@ export default function FindingPark() {
   const [thirdCurrentTime, setThirdCurrentTime] = useState<number>();
 
   useEffect(() => {
-    console.log("first", firstCurrentTime);
-
     if (
       thirdRef &&
       thirdCurrentTime &&
@@ -32,9 +30,9 @@ export default function FindingPark() {
     ) {
       firstRef.current?.play();
       thirdRef.current?.pause();
-      setIsFirstPlay(true)
-      setIsSecPlay(false)
-      setIsThirdPlay(false)
+      setIsFirstPlay(true);
+      setIsSecPlay(false);
+      setIsThirdPlay(false);
       setTimeout(() => {
         thirdRef.current!.currentTime = 0;
       }, 3000);
@@ -49,9 +47,9 @@ export default function FindingPark() {
     ) {
       thirdRef.current?.play();
       secRef.current?.pause();
-      setIsFirstPlay(false)
-      setIsSecPlay(false)
-      setIsThirdPlay(true)
+      setIsFirstPlay(false);
+      setIsSecPlay(false);
+      setIsThirdPlay(true);
       setTimeout(() => {
         secRef.current!.currentTime = 0;
       }, 3000);
@@ -65,27 +63,44 @@ export default function FindingPark() {
     ) {
       secRef.current?.play();
       firstRef.current?.pause();
-      setIsFirstPlay(false)
-      setIsSecPlay(true)
-      setIsThirdPlay(false)
+      setIsFirstPlay(false);
+      setIsSecPlay(true);
+      setIsThirdPlay(false);
       setTimeout(() => {
         firstRef.current!.currentTime = 0;
       }, 3000);
       setFirstCurrentTime(0);
     }
-  }, [firstCurrentTime, firstDuration, isFirstPlay, isSecPlay, isThirdPlay, secCurrentTime, secDuration, thirdCurrentTime, thirdDuration]);
+  }, [
+    firstCurrentTime,
+    firstDuration,
+    isFirstPlay,
+    isSecPlay,
+    isThirdPlay,
+    secCurrentTime,
+    secDuration,
+    thirdCurrentTime,
+    thirdDuration,
+  ]);
 
   return (
-    <div id="workflow" className="fourth-slide h-screen snap-start w-full flex flex-col justify-center items-center">
-      <div className="h-1/4 flex justify-center items-center">
+    <div
+      id="workflow"
+      className="fourth-slide lg:h-screen min-h-fit snap-start w-full flex flex-col justify-center items-center"
+    >
+      <div className="lg:h-1/4 mb-24 lg:mb-0 flex justify-center items-center">
         <h2 className="our-workflow bg-clip-text text-6xl font-bold">
           Our Workflow
         </h2>
       </div>
-      <div className="h-1/2 w-2/3 xl:flex justify-center items-center">
-        <div className={`w-1/2 duration-200 ${isFirstPlay ? "scale-110" : "scale-100"}`}>
+      <div className="lg:h-1/2 w-full lg:w-2/3 flex flex-col lg:flex-row justify-center items-center gap-20 lg:gap-0">
+        <div
+          className={`w-1/2 duration-200 ${
+            isFirstPlay ? "scale-110" : "scale-100"
+          }`}
+        >
           <div className="w-full flex justify-center items-center relative">
-            <div className="w-2/3 h-full absolute">
+            <div className="lg:w-2/3 h-full absolute">
               <img src={iPhone} className="w-full" alt="iPhone" />
             </div>
             <video
@@ -97,7 +112,7 @@ export default function FindingPark() {
               }}
               ref={firstRef}
               src={ShareParkingFirst}
-              className="w-7/12 mx-auto mt-3"
+              className="w-11/12 p-[0.4em] mt-[5.5px] lg:p-0 lg:w-7/12 mx-auto lg:mt-3"
               autoPlay={true}
               width={50}
               preload="auto"
@@ -106,9 +121,13 @@ export default function FindingPark() {
           </div>
         </div>
 
-        <div className={`w-1/2 duration-200 ${isSecPlay ? "scale-110" : "scale-100"}`}>
+        <div
+          className={`w-1/2 duration-200 ${
+            isSecPlay ? "scale-110" : "scale-100"
+          }`}
+        >
           <div className="w-full flex justify-center items-center relative">
-            <div className="w-2/3 h-full absolute">
+            <div className="lg:w-2/3 h-full absolute">
               <img src={iPhone} className="w-full" alt="iPhone" />
             </div>
             <video
@@ -120,7 +139,7 @@ export default function FindingPark() {
               }}
               ref={secRef}
               src={SearchParkingSecond}
-              className="w-7/12 mx-auto mt-3"
+              className="w-11/12 p-[0.4em] mt-[5.5px] lg:p-0 lg:w-7/12 mx-auto lg:mt-3"
               // autoPlay={true}
               width={50}
               muted
@@ -128,9 +147,13 @@ export default function FindingPark() {
           </div>
         </div>
 
-        <div className={`w-1/2 duration-200 ${isThirdPlay ? "scale-110" : "scale-100"}`}>
+        <div
+          className={`w-1/2 duration-200 ${
+            isThirdPlay ? "scale-110" : "scale-100"
+          }`}
+        >
           <div className="w-full flex justify-center items-center relative">
-            <div className="w-2/3 h-full absolute">
+            <div className="lg:w-2/3 h-full absolute">
               <img src={iPhone} className="w-full" alt="iPhone" />
             </div>
             <video
@@ -142,7 +165,7 @@ export default function FindingPark() {
               }}
               ref={thirdRef}
               src={CalcRouteThird}
-              className="w-7/12 mx-auto mt-3"
+              className="w-11/12 p-[0.4em] mt-[5.5px] lg:p-0 lg:w-7/12 mx-auto lg:mt-3"
               // autoPlay={true}
               width={50}
               muted

@@ -60,13 +60,23 @@ body {
   background-attachment: fixed;
 }
 
+.intro-slide{
+  background-image: url("/Images/streetBg.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  animation: zoom-in 5s cubic-bezier(1, 4, 1, -4);
+  animation-timeline: View();
+}
+
 .second-slide {
   background-color: #59b5ff;
   background-attachment: fixed;
 }
 
-.third-slide {
-  background-image: url("../public/Images/streetBg.jpeg");
+/* .third-slide {
+  background-image: url("/Images/streetBg.jpeg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -78,7 +88,7 @@ body {
 }
 
 .fourth-slide {
-  background: url("../public/Images/streetBg.jpeg") no-repeat;
+  background: url("/Images/streetBg.jpeg") no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -88,12 +98,12 @@ body {
 }
 
 .fifth-slide {
-  background: url("../public/Images/streetBg.jpeg") no-repeat;
+  background: url("/Images/streetBg.jpeg") no-repeat;
   background-size: auto 150%;
   background-position: center;
   background-attachment: fixed;
   letter-spacing: 0.05em !important;
-}
+} */
 
 .pricing-title{
     background-image: linear-gradient(
@@ -295,7 +305,7 @@ nav .contact-btn:hover {
 
 .owl-stage-outer {
   width: 100%;
-  height: 120px;
+  /* height: 120px; */
   margin: 0 auto !important;
 }
 

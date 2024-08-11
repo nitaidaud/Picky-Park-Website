@@ -10,7 +10,7 @@ export default function Partners() {
   ];
 
   return (
-    <div className="partners-slide w-full absolute snap-start">
+    <div className="w-full absolute snap-start left-0 bottom-0">
       <div className="flex flex-col justify-center items-center">
         <div>
           {/* <div>
@@ -21,7 +21,7 @@ export default function Partners() {
               
               className="owl-carousel owl-theme owl-loaded owl-drag"
             >
-              <div className="owl-stage-outer flex items-center">
+              <div className="owl-stage-outer h-28 min-h-fit flex items-center">
                 <div className="owl-stage">
                   {partners.map((partner) => {
                     return <PartnerImg partner={partner} key={partner} />;
