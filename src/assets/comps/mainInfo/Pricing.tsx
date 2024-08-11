@@ -15,19 +15,19 @@ export default function Pricing() {
   ];
 
   return (
-    <div id="pricing" className="fifth-slide h-screen snap-start w-full">
+    <div id="pricing" className="fifth-slide mt-32 lg:h-screen min-h-fit snap-start w-full flex flex-col justify-center items-center">
       <div className="h-full flex flex-col items-center justify-center w-full">
-        <div className="h-3/4 flex justify-center items-center">
-          <h2 className="text-6xl h-full font-extrabold pricing-title bg-clip-text flex justify-center items-center drop-shadow-2xl">
+        <div className="h-full lg:h-3/4 flex justify-center items-center">
+          <h2 className="text-6xl h-full p-3 lg:p-0 font-extrabold pricing-title bg-clip-text flex justify-center items-center drop-shadow-2xl">
             Pricing:
           </h2>
         </div>
-        <div className="flex justify-center items-start h-full w-2/3 mx-auto gap-10">
+        <div className="lg:flex justify-center items-start h-full w-3/4 2xl:w-2/3 mx-auto lg:gap-5 2xl:gap-10">
           {pricingCards.map(({ title, price }) => {
             return (
-              <div key={title + price} className="p-5 w-full rounded-xl shadow-xl bg-white bg-opacity-70 h-4/5 min-h-fit hover:scale-105 duration-300">
+              <div key={title + price} className="grid lg:block p-5 my-20 lg:my-0 w-full rounded-xl shadow-xl bg-white bg-opacity-70 min-h-[350px] lg:min-h-fit h-full lg:h-4/5 hover:scale-105 duration-300">
                 <div
-                  className={`w-full h-2/6 ${
+                  className={`w-full lg:h-2/6 ${
                     title == "Starter"
                       ? "bg-indigo-600"
                       : title == "Traveler"
@@ -35,7 +35,7 @@ export default function Pricing() {
                       : "bg-amber-300"
                   } rounded-lg text-center flex items-center justify-center`}
                 >
-                  <h2 className="text-black uppercase font-semibold">
+                  <h2 className="text-black uppercase font-semibold text-4xl lg:text-xl">
                     {title}
                   </h2>
                 </div>

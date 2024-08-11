@@ -5,7 +5,7 @@ import Pricing from "./mainInfo/Pricing";
 
 export default function Introduction() {
   return (
-    <div className="flex flex-col mx-auto">
+    <div className="intro-slide flex flex-col mx-auto">
       <MeetPicky />
       <FindingPark />
       <Pricing />
