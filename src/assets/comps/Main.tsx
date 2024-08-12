@@ -9,9 +9,10 @@ export default function Main() {
   return (
     <>
       <Navbar />
-      {/* <PickyLogo /> */}
-      <FirstSlide />
-      <IntroductionInfo />
+      <div className="grid gap-20">
+        <FirstSlide />
+        <IntroductionInfo />
+      </div>
 
       <LazyLoadComponent visibleByDefault={true}>
         <Introduction />

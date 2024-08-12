@@ -38,7 +38,7 @@ export default function FirstSlide() {
               <div> Available for iOS</div>
             </a>
           </div>
-            <Partners />
+          <Partners />
         </div>
       </div>
     </div>
