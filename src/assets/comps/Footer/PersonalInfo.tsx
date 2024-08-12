@@ -15,7 +15,7 @@ export default function PersonalInfo(props: { team: Employee[] }) {
           Meet Our Team:
         </h2>
       </div>
-      <div className="xl:flex items-center justify-around h-full">
+      <div className="lg:flex items-center justify-around h-full">
         {team.map(({ name, image, role, linkedIn }) => {
           return (
             <div
