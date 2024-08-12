@@ -12,12 +12,12 @@ export default function IntroductionInfo() {
   return (
     <div
       id="about"
-      className="second-slide flex justify-center items-center text-start h-fit min-h-screen snap-start w-full py-20 lg:px-10 2xl:p-0"
+      className="second-slide flex justify-center items-center text-start h-full min-h-screen snap-start w-full py-20 lg:px-10 2xl:p-0"
     >
       <div className="h-full lg:h-3/4 xl:flex mx-auto w-full xl:w-4/5 items-center justify-center gap-10 p-5 bg-black bg-opacity-70 rounded-xl">
-        <div className="w-full grid gap-10 lg:mt-0 max-w-5xl">
-          <div className="flex justify-between items-center gap-3 w-full text-balance my-auto text-center  rounded-3xl order-last sm:order-first py-14 sm:p-0 bg-opacity-50">
-            <div className="flex flex-col justify-center items-start sm:w-full px-4 2xl:w-4/5 gap-4 h-full mx-auto">
+        <div className="w-full grid gap-10 lg:mt-0 justify-center xl:h-full">
+          <div className="flex justify-between items-center gap-3 w-full text-balance my-auto text-center  rounded-3xl order-last sm:order-first py-14 sm:p-0 bg-opacity-50 h-full">
+            <div className="flex flex-col justify-center xl:justify-around items-center sm:w-full px-4 gap-4 2xl:w-4/5 xl:h-full mx-auto">
               <div className="flex justify-center sm:justify-start items-center gap-4 w-2/3 mx-auto sm:w-full hover:bg-indigo-950 p-3 duration-300  rounded-2xl">
                 <div className="bg-indigo-900 px-2 py-3 min-w-max w-1/5 rounded-xl justify-center items-center">
                   <FontAwesomeIcon
@@ -128,7 +128,7 @@ export default function IntroductionInfo() {
             </div>
           </div>
         </div>
-        <div className="max-w-5xl">
+        <div className="w-full">
           <a href="http://youtube.com" target="_blank">
             <video
               src={video}

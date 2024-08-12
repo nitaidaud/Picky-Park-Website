@@ -48,7 +48,7 @@ export default function Navbar() {
           className="flex items-center space-x-3 rtl:space-x-reverse"
           onClick={() => setIsOpen(false)}
         >
-        {/* <div> */}
+          {/* <div> */}
           <img
             loading="lazy"
             src="..\Images\pickyLogoImgFixed.png"
@@ -85,7 +85,7 @@ export default function Navbar() {
           id="navbar-sticky"
         >
           <div className="nav-links flex flex-col justify-evenly gap-3 text-3xl sm:justify-stretch sm:gap-10 sm:mt-24 p-4 lg:p-0 rounded-lg lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 font-normal w-full">
-            {navLinks.map(({ content, href, target }) => {
+            {navLinks.map(({ content, href }) => {
               return (
                 <a
                   href={href}
@@ -93,7 +93,7 @@ export default function Navbar() {
                   onClick={toggleOpen}
                   className="border-2 p-8 lg:p-2 rounded-2xl border-transparent hover:border-white duration-300 hover:bg-opacity-40 hover:border-opacity-30"
                 >
-                  <HeaderLink content={content} href={href} target={target} />
+                  <HeaderLink content={content} />
                 </a>
               );
             })}
