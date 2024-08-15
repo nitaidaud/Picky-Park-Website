@@ -3,6 +3,7 @@ import ShareParkingFirst from "/Videos/simulatorVideos/ShareParkingFirst.mp4";
 import SearchParkingSecond from "/Videos/simulatorVideos/SearchParkingSecond.mp4";
 import iPhone from "/Videos/simulatorVideos/iPhone.png";
 import { useEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function FindingPark() {
   const firstRef = useRef<HTMLVideoElement>(null);
@@ -20,6 +21,8 @@ export default function FindingPark() {
 
   const [thirdDuration, setThirdDuration] = useState<number>();
   const [thirdCurrentTime, setThirdCurrentTime] = useState<number>();
+
+  const {t} = useTranslation()
 
   useEffect(() => {
     if (
@@ -90,10 +93,11 @@ export default function FindingPark() {
     >
       <div className="lg:h-1/4 mb-24 lg:mb-0 flex justify-center items-center">
         <h2 className="our-workflow bg-clip-text text-6xl font-bold">
-          Our Workflow
+          {/* Our Workflow */}
+          {t("workflow")}
         </h2>
       </div>
-      <div className="lg:h-1/2 w-full lg:w-2/3 flex flex-col lg:flex-row justify-center items-center gap-20 lg:gap-0">
+      <div className="lg:h-1/2 w-full lg:w-2/3 flex flex-col lg:flex-row justify-center items-center gap-20 lg:gap-0 mt-10">
         <div
           className={`w-1/2 duration-200 ${
             isFirstPlay ? "scale-110" : "scale-100"
