@@ -31,7 +31,7 @@ export default function Pricing() {
               <div key={title + price} className="pricing-item grid lg:block p-5 my-20 lg:my-0 w-full rounded-xl shadow-xl bg-white bg-opacity-70 min-h-[350px] lg:min-h-[450px] h-full lg:h-4/5 hover:scale-105 duration-300 relative">
                 {isRecommended == true &&
                   <div className="flex absolute top-0 justify-center items-center w-full left-0 mx-auto">
-                    <h2 className="text-center w-fit px-3 py-2 bg-white bg-opacity-40 border-[2px] rounded-xl absolute -top-3 text-indigo-700 text-xl lg:text-base">Recommended</h2>
+                    <h2 className="text-center w-fit px-3 py-2 bg-white bg-opacity-40 border-[2px] rounded-xl absolute -top-3 text-indigo-700 text-3xl lg:text-base">Recommended</h2>
                   </div>
                 }
                 <div
