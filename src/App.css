@@ -334,6 +334,20 @@ nav .contact-btn:hover {
   );
 }
 
+.pricing-container:hover .pricing-item:not(:hover) {
+  filter: grayscale(100%);
+  opacity: 0.7;
+}
+
+.pricing-item:hover {
+  .pricing-item:not(:hover) {
+    filter: grayscale(100%);
+    opacity: 0.7;
+  }
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
 .download-btn {
   border: 1px solid;
   background-image: unset !important;
