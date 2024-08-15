@@ -32,7 +32,7 @@ export default function PersonalInfo(props: { team: Employee[] }) {
                 />
               </div>
               <div className="w-full text-center flex flex-col justify-center items-center">
-                <h2 className="max-w-fit picky-park-title uppercase text-4xl font-black bg-clip-text drop-shadow-xl">
+                <h2 className="max-w-fit picky-park-title uppercase text-4xl lg:text-3xl 2xl:text-4xl font-black bg-clip-text drop-shadow-xl px-3">
                   {name}
                 </h2>
                 <p className="w-fit tracking-wider mx-auto uppercase text-white bg-clip-text drop-shadow-xl">
