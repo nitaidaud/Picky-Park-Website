@@ -1,6 +1,6 @@
 import { faApple } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Partners from "./Partners";
+// import Partners from "./Partners";
 
 export default function FirstSlide() {
   return (
@@ -38,7 +38,6 @@ export default function FirstSlide() {
               <div> Available for iOS</div>
             </a>
           </div>
-          <Partners />
         </div>
       </div>
     </div>

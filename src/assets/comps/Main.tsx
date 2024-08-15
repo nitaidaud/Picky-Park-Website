@@ -9,10 +9,10 @@ export default function Main() {
   return (
     <>
       <Navbar />
-      <div className="grid gap-20">
+      {/* <div className="grid gap-20"> */}
         <FirstSlide />
         <IntroductionInfo />
-      </div>
+      {/* </div> */}
 
       <LazyLoadComponent visibleByDefault={true}>
         <Introduction />
