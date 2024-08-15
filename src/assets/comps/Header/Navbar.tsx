@@ -1,14 +1,14 @@
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ContactUsBtn from "./ContactUsBtn";
 import HeaderLink from "./HeaderLink";
 import { navLinks } from "../../models/navLinks";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-
+  const [className, setClassName] = useState("h-fit");
   const hamburgerIcon: IconProp = isOpen ? faX : faBars;
 
   const navLinks: navLinks[] = [
@@ -36,11 +36,15 @@ export default function Navbar() {
 
   const toggleOpen = () => setIsOpen(!isOpen);
 
+  useEffect(() => {
+    if (isOpen) setClassName("h-screen");
+    else setClassName("h-fit");
+  },[isOpen]);
+
+  // isOpen ? "h-full" : "h-fit"
   return (
     <nav
-      className={`bg-transparent backdrop-blur-3xl fixed w-full top-0 start-0 lg:h-fit ${
-        isOpen ? "h-full" : "h-fit"
-      }`}
+      className={`bg-transparent backdrop-blur-3xl fixed w-full top-0 start-0 lg:h-fit ${className} min-h-fit overflow-y-auto`}
     >
       <div className="w-full 2xl:w-4/5 flex flex-wrap items-start lg:items-center justify-between mx-auto p-4 h-full">
         <a
@@ -62,7 +66,6 @@ export default function Navbar() {
 
         <div className="contact-us-btn items-center flex lg:order-2 space-x-3 lg:space-x-0 rtl:space-x-reverse">
           <ContactUsBtn />
-
           <FontAwesomeIcon
             icon={hamburgerIcon}
             className="hamburgerBtn text-white inline-flex my-auto items-center p-2 w-10 h-10 justify-center text-sm rounded-lg lg:hidden"
@@ -81,7 +84,7 @@ export default function Navbar() {
             lg:flex 
             lg:w-auto 
             lg:order-1 
-            ${isOpen ? "flex" : "hidden h-0"}`}
+            ${isOpen ? "flex h-screen" : "hidden"}`}
           id="navbar-sticky"
         >
           <div className="nav-links flex flex-col justify-evenly gap-3 text-3xl sm:justify-stretch sm:gap-10 sm:mt-24 p-4 lg:p-0 rounded-lg lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 font-normal w-full">

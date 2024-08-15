@@ -166,7 +166,6 @@ export default function FindingPark() {
               ref={thirdRef}
               src={CalcRouteThird}
               className="w-11/12 p-[0.4em] mt-[5.5px] lg:p-0 lg:w-7/12 mx-auto lg:mt-3"
-              // autoPlay={true}
               width={50}
               muted
             />
