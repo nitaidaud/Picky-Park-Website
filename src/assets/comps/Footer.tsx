@@ -9,7 +9,7 @@ export default function Footer() {
     {
       name: "Noam Cohen",
       role: "Founder & CEO",
-      image: "../Images/profilePic/noamPic.jpg",
+      image: "/Images/profilePic/noamPic.jpg",
       description:
         "Noam Cohen, the driving force and innovative mind behind the groundbreaking parking app Picky is a fresh entrepreneur and visionary in the tech industry. With a passion for simplifying everyday challenges through technology, Noam has dedicated his expertise to redefine the parking experience for users around the globe",
       linkedIn: "https://www.linkedin.com/in/noamcohenn/",
@@ -26,8 +26,7 @@ export default function Footer() {
     {
       name: "Omer Levin",
       role: "Product Leader",
-      image:
-        "https://media.licdn.com/dms/image/D5603AQE32PFJ2tiEXA/profile-displayphoto-shrink_200_200/0/1723448924051?e=1729123200&v=beta&t=yer9rRGPe3GOcI7iZ6TKm94F3u3hZzHdeikuonAd0aw",
+      image: "/Images/profilePic/omerPic.jpg",
       description:
         "dasdasdasdasdasd asd asdasda sfsadfsadf asdf gsdagsdagsdagsdgsda",
       linkedIn: "https://www.linkedin.com/in/omer-levin-990548222/",
