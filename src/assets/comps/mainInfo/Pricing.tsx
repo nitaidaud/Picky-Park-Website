@@ -18,7 +18,7 @@ export default function Pricing() {
   ];
 
   return (
-    <div id="pricing" className="fifth-slide mt-32 lg:h-screen min-h-fit snap-start w-full flex flex-col justify-center items-center">
+    <div id="pricing" className="fifth-slide  lg:h-screen min-h-fit snap-start w-full flex flex-col justify-center items-center">
       <div className="h-full flex flex-col items-center justify-center w-full">
         <div className="h-full lg:h-1/4 flex justify-center items-center">
           <h2 className="text-6xl h-full p-3 lg:p-0 font-extrabold pricing-title bg-clip-text flex justify-center items-center drop-shadow-2xl">
@@ -28,7 +28,7 @@ export default function Pricing() {
         <div className="pricing-container lg:flex justify-center items-start h-fit w-3/4 2xl:w-2/3 mx-auto lg:gap-5 2xl:gap-10">
           {pricingCards.map(({ title, price, isRecommended }) => {
             return (
-              <div key={title + price} className="pricing-item grid lg:block p-5 my-20 lg:my-0 w-full rounded-xl shadow-xl bg-white bg-opacity-70 min-h-[350px] md:min-h-[650px] lg:min-h-[450px] h-full lg:h-4/5 hover:scale-105 duration-300 relative">
+              <div key={title + price} className="pricing-item grid lg:block p-5 my-20 lg:my-0 w-full rounded-xl shadow-xl bg-white bg-opacity-70 min-h-[350px] md:min-h-[650px] lg:min-h-[350px] 2xl:min-h-[450px] h-full lg:h-4/5 hover:scale-105 duration-300 relative">
                 {isRecommended == true &&
                   <div className="flex absolute top-0 justify-center items-center w-full left-0 mx-auto">
                     <h2 className="text-center w-fit px-3 py-2 bg-white bg-opacity-40 border-[2px] rounded-xl absolute -top-3 text-indigo-700 text-3xl lg:text-base">Recommended</h2>

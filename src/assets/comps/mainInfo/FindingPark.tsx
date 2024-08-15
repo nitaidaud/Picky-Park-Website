@@ -1,7 +1,7 @@
-import CalcRouteThird from "../../Videos/simulatorVideos/CalcRouteThird.mp4";
-import ShareParkingFirst from "../../Videos/simulatorVideos/ShareParkingFirst.mp4";
-import SearchParkingSecond from "../../Videos/simulatorVideos/SearchParkingSecond.mp4";
-import iPhone from "../../Videos/simulatorVideos/iPhone.png";
+import CalcRouteThird from "/Videos/simulatorVideos/CalcRouteThird.mp4";
+import ShareParkingFirst from "/Videos/simulatorVideos/ShareParkingFirst.mp4";
+import SearchParkingSecond from "/Videos/simulatorVideos/SearchParkingSecond.mp4";
+import iPhone from "/Videos/simulatorVideos/iPhone.png";
 import { useEffect, useRef, useState } from "react";
 
 export default function FindingPark() {
