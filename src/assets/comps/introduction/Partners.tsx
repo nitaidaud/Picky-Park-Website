@@ -10,9 +10,9 @@ export default function Partners() {
   ];
 
   return (
-    <div className="w-full absolute snap-start left-0 top-full ">
-      <div className="owl-carousel owl-theme owl-loaded owl-drag">
-        <div className="owl-stage-outer h-28 min-h-fit flex items-center">
+    // <div className="w-full snap-start top-full">
+      <div className="owl-carousel top-0 owl-theme owl-loaded owl-drag h-fit w-screen">
+        <div className="owl-stage-outer min-h-fit flex items-center">
           <div className="owl-stage">
             {partners.map((partner) => {
               return <PartnerImg partner={partner} key={partner} />;
@@ -21,6 +21,6 @@ export default function Partners() {
         </div>
         <div className="owl-nav disabled"></div>
       </div>
-    </div>
+    // </div>
   );
 }
