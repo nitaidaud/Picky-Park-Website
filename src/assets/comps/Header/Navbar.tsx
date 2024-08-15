@@ -1,34 +1,41 @@
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import ContactUsBtn from "./ContactUsBtn";
 import HeaderLink from "./HeaderLink";
 import { navLinks } from "../../models/navLinks";
+import { useTranslation } from "react-i18next";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [className, setClassName] = useState("h-fit");
+  const [currentLang, setCurrentLang] = useState("en");
   const hamburgerIcon: IconProp = isOpen ? faX : faBars;
+
+  const { t, i18n } = useTranslation();
 
   const navLinks: navLinks[] = [
     {
-      content: "How We Work?",
+      // content: "How We Work?",
+      content: t("navbar.howWeWork"),
       href: "#workflow",
       isOpen: isOpen,
     },
     {
-      content: "Partners",
+      // content: "Partners",
+      content: t("navbar.Partners"),
       href: "#partners",
       isOpen: isOpen,
     },
     {
-      content: "Pricing",
+      // content: "Pricing",
+      content: t("navbar.Pricing"),
       href: "#pricing",
       isOpen: isOpen,
     },
     {
-      content: "About",
+      // content: "About",
+      content: t("navbar.About"),
       href: "#about",
       isOpen: isOpen,
     },
@@ -36,15 +43,12 @@ export default function Navbar() {
 
   const toggleOpen = () => setIsOpen(!isOpen);
 
-  useEffect(() => {
-    if (isOpen) setClassName("h-screen");
-    else setClassName("h-fit");
-  },[isOpen]);
-
   // isOpen ? "h-full" : "h-fit"
   return (
     <nav
-      className={`bg-transparent backdrop-blur-3xl fixed w-full top-0 start-0 lg:h-fit ${className} min-h-fit overflow-y-auto`}
+      className={`bg-transparent backdrop-blur-3xl fixed w-full top-0 start-0 lg:h-fit min-h-fit overflow-y-auto ${
+        isOpen ? "h-full" : "h-fit"
+      }`}
     >
       <div className="w-full 2xl:w-4/5 flex flex-wrap items-start lg:items-center justify-between mx-auto p-4 h-full">
         <a
@@ -84,7 +88,7 @@ export default function Navbar() {
             lg:flex 
             lg:w-auto 
             lg:order-1 
-            ${isOpen ? "flex h-screen" : "hidden"}`}
+            ${isOpen ? "flex" : "hidden"}`}
           id="navbar-sticky"
         >
           <div className="nav-links flex flex-col justify-evenly gap-3 text-3xl sm:justify-stretch sm:gap-10 sm:mt-24 p-4 lg:p-0 rounded-lg lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 font-normal w-full">
@@ -100,6 +104,17 @@ export default function Navbar() {
                 </a>
               );
             })}
+          </div>
+          <div
+            onClick={() => {
+              if (currentLang == "en") setCurrentLang("he");
+              else setCurrentLang("en");
+              console.log(currentLang);
+
+              i18n.changeLanguage(currentLang);
+            }}
+          >
+            <h2>Change language</h2>
           </div>
         </div>
       </div>

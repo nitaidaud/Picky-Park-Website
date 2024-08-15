@@ -1,5 +1,9 @@
+import { useTranslation } from "react-i18next";
 import { ReactTyped } from "react-typed";
 export default function MeetPicky() {
+
+  const {t} = useTranslation()
+  
   return (
     <div className="relative h-screen">
       <div className="w-full absolute -top-6 left-0">
@@ -23,8 +27,10 @@ export default function MeetPicky() {
             <h2 className="p-3 bg-white rounded-xl text-black font-semibold">
               <ReactTyped
                 strings={[
-                  "How Is The Traffic Today?",
-                  "Finding Your Parking Now...",
+                  // "How Is The Traffic Today?",
+                  // "Finding Your Parking Now...",
+                  t("findingPark.firstTyping"),
+                  t("findingPark.secTyping"),
                 ]}
                 typeSpeed={100}
                 loop

@@ -9,14 +9,18 @@ import {
   faStreetView,
 } from "@fortawesome/free-solid-svg-icons";
 import Partners from "./Partners";
+import { useTranslation } from "react-i18next";
 
 export default function IntroductionInfo() {
+
+  const {t} = useTranslation()
+
   return (
     <div
       id="about"
       className="second-slide grid items-start text-start h-fit min-h-screen snap-start w-full lg:px-10 xl:p-0 gap-10"
     >
-      <div className="relative w-full h-fit overflow-hidden">
+      <div dir="ltr" className="relative w-full h-fit overflow-hidden">
         <Partners />
       </div>
       <div className="h-fit mb-10 xl:flex mx-auto w-full xl:w-4/5 items-center justify-center gap-10 p-5 bg-black bg-opacity-70 rounded-xl">
@@ -34,11 +38,13 @@ export default function IntroductionInfo() {
 
                 <div className="flex flex-col text-start">
                   <div>
-                    <h2>Easy Way To Park</h2>
+                    {/* <h2>Easy Way To Park</h2> */}
+                    <h2>{t("features.firstFeature.title")}</h2>
                   </div>
                   <div className="text-xs opacity-80">
                     <p className="capitalize">
-                      Picky takes the stress out of parking
+                      {/* Picky takes the stress out of parking */}
+                      {t("features.firstFeature.description")}
                     </p>
                   </div>
                 </div>
@@ -55,12 +61,13 @@ export default function IntroductionInfo() {
 
                 <div className="flex flex-col text-start">
                   <div>
-                    <h2>Find Parking Around You</h2>
+                    {/* <h2>Find Parking Around You</h2> */}
+                    <h2>{t("features.secFeature.title")}</h2>
                   </div>
                   <div className="text-xs opacity-80">
                     <p className="capitalize">
-                      Picky providing real-time information on available parking
-                      spaces
+                      {/* Picky providing real-time information on available parking spaces */}
+                      {t("features.secFeature.description")}
                     </p>
                   </div>
                 </div>
@@ -77,11 +84,13 @@ export default function IntroductionInfo() {
 
                 <div className="flex flex-col text-start">
                   <div>
-                    <h2>Sharing Parkings</h2>
+                    {/* <h2>Sharing Parkings</h2> */}
+                    <h2>{t("features.thirdFeature.title")}</h2>
                   </div>
                   <div className="text-xs opacity-80">
                     <p className="capitalize">
-                      Choose Between A Lot Of available Parkings
+                      {/* Choose Between A Lot Of available Parkings */}
+                      {t("features.thirdFeature.description")}
                     </p>
                   </div>
                 </div>
@@ -98,12 +107,13 @@ export default function IntroductionInfo() {
 
                 <div className="flex flex-col text-start">
                   <div>
-                    <h2>Explore Your Next Park</h2>
+                    {/* <h2>Explore Your Next Park</h2> */}
+                    <h2>{t("features.fourthFeature.title")}</h2>
                   </div>
                   <div className="text-xs opacity-80">
                     <p className="capitalize">
-                      guiding you to the closest and most convenient spots
-                      effortlessly
+                      {/* guiding you to the closest and most convenient spots effortlessly */}
+                      {t("features.fourthFeature.description")}
                     </p>
                   </div>
                 </div>
@@ -120,12 +130,13 @@ export default function IntroductionInfo() {
 
                 <div className="flex flex-col text-start">
                   <div>
-                    <h2>User Friendly Interface</h2>
+                    {/* <h2>User Friendly Interface</h2> */}
+                    <h2>{t("features.fifthFeature.title")}</h2>
                   </div>
                   <div className="text-xs opacity-80">
                     <p className="capitalize">
-                      The app's user-friendly interface ensures a smooth
-                      experience
+                      {/* The app's user-friendly interface ensures a smooth experience */}
+                      {t("features.fifthFeature.description")}
                     </p>
                   </div>
                 </div>
