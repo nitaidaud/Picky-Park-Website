@@ -1,7 +1,7 @@
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ContactUsBtn from "./ContactUsBtn";
 import HeaderLink from "./HeaderLink";
 import { navLinks } from "../../models/navLinks";
@@ -9,10 +9,13 @@ import { useTranslation } from "react-i18next";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const { t, i18n } = useTranslation();
   const [currentLang, setCurrentLang] = useState("en");
   const hamburgerIcon: IconProp = isOpen ? faX : faBars;
 
-  const { t, i18n } = useTranslation();
+  useEffect(() => {
+    i18n.changeLanguage(currentLang);
+  }, [currentLang, i18n]);
 
   const navLinks: navLinks[] = [
     {
@@ -43,7 +46,6 @@ export default function Navbar() {
 
   const toggleOpen = () => setIsOpen(!isOpen);
 
-  // isOpen ? "h-full" : "h-fit"
   return (
     <nav
       className={`bg-transparent backdrop-blur-3xl fixed w-full top-0 start-0 lg:h-fit min-h-fit overflow-y-auto ${
@@ -109,9 +111,6 @@ export default function Navbar() {
             onClick={() => {
               if (currentLang == "en") setCurrentLang("he");
               else setCurrentLang("en");
-              console.log(currentLang);
-
-              i18n.changeLanguage(currentLang);
             }}
           >
             <h2>Change language</h2>
