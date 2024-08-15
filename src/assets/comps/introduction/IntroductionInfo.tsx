@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import video from "../../Videos/introVid.mp4";
+// import video from "../../Videos/";
+import video from "/Videos/introVidReduced.mp4"
 import {
   faCompass,
   faMobileScreenButton,
