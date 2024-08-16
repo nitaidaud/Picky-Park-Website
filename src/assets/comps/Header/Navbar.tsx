@@ -12,6 +12,11 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const { t } = useTranslation();
   const hamburgerIcon: IconProp = isOpen ? faX : faBars;
+  const [dir, setDir] = useState("ltr");
+
+  const toggleDir = (dir: string) => {
+    setDir(dir);
+  };
 
   const navLinks: navLinks[] = [
     {
@@ -41,14 +46,13 @@ export default function Navbar() {
   ];
 
   const toggleOpen = () => setIsOpen(!isOpen);
-
   return (
     <nav
       className={`bg-transparent backdrop-blur-3xl fixed w-full top-0 start-0 xl:h-fit min-h-fit overflow-y-auto xl:overflow-visible ${
         isOpen ? "h-full" : "h-fit"
       }`}
     >
-      <div className="w-full 2xl:w-4/5 flex flex-wrap items-start xl:items-center justify-between mx-auto p-4 h-full">
+      <div className={`w-full 2xl:w-4/5 flex flex-wrap items-start xl:items-center justify-between mx-auto p-4 h-full ${dir == "ltr" ? "flex-row" : "flex-row-reverse"}`}>
         <a
           href="#"
           className="flex items-center space-x-3 rtl:space-x-reverse"
@@ -66,11 +70,11 @@ export default function Navbar() {
         </a>
         {/* </div> */}
 
-        <div className="contact-us-btn items-center flex xl:order-2 space-x-3 xl:space-x-0 rtl:space-x-reverse">
+        <div className="contact-us-btn items-center flex ltr:xl:order-2 space-x-3 xl:space-x-0 rtl:space-x-reverse">
           <ContactUsBtn />
           <FontAwesomeIcon
             icon={hamburgerIcon}
-            className="hamburgerBtn text-white inline-flex my-auto items-center p-2 w-10 h-10 justify-center text-sm rounded-lg xl:hidden"
+            className="hamburgerBtn text-white inline-flex my-auto items-center p-2 w-10 h-10 justify-center text-sm rounded-lg xl:hidden rtl:order-first"
             aria-controls="navbar-sticky"
             aria-expanded="false"
             onClick={() => setIsOpen(!isOpen)}
@@ -78,6 +82,7 @@ export default function Navbar() {
         </div>
 
         <div
+          dir={dir}
           className={`
             w-full 
             h-full
@@ -102,7 +107,7 @@ export default function Navbar() {
                 </a>
               );
             })}
-            <LanguageSelector />
+            <LanguageSelector setDir={toggleDir} />
           </div>
         </div>
       </div>
