@@ -7,8 +7,8 @@ import FirstSlide from "./introduction/FirstSlide";
 import { useTranslation } from "react-i18next";
 
 export default function Main() {
-  const { "1": lang } = useTranslation();
-  const dir = lang.dir();
+  const { i18n } = useTranslation();
+  const dir = i18n.dir();
   return (
     <div dir={dir}>
       <Navbar />

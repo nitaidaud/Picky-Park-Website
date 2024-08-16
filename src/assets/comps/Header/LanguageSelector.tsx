@@ -2,17 +2,23 @@ import { useEffect, useState } from "react";
 import { Language } from "../../models/Language";
 import { useTranslation } from "react-i18next";
 
-export default function LanguageSelector() {
+export default function LanguageSelector(props: {
+  setDir: (dir: string) => void;
+}) {
+  const setDir: (dir: string) => void = props.setDir;
+
   const languages: Language[] = [
     {
       name: "English",
       symbol: "en",
-      flag: "Images/en.png"
+      flag: "Images/en.png",
+      dir: "ltr",
     },
     {
       name: "עברית",
       symbol: "he",
-      flag: "Images/he.png"
+      flag: "Images/he.png",
+      dir: "rtl",
     },
   ];
   const { i18n } = useTranslation();
@@ -68,7 +74,10 @@ export default function LanguageSelector() {
                 key={lang.name}
                 className="flex items-center text-nowrap w-fit mx-auto xl:w-full xl:text-left px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
                 role="menuitem"
-                onClick={() => selectLanguage(lang)}
+                onClick={() => {
+                  selectLanguage(lang);
+                  setDir(lang.dir);
+                }}
               >
                 {/* <span className="mr-2">{lang.flag}</span> */}
                 {/* <span className="mr-2"> */}
