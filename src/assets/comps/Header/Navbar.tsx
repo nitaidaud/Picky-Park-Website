@@ -52,10 +52,10 @@ export default function Navbar() {
         isOpen ? "h-full" : "h-fit"
       }`}
     >
-      <div className={`w-full 2xl:w-4/5 flex flex-wrap items-start xl:items-center justify-between mx-auto p-4 h-full ${dir == "ltr" ? "flex-row" : "flex-row-reverse"}`}>
+      <div className={`w-full 2xl:w-4/5 flex flex-wrap items-start xl:items-center justify-between mx-auto p-4 h-full ${dir == "ltr" ? "xl:flex-row" : "rtl:xl:flex-row-reverse rtl:flex-row"}`}>
         <a
           href="#"
-          className="flex items-center space-x-3 rtl:space-x-reverse"
+          className={`flex items-center space-x-3 rtl:xl:order-2 `}
           onClick={() => setIsOpen(false)}
         >
           {/* <div> */}
@@ -63,14 +63,14 @@ export default function Navbar() {
             loading="lazy"
             src="..\Images\pickyLogoImgFixed.png"
             alt="Picky Logo"
-            className="w-24 "
+            className="w-24 rtl:"
             width={130}
             height={130}
           />
         </a>
         {/* </div> */}
 
-        <div className="contact-us-btn items-center flex ltr:xl:order-2 space-x-3 xl:space-x-0 rtl:space-x-reverse">
+        <div className="contact-us-btn items-center flex ltr:xl:order-2 rtl:order-first space-x-3 xl:space-x-0 rtl:space-x-reverse">
           <ContactUsBtn />
           <FontAwesomeIcon
             icon={hamburgerIcon}
