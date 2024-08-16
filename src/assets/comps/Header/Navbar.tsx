@@ -1,21 +1,17 @@
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import ContactUsBtn from "./ContactUsBtn";
 import HeaderLink from "./HeaderLink";
 import { navLinks } from "../../models/navLinks";
 import { useTranslation } from "react-i18next";
+import LanguageSelector from "./LanguageSelector";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const { t, i18n } = useTranslation();
-  const [currentLang, setCurrentLang] = useState("en");
+  const { t } = useTranslation();
   const hamburgerIcon: IconProp = isOpen ? faX : faBars;
-
-  useEffect(() => {
-    i18n.changeLanguage(currentLang);
-  }, [currentLang, i18n]);
 
   const navLinks: navLinks[] = [
     {
@@ -48,11 +44,11 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`bg-transparent backdrop-blur-3xl fixed w-full top-0 start-0 lg:h-fit min-h-fit overflow-y-auto ${
+      className={`bg-transparent backdrop-blur-3xl fixed w-full top-0 start-0 xl:h-fit min-h-fit overflow-y-auto xl:overflow-visible ${
         isOpen ? "h-full" : "h-fit"
       }`}
     >
-      <div className="w-full 2xl:w-4/5 flex flex-wrap items-start lg:items-center justify-between mx-auto p-4 h-full">
+      <div className="w-full 2xl:w-4/5 flex flex-wrap items-start xl:items-center justify-between mx-auto p-4 h-full">
         <a
           href="#"
           className="flex items-center space-x-3 rtl:space-x-reverse"
@@ -70,11 +66,11 @@ export default function Navbar() {
         </a>
         {/* </div> */}
 
-        <div className="contact-us-btn items-center flex lg:order-2 space-x-3 lg:space-x-0 rtl:space-x-reverse">
+        <div className="contact-us-btn items-center flex xl:order-2 space-x-3 xl:space-x-0 rtl:space-x-reverse">
           <ContactUsBtn />
           <FontAwesomeIcon
             icon={hamburgerIcon}
-            className="hamburgerBtn text-white inline-flex my-auto items-center p-2 w-10 h-10 justify-center text-sm rounded-lg lg:hidden"
+            className="hamburgerBtn text-white inline-flex my-auto items-center p-2 w-10 h-10 justify-center text-sm rounded-lg xl:hidden"
             aria-controls="navbar-sticky"
             aria-expanded="false"
             onClick={() => setIsOpen(!isOpen)}
@@ -85,35 +81,28 @@ export default function Navbar() {
           className={`
             w-full 
             h-full
-            lg:items-center
-            lg:justify-between
-            lg:flex 
-            lg:w-auto 
-            lg:order-1 
+            xl:items-center
+            xl:justify-between
+            xl:flex 
+            xl:w-auto 
+            xl:order-1 
             ${isOpen ? "flex" : "hidden"}`}
           id="navbar-sticky"
         >
-          <div className="nav-links flex flex-col justify-evenly gap-3 text-3xl sm:justify-stretch sm:gap-10 sm:mt-24 p-4 lg:p-0 rounded-lg lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0 font-normal w-full">
+          <div className="nav-links flex flex-col justify-evenly gap-3 text-3xl sm:justify-stretch sm:gap-10 sm:mt-24 p-4 xl:p-0 rounded-lg xl:space-x-8 rtl:space-x-reverse xl:flex-row xl:mt-0 xl:border-0 font-normal w-full">
             {navLinks.map(({ content, href }) => {
               return (
                 <a
                   href={href}
                   key={content}
                   onClick={toggleOpen}
-                  className="border-2 p-8 lg:p-2 rounded-2xl border-transparent hover:border-white duration-300 hover:bg-opacity-40 hover:border-opacity-30"
+                  className="border-2 p-8 xl:p-2 rounded-2xl border-transparent hover:border-white duration-300 hover:bg-opacity-40 hover:border-opacity-30"
                 >
                   <HeaderLink content={content} />
                 </a>
               );
             })}
-          </div>
-          <div
-            onClick={() => {
-              if (currentLang == "en") setCurrentLang("he");
-              else setCurrentLang("en");
-            }}
-          >
-            <h2>Change language</h2>
+            <LanguageSelector />
           </div>
         </div>
       </div>
