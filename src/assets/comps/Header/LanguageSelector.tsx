@@ -7,6 +7,8 @@ export default function LanguageSelector(props: {
 }) {
   const setDir: (dir: string) => void = props.setDir;
 
+  const { i18n } = useTranslation();
+
   const languages: Language[] = [
     {
       name: "English",
@@ -21,7 +23,7 @@ export default function LanguageSelector(props: {
       dir: "rtl",
     },
   ];
-  const { i18n } = useTranslation();
+
   const [isOpen, setIsOpen] = useState(false);
   const [selectedLanguage, setSelectedLanguage] = useState(languages[0]);
 

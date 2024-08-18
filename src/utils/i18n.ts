@@ -15,6 +15,7 @@ const resources = {
         bigTitle: "stop driving",
         tinyTitle: "in circles",
         description: "Find your parking now.",
+        download:"Available for iOS"
       },
       features: {
         firstFeature: {
@@ -77,6 +78,19 @@ const resources = {
           role: "Product Leader",
         },
       },
+      footer: {
+        title: "Contact Us",
+        location: "Zichron Yaakov, ISRAEL",
+        descriptionFirst:
+          "Website Is Under Construction, We Invite You To Download Our Application And Find Your Next Park.",
+        descriptionSec:
+          "We Would Happy To Be In Touch, You Can Contact Us For Help",
+        privacyAndPolicy: "Privacy & Policy",
+        termsOfUse: "Terms Of Use",
+        poweredBy: " Powered By",
+        nitaiDaud: "Nitai Daud",
+        rights: "2024 Picky. All Rights Reserved",
+      },
     },
   },
   he: {
@@ -92,6 +106,7 @@ const resources = {
         bigTitle: "תפסיקו לנסוע",
         tinyTitle: "במעגלים",
         description: "מצאו את החניה שלכם עכשיו.",
+        download:"זמין להורדה"
       },
       features: {
         firstFeature: {
@@ -123,24 +138,24 @@ const resources = {
       pricing: {
         title: "החבילות שלנו:",
         first: {
-          title: "מעפנים",
-          price: "20 שקל",
+          title: "חבילת בייסיק",
+          price: "15 שקל",
         },
         sec: {
-          title: "בינוניים",
-          price: "40 שקל",
+          title: "חבילת נסיעות",
+          price: "35 שקל",
           recommended: "המומלץ שלנו",
         },
         third: {
-          title: "מביני עניין",
-          price: "80 שקל",
+          title: "חבילת עסקים",
+          price: "50 שקל",
         },
       },
       ourTeam: {
         title: "הצוות של פיקי:",
         noam: {
           name: "נועם כהן",
-          role: "מייסד ומנכל",
+          role: "מייסד ומנכ''ל",
         },
         nitai: {
           name: "ניתאי דאוד",
@@ -150,6 +165,19 @@ const resources = {
           name: "עומר לוין",
           role: "מנהלת מוצר",
         },
+      },
+      footer: {
+        title: "צרו קשר",
+        location: "זכרון יעקב, ישראל",
+        descriptionFirst:
+          "האתר תחת בניה מתמדת, אנו מזמינים אתכם להוריד את האפלקציה שלנו ולמצוא את החניה הבאה שלכם.",
+        descriptionSec:
+          "נשמח לשמור על קשר, תוכלו ליצור עימנו קשר על מנת לקבל מענה.",
+          privacyAndPolicy: "פרטיות ומדיניות",
+          termsOfUse: "תנאי שימוש",
+          poweredBy: "פותח ע''י: ",
+          nitaiDaud: "ניתאי דאוד",
+          rights: "כל הזכויות שמורות 2024 Picky",
       },
     },
   },

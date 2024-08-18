@@ -43,7 +43,7 @@ export default function FirstSlide() {
                 // fontSize="35px"
                 fontSize={"2.5em"}
               />
-              <div> Available for iOS</div>
+              <div>{t("welcomeMsg.download")}</div>
             </a>
           </div>
         </div>
