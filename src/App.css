@@ -65,15 +65,16 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
   /* animation: zoom-in 5s cubic-bezier(1, 4, 1, -4);
   animation-timeline: View(); */
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .intro-slide {
     background-size: 200%;
   }
-}
+} */
 
 .second-slide {
   background-color: #59b5ff;
@@ -208,7 +209,6 @@ nav .contact-btn:hover {
     #a762b3 0%,
     rgba(255, 255, 255, 0.561) 100%
   );
-
   -webkit-text-fill-color: transparent;
 }
 
