@@ -15,7 +15,7 @@ const resources = {
         bigTitle: "stop driving",
         tinyTitle: "in circles",
         description: "Find your parking now.",
-        download:"Available for iOS"
+        download: "Available for iOS",
       },
       features: {
         firstFeature: {
@@ -52,15 +52,18 @@ const resources = {
         first: {
           title: "Starter",
           price: "20ILS",
+          description: "Go find a job... 1 parking spot and then what?",
         },
         sec: {
           title: "Traveler",
           price: "40ILS",
+          description: "Nice! 3 parking spots, you're arranged for now",
           recommended: "recommended",
         },
         third: {
           title: "business",
           price: "80ILS",
+          description: "You're the real deal mate!",
         },
       },
       ourTeam: {
@@ -105,13 +108,13 @@ const resources = {
       welcomeMsg: {
         bigTitle: "תפסיקו לנסוע",
         tinyTitle: "במעגלים",
-        description: "מצאו את החניה שלכם עכשיו.",
-        download:"זמין להורדה"
+        description: "מצאו את החנייה שלכם עכשיו.",
+        download: "זמין להורדה",
       },
       features: {
         firstFeature: {
-          title: "דרך קלה לחנות",
-          description: "פיקי מורידה את הלחץ מחיפוש חניה",
+          title: "חנייה בקלות",
+          description: "פיקי מורידה את הלחץ מחיפוש חנייה",
         },
         secFeature: {
           title: "מצא חניות בסביבתך",
@@ -119,36 +122,41 @@ const resources = {
         },
         thirdFeature: {
           title: "חניה שיתופית",
-          description: "בחר חניה ממגוון חניות זמינות",
+          description: "בחר ושמור חנייה ממגוון חניות זמינות",
         },
         fourthFeature: {
-          title: "תאם את החניה הבאה שלך",
-          description: "מוביל אותך לחניה הקרובה והנוחה ביותר ללא מאמץ",
+          title: "הכוונה לחניה הבאה שלך",
+          description: "פיקי מובילה אותך לחנייה הקרובה והנוחה ביותר ללא מאמץ",
         },
         fifthFeature: {
           title: "ממשק משתמש ידידותי",
-          description: "ממשק האפלקציה חלק וידידותי למשתמש",
+          description: "ממשק האפלקציה פשוט ונוח למשתמש",
         },
       },
       findingPark: {
         firstTyping: "איך התנועה היום?",
-        secTyping: "מחפש את החניה הבאה שלך...",
+        secTyping: "מחפש את החנייה הבאה שלך...",
       },
-      workflow: "הדרך לחניה הבאה שלך!",
+      workflow: "הדרך לחנייה הבאה שלך!",
       pricing: {
         title: "החבילות שלנו:",
+        pickyCoins: "מטבעות פיקי",
         first: {
           title: "חבילת בייסיק",
           price: "15 שקל",
+          description: " פראיירים! סעו למצוא עבודה... 10 חניות ואחכ מה?",
         },
         sec: {
           title: "חבילת נסיעות",
           price: "35 שקל",
+          description:
+            "אתם בסדר, יש לאן לשאוף...30 חניות - מסודרים לחודש הקרוב",
           recommended: "המומלץ שלנו",
         },
         third: {
           title: "חבילת עסקים",
           price: "50 שקל",
+          description: "יא עשירים! אנחנו מחפשים משקיע... 50 חניות תתפרעו",
         },
       },
       ourTeam: {
@@ -170,14 +178,14 @@ const resources = {
         title: "צרו קשר",
         location: "זכרון יעקב, ישראל",
         descriptionFirst:
-          "האתר תחת בניה מתמדת, אנו מזמינים אתכם להוריד את האפלקציה שלנו ולמצוא את החניה הבאה שלכם.",
+          "האתר תחת בניה מתמדת, אנו מזמינים אתכם להוריד את האפלקציה שלנו ולמצוא את החנייה הבאה שלכם.",
         descriptionSec:
           "נשמח לשמור על קשר, תוכלו ליצור עימנו קשר על מנת לקבל מענה.",
-          privacyAndPolicy: "פרטיות ומדיניות",
-          termsOfUse: "תנאי שימוש",
-          poweredBy: "פותח ע''י: ",
-          nitaiDaud: "ניתאי דאוד",
-          rights: "כל הזכויות שמורות 2024 Picky",
+        privacyAndPolicy: "פרטיות ומדיניות",
+        termsOfUse: "תנאי שימוש",
+        poweredBy: "פותח ע''י: ",
+        nitaiDaud: "ניתאי דאוד",
+        rights: "כל הזכויות שמורות 2024 Picky",
       },
     },
   },

@@ -66,44 +66,14 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  animation: zoom-in 5s cubic-bezier(1, 4, 1, -4);
-  animation-timeline: View();
+  /* animation: zoom-in 5s cubic-bezier(1, 4, 1, -4);
+  animation-timeline: View(); */
 }
 
 .second-slide {
   background-color: #59b5ff;
   background-attachment: fixed;
 }
-
-/* .third-slide {
-  background-image: url("/Images/streetBg.jpeg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  letter-spacing: 0.05em !important;
-
-  animation: zoom-in 5s alternate;
-  animation-timeline: View();
-}
-
-.fourth-slide {
-  background: url("/Images/streetBg.jpeg") no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  animation: zoom-out-half 5s alternate;
-  animation-timeline: View();
-  letter-spacing: 0.05em !important;
-}
-
-.fifth-slide {
-  background: url("/Images/streetBg.jpeg") no-repeat;
-  background-size: auto 150%;
-  background-position: center;
-  background-attachment: fixed;
-  letter-spacing: 0.05em !important;
-} */
 
 .pricing-title {
   background-image: linear-gradient(
@@ -346,6 +316,10 @@ nav .contact-btn:hover {
   }
   transform: scale(1.05);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.picky-coins h2{
+  text-shadow: rgba(255, 255, 255, 0.4) 1px 1px 10px;
 }
 
 .download-btn {

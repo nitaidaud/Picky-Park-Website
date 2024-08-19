@@ -145,7 +145,7 @@ export default function IntroductionInfo() {
           </div>
         </div>
         <div className="w-full">
-          <a href="http://youtube.com" target="_blank">
+          <a href="https://youtu.be/D4Kqnb4NbXY?si=kMx8FW3rqdO0A1Qa" target="_blank">
             <video
               src={video}
               className="mx-auto mt-32 lg:mt-0 rounded-2xl"

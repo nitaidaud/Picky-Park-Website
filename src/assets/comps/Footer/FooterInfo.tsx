@@ -83,10 +83,12 @@ export default function FooterInfo() {
         </div>
 
         <h3 className="h-full w-full text-white">
-        {t("footer.poweredBy")}
+          {/* {t("footer.poweredBy")} */}
+          Powered By:
           <a href="https://www.linkedin.com/in/nitai-daud/" target="_blank">
             {" "}
-            {t("footer.nitaiDaud")}
+            {/* {t("footer.nitaiDaud")} */}
+            Nitai Daud
           </a>
         </h3>
 

@@ -22,7 +22,7 @@ export default function FindingPark() {
   const [thirdDuration, setThirdDuration] = useState<number>();
   const [thirdCurrentTime, setThirdCurrentTime] = useState<number>();
 
-  const {t} = useTranslation()
+  const { t } = useTranslation();
 
   useEffect(() => {
     if (
@@ -100,7 +100,7 @@ export default function FindingPark() {
       <div className="lg:h-1/2 w-full lg:w-2/3 flex flex-col lg:flex-row justify-center items-center gap-20 lg:gap-0 mt-10">
         <div
           className={`w-1/2 duration-200 ${
-            isFirstPlay ? "scale-110" : "scale-100"
+            isFirstPlay ? "scale-110 grayscale-[0]" : "scale-100 grayscale-[40%]"
           }`}
         >
           <div className="w-full flex justify-center items-center relative">
@@ -116,7 +116,7 @@ export default function FindingPark() {
               }}
               ref={firstRef}
               src={ShareParkingFirst}
-              className="w-11/12 p-[0.4em] mt-[5.5px] lg:p-0 lg:w-7/12 mx-auto lg:mt-3"
+              className={`w-11/12  p-[0.4em] mt-[5.5px] lg:p-0 lg:w-7/12 mx-auto lg:mt-3`}
               autoPlay={true}
               width={50}
               preload="auto"
@@ -127,7 +127,7 @@ export default function FindingPark() {
 
         <div
           className={`w-1/2 duration-200 ${
-            isSecPlay ? "scale-110" : "scale-100"
+            isSecPlay ? "scale-110 grayscale-[0]" : "scale-100 grayscale-[40%]"
           }`}
         >
           <div className="w-full flex justify-center items-center relative">
@@ -153,7 +153,7 @@ export default function FindingPark() {
 
         <div
           className={`w-1/2 duration-200 ${
-            isThirdPlay ? "scale-110" : "scale-100"
+            isThirdPlay ? "scale-110 grayscale-[0]" : "scale-100 grayscale-[40%]"
           }`}
         >
           <div className="w-full flex justify-center items-center relative">
