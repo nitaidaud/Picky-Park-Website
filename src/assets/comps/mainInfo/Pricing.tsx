@@ -66,23 +66,20 @@ export default function Pricing() {
                       {title}
                     </h2>
                   </div>
-                  <div className="flex flex-col justify-start items-center w-full h-3/4">
+                  <div className="flex flex-col justify-start items-center w-full lg:h-3/4">
                     <div className="flex items-center justify-center w-full h-1/4">
-                      <h2 className="text-slate-700 font-bold w-3/4 h-full mt-6">
+                      <h2 className="text-slate-700 font-bold w-full 2xl:w-4/5 text-2xl lg:text-xs xl:text-base h-full mt-6">
                         {description}
                       </h2>
                     </div>
                     <div className="flex items-center justify-center w-full h-3/4 picky-coins">
-                      <h2 className="text-amber-400 font-extrabold text-4xl">
+                      <h2 className="text-amber-400 font-extrabold text-7xl lg:text-3xl xl:text-4xl">
                         {coins}{" "}
                         <h2 className="text-amber-400 font-bold text-xl">
                         {t("pricing.pickyCoins")}
                         </h2>
                       </h2>
                     </div>
-                    {/* <div className="flex absolute bottom-0 rounded-b-xl items-center justify-center w-full h-fit bg-green-500 bg-opacity-70 p-2">
-                      <h2 className="text-black font-bold text-2xl">{price}</h2>
-                    </div> */}
                   </div>
                 </div>
               );

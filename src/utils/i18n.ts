@@ -49,6 +49,7 @@ const resources = {
       workflow: "Our Workflow",
       pricing: {
         title: "Pricing",
+        pickyCoins: "Picky Coins",
         first: {
           title: "Starter",
           price: "20ILS",
