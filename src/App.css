@@ -63,11 +63,16 @@ body {
 .intro-slide {
   background-image: url("/Images/streetBg.jpeg");
   background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   /* animation: zoom-in 5s cubic-bezier(1, 4, 1, -4);
   animation-timeline: View(); */
+}
+
+@media (max-width: 768px) {
+  .intro-slide {
+    background-size: 200%;
+  }
 }
 
 .second-slide {
