@@ -15,4 +15,4 @@ Sitemap: https://www.pickypark.com/sitemap.xml
 Disallow: /search
 
 # Crawl-delay directive (optional, use if you want to limit crawl rate)
-Crawl-delay: 10
+# Crawl-delay: 10
