@@ -5,7 +5,7 @@ import { useTranslation } from "react-i18next";
 
 export default function FirstSlide() {
   const { t } = useTranslation();
-  
+
   return (
     <div
       className="first-slide min-h-fit h-screen md:mt-14 lg:mt-20 2xl:mt-0"
