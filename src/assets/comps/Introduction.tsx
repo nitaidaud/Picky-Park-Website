@@ -1,10 +1,14 @@
 import MeetPicky from "./mainInfo/MeetPicky";
 import FindingPark from "./mainInfo/FindingPark";
 import Pricing from "./mainInfo/Pricing";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function Introduction() {
-  const [backgroundSize, setBackgroundSize] = useState(100);
+  const elementRef = useRef<HTMLDivElement>(null);
+  const [size, setSize] = useState<number>(
+    Number(elementRef.current?.style.backgroundSize.substring(0, 3)),
+  );
+  const [backgroundSize, setBackgroundSize] = useState(size);
 
   const handleScroll = () => {
     const scrollTop = window.pageYOffset;
@@ -12,18 +16,21 @@ export default function Introduction() {
       document.documentElement.scrollHeight - window.innerHeight;
     const scrollFraction = scrollTop / documentHeight;
 
-    let newSize;
-    if (scrollFraction <= 0.5) {
-      // Increase from 100% to 150% as you scroll to the midpoint
-      newSize = 90 + scrollFraction * 100; // 100% at start, 150% at midpoint
+    let newSize = 0;
+
+    if (scrollFraction < 0.5) {
+      if (size > 100) newSize = 90 + scrollFraction * 100;
+      else newSize = 350 + scrollFraction * 100;
     } else {
-      // Decrease from 150% to 50% from midpoint to end
-      newSize = 140 - (scrollFraction - 0.5) * 100; // 150% at midpoint, 50% at end
+      if (size > 100) newSize = 140 - (scrollFraction - 0.5) * 100;
+      else newSize = 400 - (scrollFraction - 0.5) * 100;
     }
+    setSize(newSize);
 
     setBackgroundSize(newSize);
   };
 
+  console.log(size);
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -35,6 +42,7 @@ export default function Introduction() {
       style={{
         backgroundSize: `${backgroundSize}%`,
       }}
+      ref={elementRef}
     >
       <MeetPicky />
       <FindingPark />
