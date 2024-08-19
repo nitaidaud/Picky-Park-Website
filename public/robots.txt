@@ -9,10 +9,10 @@ Disallow: /private/
 Allow: /assets/
 
 # If you have a sitemap, uncomment and update the following line
-Sitemap: https://pickyil.online/sitemap.xml
+Sitemap: https://www.pickypark.com/sitemap.xml
 
 # Prevent indexing of any search result pages if they exist
 Disallow: /search
 
 # Crawl-delay directive (optional, use if you want to limit crawl rate)
-# Crawl-delay: 10
+Crawl-delay: 10
