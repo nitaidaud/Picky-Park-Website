@@ -40,7 +40,7 @@ export default function Navbar() {
     {
       // content: "About",
       content: t("navbar.About"),
-      href: "/#about",
+      href: "/AboutUs",
       isOpen: isOpen,
     },
   ];

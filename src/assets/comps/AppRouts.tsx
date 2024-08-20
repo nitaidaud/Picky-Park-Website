@@ -4,6 +4,7 @@ import Main from "./Main";
 import ContactUs from "./Contact-Us/ContactUs";
 import Navbar from "./Header/Navbar";
 import { useTranslation } from "react-i18next";
+import AboutUs from "./AboutUs/AboutUs";
 
 export default function AppRouts() {
   const { i18n } = useTranslation();
@@ -20,6 +21,7 @@ export default function AppRouts() {
       >
         <Route index element={<Main />} />
         <Route path="/ContactUs" element={<ContactUs />} />
+        <Route path="/AboutUs" element={<AboutUs />} />
         <Route path="/GDPR" element={<GDPRInfo />} />
       </Route>
     </Routes>
