@@ -22,25 +22,25 @@ export default function Navbar() {
     {
       // content: "How We Work?",
       content: t("navbar.howWeWork"),
-      href: "#workflow",
+      href: "/#workflow",
       isOpen: isOpen,
     },
     {
       // content: "Partners",
       content: t("navbar.Partners"),
-      href: "#partners",
+      href: "/#partners",
       isOpen: isOpen,
     },
     {
       // content: "Pricing",
       content: t("navbar.Pricing"),
-      href: "#pricing",
+      href: "/#pricing",
       isOpen: isOpen,
     },
     {
       // content: "About",
       content: t("navbar.About"),
-      href: "#about",
+      href: "/#about",
       isOpen: isOpen,
     },
   ];
@@ -54,7 +54,7 @@ export default function Navbar() {
     >
       <div className={`w-full 2xl:w-4/5 flex flex-wrap items-start xl:items-center justify-between mx-auto p-4 h-full ${dir == "ltr" ? "xl:flex-row" : "rtl:xl:flex-row-reverse rtl:flex-row"}`}>
         <a
-          href="#"
+          href="/#"
           className={`flex items-center space-x-3 rtl:xl:order-2 `}
           onClick={() => setIsOpen(false)}
         >
