@@ -82,6 +82,23 @@ const resources = {
           role: "Product Leader",
         },
       },
+      contactUs: {
+        title: "Contact Us",
+        name: {
+          name: "Name",
+          placeholder: "Your Name",
+        },
+        email: {
+          name: "Email",
+          placeholder: "Your Email",
+        },
+        phone: {
+          name: "Phone",
+          placeholder: "Your Phone",
+        },
+        msg: "Your Message",
+        sendBtn: "Send Message",
+      },
       footer: {
         title: "Contact Us",
         location: "Zichron Yaakov, ISRAEL",
@@ -173,6 +190,23 @@ const resources = {
           name: "עומר לוין",
           role: "מנהלת מוצר",
         },
+      },
+      contactUs: {
+        title: "צור קשר",
+        name: {
+          name: "שם פרטי",
+          placeholder: "השם שלך",
+        },
+        email: {
+          name: "מייל",
+          placeholder: "המייל שלך",
+        },
+        phone: {
+          name: "מס' טלפון",
+          placeholder: "מספר הטלפון שלך",
+        },
+        msg: "ההודעה שלך",
+        sendBtn: "שלח הודעה",
       },
       footer: {
         title: "צרו קשר",

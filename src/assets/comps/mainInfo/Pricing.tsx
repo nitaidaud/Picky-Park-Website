@@ -73,9 +73,9 @@ export default function Pricing() {
                       </h2>
                     </div>
                     <div className="flex items-center justify-center w-full h-3/4 picky-coins">
-                      <h2 className="text-amber-400 font-extrabold text-7xl lg:text-3xl xl:text-4xl">
+                      <h2 className="text-black font-bold text-7xl lg:text-3xl xl:text-4xl">
                         {coins}{" "}
-                        <h2 className="text-amber-400 font-bold text-xl">
+                        <h2 className="text-black font-bold text-xl">
                         {t("pricing.pickyCoins")}
                         </h2>
                       </h2>

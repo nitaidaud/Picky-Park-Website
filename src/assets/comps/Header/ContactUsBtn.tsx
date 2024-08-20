@@ -4,7 +4,7 @@ export default function ContactUsBtn() {
   const { t } = useTranslation();
   return (
     <a
-      href="#contact-info"
+      href="/ContactUs"
       className="contact-btn uppercase text-white font-medium rounded-3xl hover:ease-in-out hover:border-transparent text-center duration-300"
     >
       {/* Contact Us */}

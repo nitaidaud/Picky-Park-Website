@@ -1,5 +1,4 @@
 import IntroductionInfo from "./introduction/IntroductionInfo";
-import Navbar from "./Header/Navbar";
 import { LazyLoadComponent } from "react-lazy-load-image-component";
 import Introduction from "./Introduction";
 import Footer from "./Footer";
@@ -11,7 +10,7 @@ export default function Main() {
   const dir = i18n.dir();
   return (
     <div dir={dir}>
-      <Navbar />
+      {/* <Navbar /> */}
       <FirstSlide />
       <IntroductionInfo />
 
