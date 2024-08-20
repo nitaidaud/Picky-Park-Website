@@ -8,7 +8,7 @@ const resources = {
         howWeWork: "How We Work",
         Partners: "Partners",
         Pricing: "Pricing",
-        About: "About",
+        About: "About Us",
         ContactUs: "Contact Us",
       },
       welcomeMsg: {
@@ -99,6 +99,14 @@ const resources = {
         msg: "Your Message",
         sendBtn: "Send Message",
       },
+      aboutUs: {
+        title:"About Us",
+        first:
+          "Picky is a parking app that helps you find parking spaces. Whether you need to park for a few minutes or a few hours, you can use picky to locate available parking spots near your destination.",
+        sec: "Picky was founded in 2023 by Noam Cohen, an innovative entrepreneur who wanted to solve the problem of parking in crowded cities. His vision is to make parking easy, convenient, and affordable for everyone. He partners with parking operators, municipalities, and businesses to offer you the best parking options and deals. ",
+        third:
+          "Picky is currently a free app that does not require any payment. You can simply download the app and start using it right away. Picky is constantly improving its app and adding new features and services to enhance your parking experience.",
+      },
       footer: {
         title: "Contact Us",
         location: "Zichron Yaakov, ISRAEL",
@@ -120,7 +128,7 @@ const resources = {
         howWeWork: "איך אנחנו עובדים",
         Partners: "שותפים",
         Pricing: "חבילות",
-        About: "אודות",
+        About: "עלינו",
         ContactUs: "צור קשר",
       },
       welcomeMsg: {
@@ -207,6 +215,14 @@ const resources = {
         },
         msg: "ההודעה שלך",
         sendBtn: "שלח הודעה",
+      },
+      aboutUs: {
+        title:"אודותינו",
+        first:
+          "אנחנו אפליקציית חניה שעוזרת לך למצוא מקומות חניה. בין אם אתה צריך לחנות לכמה דקות או כמה שעות, אתה יכול להשתמש בPicky כדי לאתר מקומות חניה פנויים בקרבת היעד שלך.",
+        sec: "הוקמנו בשנת 2023 על ידי נועם כהן, יזם חדשני שביקש לפתור את בעיית החניה בערים צפופות. החזון שלו הוא להפוך את החניה לקלה, נוחה ובמחיר סביר לכולם. הוא משתף פעולה עם מפעילי חניה, עיריות ועסקים כדי להציע לך את אפשרויות החניה והעסקאות הטובות ביותר.",
+        third:
+          "כרגע האפליקציה היא חינמית אינה דורשת כל תשלום. אתה יכול פשוט להוריד את האפליקציה ולהתחיל להשתמש בה מיד. Picky משפרת כל הזמן את האפליקציה שלה ומוסיפה תכונות ושירותים חדשים כדי לשפר את חווית החניה שלך.",
       },
       footer: {
         title: "צרו קשר",
