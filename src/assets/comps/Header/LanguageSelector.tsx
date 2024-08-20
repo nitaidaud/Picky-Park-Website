@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { Language } from "../../models/Language";
 import { useTranslation } from "react-i18next";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 export default function LanguageSelector(props: {
   setDir: (dir: string) => void;
@@ -60,6 +62,10 @@ export default function LanguageSelector(props: {
             alt="flag"
           />
           {selectedLanguage.name}
+          <FontAwesomeIcon
+            className={`arrow-icon duration-200 ${isOpen ? "-rotate-180" : ""} ms-2`}
+            icon={faChevronDown}
+          />
         </button>
       </div>
 
