@@ -163,8 +163,12 @@ nav .contact-btn:hover {
   transform: scale(110%);
 }
 
-nav .carProgress{
+nav .carProgress:where([dir="ltr"], [dir="ltr"] *){
   transform: rotateY(180deg);
+}
+
+nav .carProgress:where([dir="rtl"], [dir="rtl"] *){
+  transform: rotateY(0deg);
 }
 
 .btn-container:hover {
