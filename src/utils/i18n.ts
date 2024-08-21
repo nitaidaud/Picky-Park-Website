@@ -98,9 +98,18 @@ const resources = {
         },
         msg: "Your Message",
         sendBtn: "Send Message",
+        errors: {
+          name: "Name is required",
+          email: "Email is required",
+          invalidEmail: "Email is invalid",
+          phone: "phone is required",
+          invalidPhone: "Phone number is invalid (should be 10 digits)",
+          phoneCode: "phone code is required",
+          msg: "Message is required",
+        },
       },
       aboutUs: {
-        title:"About Us",
+        title: "About Us",
         first:
           "Picky is a parking app that helps you find parking spaces. Whether you need to park for a few minutes or a few hours, you can use picky to locate available parking spots near your destination.",
         sec: "Picky was founded in 2023 by Noam Cohen, an innovative entrepreneur who wanted to solve the problem of parking in crowded cities. His vision is to make parking easy, convenient, and affordable for everyone. He partners with parking operators, municipalities, and businesses to offer you the best parking options and deals. ",
@@ -215,9 +224,18 @@ const resources = {
         },
         msg: "ההודעה שלך",
         sendBtn: "שלח הודעה",
+        errors: {
+          name: "שם פרטי חסר",
+          email: "מייל חסר",
+          invalidEmail: "מייל לא תקין",
+          phone: "מספר טלפון חסר",
+          invalidPhone: "מספר טלפון לא חוקי (חייב להיות 10 ספרות)",
+          phoneCode: "קידומת חסרה",
+          msg: "הודעה חסרה",
+        },
       },
       aboutUs: {
-        title:"אודותינו",
+        title: "אודותינו",
         first:
           "אנחנו אפליקציית חניה שעוזרת לך למצוא מקומות חניה. בין אם אתה צריך לחנות לכמה דקות או כמה שעות, אתה יכול להשתמש בPicky כדי לאתר מקומות חניה פנויים בקרבת היעד שלך.",
         sec: "הוקמנו בשנת 2023 על ידי נועם כהן, יזם חדשני שביקש לפתור את בעיית החניה בערים צפופות. החזון שלו הוא להפוך את החניה לקלה, נוחה ובמחיר סביר לכולם. הוא משתף פעולה עם מפעילי חניה, עיריות ועסקים כדי להציע לך את אפשרויות החניה והעסקאות הטובות ביותר.",
