@@ -47,7 +47,7 @@ export default function LanguageSelector(props: {
   }, [i18n, selectedLanguage.symbol]);
 
   return (
-    <div dir="ltr" className="relative text-left order-first xl:order-last">
+    <div dir="ltr" className="z-20 relative text-left order-first xl:order-last">
       <div className="flex items-center">
         <button
           id="language-selector"
