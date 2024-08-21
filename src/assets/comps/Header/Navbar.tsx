@@ -1,7 +1,7 @@
 import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { faBars, faX } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ContactUsBtn from "./ContactUsBtn";
 import HeaderLink from "./HeaderLink";
 import { navLinks } from "../../models/navLinks";
@@ -10,6 +10,7 @@ import LanguageSelector from "./LanguageSelector";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [progressBar, setProgressBar] = useState(0);
   const { t } = useTranslation();
   const hamburgerIcon: IconProp = isOpen ? faX : faBars;
   const [dir, setDir] = useState("ltr");
@@ -45,18 +46,41 @@ export default function Navbar() {
     },
   ];
 
-  const toggleOpen = () => setIsOpen(!isOpen);
+  useEffect(() => {
+    const handleProgress = () => {
+      const windowHeight = window.innerHeight;
+      const docHeight = document.documentElement.scrollHeight;
+      const scrollY = window.scrollY;
+
+      const scrollPercentage = (scrollY / (docHeight - windowHeight)) * 100;
+
+      setProgressBar(scrollPercentage);
+    };
+
+    window.addEventListener("scroll", handleProgress);
+
+    return () => {
+      window.removeEventListener("scroll", handleProgress);
+    };
+  }, []);
+
   return (
     <nav
       className={`bg-transparent backdrop-blur-3xl fixed w-full top-0 start-0 xl:h-fit min-h-fit overflow-y-auto xl:overflow-visible ${
         isOpen ? "h-full" : "h-fit"
       }`}
     >
-      <div className={`w-full 2xl:w-4/5 flex flex-wrap items-start xl:items-center justify-between mx-auto p-4 h-full ${dir == "ltr" ? "xl:flex-row" : "rtl:xl:flex-row-reverse rtl:flex-row"}`}>
+      <div
+        className={`w-full 2xl:w-4/5 flex flex-wrap items-start xl:items-center justify-between mx-auto p-4 h-full ${
+          dir == "ltr" ? "xl:flex-row" : "rtl:xl:flex-row-reverse rtl:flex-row"
+        }`}
+      >
         <a
           href="/#"
           className={`flex items-center space-x-3 rtl:xl:order-2 `}
-          onClick={() => setIsOpen(false)}
+          onClick={() => {
+            if (isOpen) setIsOpen(false);
+          }}
         >
           {/* <div> */}
           <img
@@ -100,7 +124,7 @@ export default function Navbar() {
                 <a
                   href={href}
                   key={content}
-                  onClick={toggleOpen}
+                  onClick={() => setIsOpen(false)}
                   className="border-2 p-8 xl:p-2 rounded-2xl border-transparent hover:border-white duration-300 hover:bg-opacity-40 hover:border-opacity-30"
                 >
                   <HeaderLink content={content} />
@@ -111,6 +135,19 @@ export default function Navbar() {
           </div>
         </div>
       </div>
+      {!isOpen && (
+        <div className="fixed w-full left-0 h-2 flex items-end bottom-[0.1em] xl:bottom-0">
+          <div
+            className="bg-indigo-600 h-full"
+            style={{ width: `${progressBar}%` }}
+          ></div>
+          <img
+            src="/Images/carProgressBar.png"
+            className="carProgress h-4"
+            alt=""
+          />
+        </div>
+      )}
     </nav>
   );
 }

@@ -163,6 +163,10 @@ nav .contact-btn:hover {
   transform: scale(110%);
 }
 
+nav .carProgress{
+  transform: rotateY(180deg);
+}
+
 .btn-container:hover {
   transform: scale(115%);
 }
