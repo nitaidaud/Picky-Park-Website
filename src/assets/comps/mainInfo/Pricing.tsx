@@ -14,14 +14,14 @@ export default function Pricing() {
     {
       title: t("pricing.sec.title"),
       coins: 300,
-      description:  t("pricing.sec.description"),
+      description: t("pricing.sec.description"),
       price: t("pricing.sec.price"),
       isRecommended: true,
     },
     {
       title: t("pricing.third.title"),
       coins: 500,
-      description:  t("pricing.third.description"),
+      description: t("pricing.third.description"),
       price: t("pricing.third.price"),
       isRecommended: false,
     },
@@ -75,9 +75,9 @@ export default function Pricing() {
                     <div className="flex items-center justify-center w-full h-3/4 picky-coins">
                       <h2 className="text-black font-bold text-7xl lg:text-3xl xl:text-4xl">
                         {coins}{" "}
-                        <h2 className="text-black font-bold text-xl">
-                        {t("pricing.pickyCoins")}
-                        </h2>
+                        <span className="block text-black font-bold text-xl">
+                          {t("pricing.pickyCoins")}
+                        </span>
                       </h2>
                     </div>
                   </div>
