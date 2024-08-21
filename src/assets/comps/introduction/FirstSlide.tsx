@@ -8,7 +8,7 @@ export default function FirstSlide() {
 
   return (
     <div
-      className="first-slide min-h-fit h-screen md:mt-14 lg:mt-20 2xl:mt-0"
+      className="first-slide min-h-fit h-screen"
     >
       <div className="h-full w-full flex justify-start items-center">
         <div className="lg:w-2/3 mx-auto">

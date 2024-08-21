@@ -40,7 +40,7 @@ export default function Pricing() {
         </div>
         <div className="pricing-container lg:flex justify-center items-start h-fit w-3/4 2xl:w-2/3 mx-auto lg:gap-5 2xl:gap-10">
           {pricingCards.map(
-            ({ title, price, isRecommended, coins, description }) => {
+            ({ title, price, isRecommended, coins }) => {
               return (
                 <div
                   key={title + price}
@@ -67,17 +67,17 @@ export default function Pricing() {
                     </h2>
                   </div>
                   <div className="flex flex-col justify-start items-center w-full lg:h-3/4">
-                    <div className="flex items-center justify-center w-full h-1/4">
-                      <h2 className="text-slate-700 font-bold w-full 2xl:w-4/5 text-2xl lg:text-xs xl:text-base h-full mt-6">
-                        {description}
-                      </h2>
-                    </div>
                     <div className="flex items-center justify-center w-full h-3/4 picky-coins">
                       <h2 className="text-black font-bold text-7xl lg:text-3xl xl:text-4xl">
                         {coins}{" "}
                         <span className="block text-black font-bold text-xl">
                           {t("pricing.pickyCoins")}
                         </span>
+                      </h2>
+                    </div>
+                    <div className="flex items-center justify-center w-full h-1/4">
+                      <h2 className="text-black font-bold w-full 2xl:w-4/5 text-3xl h-full">
+                        {price}
                       </h2>
                     </div>
                   </div>

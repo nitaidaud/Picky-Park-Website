@@ -5,6 +5,7 @@ import ContactUs from "./Contact-Us/ContactUs";
 import Navbar from "./Header/Navbar";
 import { useTranslation } from "react-i18next";
 import AboutUs from "./AboutUs/AboutUs";
+import FooterInfo from "./Footer/FooterInfo";
 
 export default function AppRouts() {
   const { i18n } = useTranslation();
@@ -16,6 +17,9 @@ export default function AppRouts() {
           <div dir={dir}>
             <Navbar />
             <Outlet />
+            <div className="relative h-[160vh] lg:h-[80vh] 2xl:h-fit">
+              <FooterInfo />
+            </div>
           </div>
         }
       >
