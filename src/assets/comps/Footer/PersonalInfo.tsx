@@ -9,7 +9,7 @@ export default function PersonalInfo(props: { team: Employee[] }) {
   return (
     <div
       id="contact-info"
-      className="w-full h-full flex flex-col min-h-fit snap-start p-16 py-32 2xl:grid items-center gap-10"
+      className="w-full h-full flex flex-col min-h-fit snap-start px-16 pt-32 2xl:grid items-center gap-10 mb-56"
     >
       <div className="w-full">
         <h2 className="text-6xl font-bold text-white drop-shadow-xl">

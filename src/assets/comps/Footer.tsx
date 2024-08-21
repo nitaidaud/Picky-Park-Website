@@ -1,12 +1,11 @@
 // import FooterLinks from "./Footer/FooterLinks";
 import { useTranslation } from "react-i18next";
 import { Employee } from "../models/Employee";
-import FooterInfo from "./Footer/FooterInfo";
 import PersonalInfo from "./Footer/PersonalInfo";
 // import PrivacyAndTerms from "./Footer/PrivacyAndTerms";
 
 export default function Footer() {
-  const {t} = useTranslation()
+  const { t } = useTranslation();
   const team: Employee[] = [
     {
       // name: "Noam Cohen",
@@ -38,7 +37,6 @@ export default function Footer() {
   return (
     <div className="mx-auto">
       <PersonalInfo team={team} />
-      <FooterInfo />
     </div>
   );
 }

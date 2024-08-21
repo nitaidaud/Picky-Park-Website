@@ -123,7 +123,7 @@ export default function ContactUs() {
   };
 
   return (
-    <div className="min-h-screen w-full flex flex-col items-center justify-center">
+    <div className="h-fit min-h-screen w-full flex flex-col items-center justify-center">
       <form
         onSubmit={onSubmit}
         className="bg-black bg-opacity-60 flex flex-col justify-center gap-8 items-center shadow-2xl rounded-lg w-11/12 max-w-lg 2xl:max-w-2xl text-start p-8 mt-28 mb-10"
