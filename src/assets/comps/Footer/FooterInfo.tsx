@@ -20,7 +20,7 @@ export default function FooterInfo() {
             />
           </div>
 
-          <a href="/GDPR" className="min-w-fit h-fit flex gap-2 items-center">
+          <a href="https://gdpr.eu/what-is-gdpr/" target="_blank" className="min-w-fit h-fit flex gap-2 items-center">
             <div className="my-auto rounded-lg">
               <img
                 src="..\Images\GDPRImg1.png"

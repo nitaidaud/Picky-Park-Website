@@ -33,27 +33,27 @@ export default function ContactUs() {
     const newErrors: Partial<FormData> = {};
 
     if (!formData.name.trim()) {
-      newErrors.name = "Name is required";
+      newErrors.name = t("contactUs.errors.name");
     }
 
     if (!formData.email.trim()) {
-      newErrors.email = "Email is required";
+      newErrors.email = t("contactUs.errors.email");
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-      newErrors.email = "Email is invalid";
+      newErrors.email = t("contactUs.errors.invalidEmail");
     }
 
     if (!formData.phoneCode.trim()) {
-      newErrors.phoneCode = "Phone code is required";
+      newErrors.phoneCode = t("contactUs.errors.phoneCode");
     }
 
     if (!formData.phone.trim()) {
-      newErrors.phone = "Phone number is required";
+      newErrors.phone = t("contactUs.errors.phone");
     } else if (!/^\d{10}$/.test(formData.phone)) {
-      newErrors.phone = "Phone number is invalid (should be 10 digits)";
+      newErrors.phone = t("contactUs.errors.invalidPhone");
     }
 
     if (!formData.message.trim()) {
-      newErrors.message = "Message is required";
+      newErrors.message = t("contactUs.errors.msg");
     }
 
     setErrors(newErrors);
