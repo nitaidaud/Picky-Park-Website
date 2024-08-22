@@ -10,6 +10,10 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
+tests*
+e2e
+.github
+playwright.config.ts
 *.local
 
 # Editor directories and files
@@ -23,3 +27,15 @@ dist-ssr
 *.sln
 *.sw?
 *.env
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
