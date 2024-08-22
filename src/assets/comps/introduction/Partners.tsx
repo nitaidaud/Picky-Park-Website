@@ -6,7 +6,7 @@ export default function Partners() {
     "../Partners/Logos/GoogleLogo.png",
     "../Partners/Logos/appwrite.png",
     "../Partners/Logos/EDA2.png",
-    "../Partners/Logos/OpenAI.png",
+    // "../Partners/Logos/OpenAI.png",
   ];
 
   return (
