@@ -66,12 +66,12 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`bg-transparent backdrop-blur-3xl fixed w-full top-0 start-0 xl:h-fit min-h-fit overflow-y-auto xl:overflow-visible ${
+      className={`bg-transparent backdrop-blur-3xl fixed w-full top-0 start-0  overflow-y-auto xl:overflow-visible ${
         isOpen ? "h-full" : "h-fit"
       }`}
     >
       <div
-        className={`w-full 2xl:w-4/5 flex flex-wrap items-start xl:items-center justify-between mx-auto p-4 h-full ${
+        className={`w-full 2xl:w-4/5 flex flex-wrap items-start xl:items-center justify-between mx-auto p-4 h-full min-h-fit ${
           dir == "ltr" ? "xl:flex-row" : "rtl:xl:flex-row-reverse rtl:flex-row"
         }`}
       >
