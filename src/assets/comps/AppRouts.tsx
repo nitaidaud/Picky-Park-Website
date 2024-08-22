@@ -17,7 +17,7 @@ export default function AppRouts() {
           <div dir={dir}>
             <Navbar />
             <Outlet />
-            <div className="relative h-[160vh] lg:h-[80vh] 2xl:h-fit">
+            <div className="relative h-[160vh] max-h-0 lg:h-[80vh] 2xl:h-fit">
               <FooterInfo />
             </div>
           </div>
