@@ -84,8 +84,8 @@ body {
 .pricing-title {
   background-image: linear-gradient(
     344deg,
-    #ffb800 0%,
-    rgba(255, 255, 255, 0.561) 100%
+    #ffb800 20%,
+    rgb(255, 255, 255) 100%
   );
   -webkit-text-fill-color: transparent;
 }
