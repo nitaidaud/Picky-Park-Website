@@ -124,7 +124,7 @@ export default function ContactUs() {
 
   return (
     <div className="h-fit min-h-screen w-full flex flex-col 2xl:flex-row items-center justify-center px-10">
-      <div className="w-1/2 flex justify-center">
+      <div className="xl:w-1/2 flex justify-center">
         <form
           onSubmit={onSubmit}
           className="bg-black bg-opacity-60 flex flex-col justify-center gap-8 items-center shadow-2xl rounded-lg w-11/12 max-w-lg 2xl:max-w-2xl text-start p-8 mt-28 mb-10"
@@ -194,7 +194,7 @@ export default function ContactUs() {
               </label>
               <div className="flex w-full">
                 <select
-                  className="shadow appearance-none border rounded-l w-1/4 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                  className="shadow appearance-none border rounded-l w-1/4 min-w-fit py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="phoneCode"
                   name="phoneCode"
                   onChange={handleChange}
