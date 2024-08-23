@@ -53,22 +53,23 @@ body {
 }
 
 .first-slide {
-  background: url("/src/assets/Images/firstSlideBg.png");
+  background: url("/src/assets/Images/firstSlideBg.png") fixed;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
 }
 
 .intro-slide { 
-  position: relative;
-  background-image: url("/Images/streetBg.jpeg");
+  background: url("/Images/streetBg.jpeg") fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-size: cover;
-  /* animation: zoom-in 5s cubic-bezier(1, 4, 1, -4);
-  animation-timeline: View(); */
+  animation: zoom-in 5s cubic-bezier(1, 4, 1, -4);
+  animation-timeline: View();
+  animation-play-state: running;
+  -moz-animation-play-state: paused !important;
 }
 
 /* @media (max-width: 768px) {
