@@ -1,52 +1,46 @@
+import React, { useEffect, useRef } from 'react';
 import MeetPicky from "./mainInfo/MeetPicky";
 import FindingPark from "./mainInfo/FindingPark";
 import Pricing from "./mainInfo/Pricing";
 
 export default function Introduction() {
-  // const elementRef = useRef<HTMLDivElement>(null);
-  // const [size, setSize] = useState<number>(
-  //   Number(elementRef.current?.style.backgroundSize.substring(0, 3)),
-  // );
-  // const [backgroundSize, setBackgroundSize] = useState(size);
+  const backgroundRef = useRef<HTMLDivElement>(null);
 
-  // const handleScroll = () => {
-  //   const scrollTop = window.pageYOffset;
-  //   const documentHeight =
-  //     document.documentElement.scrollHeight - window.innerHeight;
-  //   const scrollFraction = documentHeight / scrollTop;
+  useEffect(() => {
+    const updateBackground = () => {
+      if (backgroundRef.current) {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        backgroundRef.current.style.transform = `translateY(${scrollTop * 0.5}px)`;
+      }
+    };
 
-  //   let newSize = 0;
-    
-  //   if (scrollFraction < 100) {
-  //     console.log(scrollFraction);
-  //     if (size > 100) newSize = 90 + scrollFraction * 100;
-  //     else newSize = 350 + scrollFraction * 100;
-  //   } else {
-  //     if (size > 100) newSize = 140 - (scrollFraction - 0.5) * 100;
-  //     else newSize = 400 - (scrollFraction - 0.5) * 100;
-  //   }
-  //   setSize(newSize);
+    window.addEventListener('scroll', updateBackground);
+    window.addEventListener('resize', updateBackground);
 
-  //   setBackgroundSize(newSize);
-  // };
+    // Initial call to set the background position
+    updateBackground();
 
-  // useEffect(() => {
-  //   window.addEventListener("scroll", handleScroll);
-  // }, []);
+    // Cleanup
+    return () => {
+      window.removeEventListener('scroll', updateBackground);
+      window.removeEventListener('resize', updateBackground);
+    };
+  }, []);
 
   return (
-    <div
-      className="intro-slide flex flex-col mx-auto"
-      // style={{
-      //   backgroundSize: `${backgroundSize}%`,
-      // }}
-    >
-      <MeetPicky />
-      <FindingPark />
-      <Pricing />
-      {/* <ParkingSolution /> */}
-      {/* <LoyaltyAchievements /> */}
-      {/* <SecurityInfo /> */}
+    <div className="intro-slide relative overflow-hidden">
+      <div 
+        ref={backgroundRef}
+        className="absolute top-0 left-0 w-full h-full bg-cover bg-center z-0"
+        style={{
+          backgroundImage: 'url("/path/to/your/intro-background-image.jpg")', // Replace with your actual image path
+        }}
+      />
+      <div className="relative z-10 flex flex-col mx-auto">
+        <MeetPicky />
+        <FindingPark />
+        <Pricing />
+      </div>
     </div>
   );
 }

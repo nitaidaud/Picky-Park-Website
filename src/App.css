@@ -60,7 +60,8 @@ body {
   background-attachment: fixed;
 }
 
-.intro-slide {
+.intro-slide { 
+  position: relative;
   background-image: url("/Images/streetBg.jpeg");
   background-position: center;
   background-repeat: no-repeat;
