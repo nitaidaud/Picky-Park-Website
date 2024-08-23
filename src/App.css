@@ -70,6 +70,7 @@ body {
   animation-timeline: View();
   animation-play-state: running;
   -moz-animation-play-state: paused !important;
+  -webkit-animation-play-state: paused !important;
 }
 
 /* @media (max-width: 768px) {
