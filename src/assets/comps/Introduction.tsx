@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import MeetPicky from "./mainInfo/MeetPicky";
 import FindingPark from "./mainInfo/FindingPark";
 import Pricing from "./mainInfo/Pricing";
