@@ -150,6 +150,7 @@ export default function IntroductionInfo() {
               src={video}
               className="mx-auto mt-32 lg:mt-0 rounded-2xl"
               autoPlay={true}
+              preload="auto"
               muted
               loop
             />
