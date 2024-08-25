@@ -18,12 +18,12 @@ export default function IntroductionInfo() {
   return (
     <div
       id="about"
-      className="second-slide grid items-start text-start h-fit min-h-screen snap-start w-full lg:px-10 xl:p-0 gap-10"
+      className="second-slide grid items-start text-start h-fit min-h-screen snap-start w-full xl:p-0 gap-10"
     >
       <div dir="ltr" className="relative w-full h-fit overflow-hidden">
         <Partners />
       </div>
-      <div className="h-fit mb-10 xl:flex mx-auto w-full xl:w-4/5 items-center justify-center gap-10 p-5 bg-black bg-opacity-70 rounded-xl">
+      <div className="h-fit mb-10 xl:flex mx-auto w-full xl:w-4/5 items-center justify-center gap-10 p-5 bg-black bg-opacity-70 rounded-xl lg:w-[90%]">
         <div className="w-full grid gap-10 lg:mt-0 justify-center xl:h-full">
           <div className="flex justify-between items-center gap-3 w-full text-balance my-auto text-center  rounded-3xl order-last sm:order-first py-14 sm:p-0 bg-opacity-50 h-full">
             <div className="flex flex-col justify-center xl:justify-around items-center sm:w-full px-4 gap-4 2xl:w-4/5 xl:h-full mx-auto">
@@ -148,7 +148,7 @@ export default function IntroductionInfo() {
           <a href="https://youtu.be/D4Kqnb4NbXY?si=kMx8FW3rqdO0A1Qa" target="_blank">
             <video
               src={video}
-              className="mx-auto mt-32 lg:mt-0 rounded-2xl"
+              className="mx-auto mt-32 lg:mt-10 lg:w-3/5 xl:w-full rounded-2xl"
               autoPlay={true}
               preload="auto"
               muted
