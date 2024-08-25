@@ -67,17 +67,15 @@ export default function FindingPark() {
               <div className="lg:w-2/3 h-full absolute">
                 <img src={iPhone} className="w-full" alt="iPhone" />
               </div>
-              <LazyLoadComponent visibleByDefault={true}>
-                <video
-                  playsInline
-                  ref={index === 0 ? firstRef : index === 1 ? secRef : thirdRef}
-                  src={videoSrc}
-                  className="w-11/12 p-[0.4em] mt-[5.5px] lg:p-0 lg:w-7/12 mx-auto lg:mt-3"
-                  preload="auto"
-                  muted
-                  autoPlay={index === 0}
-                />
-              </LazyLoadComponent>
+              <video
+                playsInline
+                ref={index === 0 ? firstRef : index === 1 ? secRef : thirdRef}
+                src={videoSrc}
+                className="w-11/12 p-[0.4em] mt-[5.5px] lg:p-0 lg:w-7/12 mx-auto lg:mt-3"
+                preload="auto"
+                muted
+                autoPlay={index === 0}
+              />
             </div>
           </div>
         ))}
