@@ -72,6 +72,12 @@ body {
   -moz-animation-play-state: paused !important;
 }
 
+@supports (-webkit-touch-callout: none) {
+  .intro-slide {
+    animation: none !important;
+  }
+}
+
 /* .intro-slide::before {
   content: "";
   position: fixed;
