@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from "react";
 
 export default function Introduction() {
   const minScale = 100;
-  const maxScale = 150;
+  const maxScale = 200;
   const [scale, setScale] = useState(minScale);
   const containerRef = useRef<HTMLImageElement>(null);
 
