@@ -6,9 +6,11 @@ export default function FirstSlide() {
   const { t } = useTranslation();
 
   return (
-    <div className="min-h-fit h-screen relative">
-      <img src="/Images/firstSlideBg.png" className="fixed z-[-9]" alt="" />
-      <div className="h-full w-full flex justify-start items-center">
+    <div className="min-h-fit h-screen first-slide 2xl:bg-fixed">
+      <div className="h-full w-full flex justify-start items-center ">
+      {/* <div className="relative max-h-screen">
+        <img src="/Images/firstSlideBg.png" alt="" className="fixed top-10 -z-10"/>
+      </div> */}
         <div className="lg:w-2/3 mx-auto">
           <h2 className="uppercase text-center text-8xl lg:text-start md:text-8xl 2xl:text-balance w-full xl:w-1/2">
             {t("welcomeMsg.bigTitle")}
