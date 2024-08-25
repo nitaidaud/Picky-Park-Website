@@ -36,7 +36,7 @@ export default function Introduction() {
 
   return (
     <div
-      className="intro-slide flex flex-col mx-auto"
+      className="intro-slide flex flex-col mx-auto xl:bg-fixed"
       // style={{
       //   backgroundSize: `${backgroundSize}%`,
       // }}
