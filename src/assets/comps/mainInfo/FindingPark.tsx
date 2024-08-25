@@ -5,7 +5,6 @@ import CalcRouteThird from "/Videos/simulatorVideos/CalcRouteThird.mp4";
 import ShareParkingFirst from "/Videos/simulatorVideos/ShareParkingFirst.mp4";
 import SearchParkingSecond from "/Videos/simulatorVideos/SearchParkingSecond.mp4";
 import iPhone from "/Videos/simulatorVideos/iPhone.png";
-import { LazyLoadComponent } from "react-lazy-load-image-component";
 
 export default function FindingPark() {
   const firstRef = useRef<HTMLVideoElement>(null);
