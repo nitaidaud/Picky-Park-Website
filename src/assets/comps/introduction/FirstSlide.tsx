@@ -6,7 +6,7 @@ export default function FirstSlide() {
   const { t } = useTranslation();
 
   return (
-    <div className="first-slide min-h-fit h-screen">
+    <div className="first-slide min-h-fit h-screen xl:bg-fixed">
       <div className="h-full w-full flex justify-start items-center">
         <div className="lg:w-2/3 mx-auto">
           <h2 className="uppercase text-center text-8xl lg:text-start md:text-8xl 2xl:text-balance w-full xl:w-1/2">
