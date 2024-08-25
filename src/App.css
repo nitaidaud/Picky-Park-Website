@@ -44,7 +44,7 @@ body {
 }
 
 .first-slide {
-  background: url("/src/assets/Images/firstSlideBg.png");
+  background: url("/Images/firstSlideBg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -97,14 +97,14 @@ body {
   animation-iteration-count: 1;
 } */
 
-/* @media only screen and (max-width: 1180px) {
-  .intro-slide {
+@media only screen and (max-width: 1180px) {
+  /* .intro-slide {
     background: none !important;
     background: url("/Images/mobileBgFixed.jpeg") fixed !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
-  }
+  } */
   .intro-slide::before {
     content: "";
     position: fixed;
@@ -117,7 +117,7 @@ body {
     background-position: center !important;
     z-index: -1;
   }
-} */
+}
 /* @media (max-width: 768px) {
   .intro-slide {
     background-size: 200%;
@@ -218,7 +218,7 @@ nav .carProgress:where([dir="rtl"], [dir="rtl"] *) {
   transform: rotateY(0deg);
 }
 
-.btn-container:hover {
+.btn-container:hover { 
   transform: scale(115%);
 }
 

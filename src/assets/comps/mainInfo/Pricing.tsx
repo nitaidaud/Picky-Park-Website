@@ -64,8 +64,8 @@ export default function Pricing() {
                   <div className="coin-item duration-200 absolute w-full flex justify-center items-center">
                   <img
                     src="/Images/coins.png"
-                    width={90}
-                    className="mx-auto -z-10 animate-spin"
+                    width={75}
+                    className="mx-auto w-1/4 lg:w-1/5 -z-10 animate-spin"
                     alt=""
                   />
                 </div>

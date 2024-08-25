@@ -4,7 +4,7 @@ import Pricing from "./mainInfo/Pricing";
 import { useEffect, useRef, useState } from "react";
 
 export default function Introduction() {
-  const minScale = 100;
+  const minScale = 80;
   const maxScale = 200;
   const [scale, setScale] = useState(minScale);
   const containerRef = useRef<HTMLImageElement>(null);
@@ -27,11 +27,11 @@ export default function Introduction() {
   }, [minScale, maxScale]);
 
   return (
-    <div className="intro-slide flex flex-col mx-auto xl:bg-fixed">
+    <div className="flex flex-col mx-auto intro-slide">
       <img
         ref={containerRef}
         style={{ scale: ` ${scale}%` }}
-        className="fixed w-full h-full top-0 left-0 -z-10 bg-scroll"
+        className="fixed -z-[100] h-full w-full top-0 left-0"
         src="/Images/streetBg.jpeg"
         alt=""
       />
