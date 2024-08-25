@@ -97,13 +97,13 @@ body {
   animation-iteration-count: 1;
 } */
 
-@media only screen and (max-width: 1180px) {
+/* @media only screen and (max-width: 1180px) {
   .intro-slide {
     background: none !important;
-    /* background: url("/Images/mobileBgFixed.jpeg") fixed !important;
+    background: url("/Images/mobileBgFixed.jpeg") fixed !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
-    background-size: cover !important; */
+    background-size: cover !important;
   }
   .intro-slide::before {
     content: "";
@@ -117,7 +117,7 @@ body {
     background-position: center !important;
     z-index: -1;
   }
-}
+} */
 /* @media (max-width: 768px) {
   .intro-slide {
     background-size: 200%;
