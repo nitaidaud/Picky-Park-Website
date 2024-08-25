@@ -72,11 +72,12 @@ export default function Pricing() {
                     </h2>
                   </div>
                   <div className="flex items-center justify-center w-full h-2/3">
-                    <h2 className="text-amber-500 font-bold text-5xl lg:text-3xl xl:text-4xl">
-                      {coins}{" "}
-                      <span className="block text-amber-500 font-bold text-xl">
+                    <h2 className="text-amber-500 font-semibold text-5xl lg:text-3xl xl:text-3xl flex items-center justify-center w-full gap-1">
+                      {coins}
+                      <img width={30} src="/Images/coins.png" alt="" />
+                      {/* <span className="block text-amber-500 font-bold text-xl">
                         {t("pricing.pickyCoins")}
-                      </span>
+                      </span> */}
                     </h2>
                   </div>
                 </div>

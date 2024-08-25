@@ -52,18 +52,18 @@ const resources = {
         pickyCoins: "Picky Coins",
         first: {
           title: "Starter",
-          price: "20ILS",
+          price: "15ILS",
           description: "Go find a job... 1 parking spot and then what?",
         },
         sec: {
           title: "Traveler",
-          price: "40ILS",
+          price: "35ILS",
           description: "Nice! 3 parking spots, you're arranged for now",
           recommended: "recommended",
         },
         third: {
           title: "business",
-          price: "80ILS",
+          price: "50ILS",
           description: "You're the real deal mate!",
         },
       },

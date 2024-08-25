@@ -12,7 +12,7 @@ export default function Footer() {
       // role: "Founder & CEO",
       name: t("ourTeam.noam.name"),
       role: t("ourTeam.noam.role"),
-      image: "/Images/profilePic/noamPic.jpg",
+      image: "/Images/noamPic.jpg",
       linkedIn: "https://www.linkedin.com/in/noamcohenn/",
     },
     {
@@ -21,7 +21,9 @@ export default function Footer() {
       name: t("ourTeam.nitai.name"),
       role: t("ourTeam.nitai.role"),
       image:
-        "https://media.licdn.com/dms/image/D4D03AQEylbfXyhuWRw/profile-displayphoto-shrink_200_200/0/1719038456904?e=1728518400&v=beta&t=_3bphE5Jh4fQed23JQZec4Yr68OUWRw0iURVkdrP5LU",
+        "/Images/nitaiPic.jpg",
+      // image:
+      //   "https://media.licdn.com/dms/image/D4D03AQEylbfXyhuWRw/profile-displayphoto-shrink_200_200/0/1719038456904?e=1728518400&v=beta&t=_3bphE5Jh4fQed23JQZec4Yr68OUWRw0iURVkdrP5LU",
       linkedIn: "https://www.linkedin.com/in/nitai-daud/",
     },
     {
@@ -29,7 +31,7 @@ export default function Footer() {
       // role: "Product Leader",
       name: t("ourTeam.omer.name"),
       role: t("ourTeam.omer.role"),
-      image: "/Images/profilePic/omerPic.jpg",
+      image: "/Images/omerPic.jpg",
       linkedIn: "https://www.linkedin.com/in/omer-levin-990548222/",
     },
   ];
