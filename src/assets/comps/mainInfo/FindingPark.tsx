@@ -1,43 +1,43 @@
+import { useEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
+
 import CalcRouteThird from "/Videos/simulatorVideos/CalcRouteThird.mp4";
 import ShareParkingFirst from "/Videos/simulatorVideos/ShareParkingFirst.mp4";
 import SearchParkingSecond from "/Videos/simulatorVideos/SearchParkingSecond.mp4";
 import iPhone from "/Videos/simulatorVideos/iPhone.png";
-import { useEffect, useRef, useState } from "react";
-import { useTranslation } from "react-i18next";
 
 export default function FindingPark() {
   const firstRef = useRef<HTMLVideoElement>(null);
   const secRef = useRef<HTMLVideoElement>(null);
   const thirdRef = useRef<HTMLVideoElement>(null);
-
   const [currentVideo, setCurrentVideo] = useState<number>(0);
-
   const { t } = useTranslation();
+  const videos = [ShareParkingFirst, SearchParkingSecond, CalcRouteThird];
 
   useEffect(() => {
     const videoRefs = [firstRef, secRef, thirdRef];
 
-    // Add 'ended' event listeners to each video to manage the playback order.
-    videoRefs.forEach((ref) => {
-      ref.current?.addEventListener("ended", () => {
-        setCurrentVideo(currentVideo == 0 ? 1 : currentVideo == 1 ? 2 : 0);
-      });
-    });
+    const handleVideoEnd = (index: number) => {
+      setCurrentVideo((index + 1) % 3);
+    };
 
-    // Manage video playback based on the currentVideo state.
     videoRefs.forEach((ref, index) => {
-      if (index === currentVideo) {
-        ref.current?.play();
-      } else {
-        ref.current?.pause();
-        ref.current!.currentTime = 0;
+      const video = ref.current;
+      if (video) {
+        video.addEventListener("ended", () => handleVideoEnd(index));
+        
+        if (index === currentVideo) {
+          video.play();
+        } else {
+          video.pause();
+          video.currentTime = 0;
+        }
       }
     });
 
-    // Cleanup the event listeners when the component unmounts.
     return () => {
-      videoRefs.forEach((ref) => {
-        ref.current?.removeEventListener("ended", () => {});
+      videoRefs.forEach((ref, index) => {
+        ref.current?.removeEventListener("ended", () => handleVideoEnd(index));
       });
     };
   }, [currentVideo]);
@@ -53,7 +53,7 @@ export default function FindingPark() {
         </h2>
       </div>
       <div className="lg:h-1/2 w-full lg:w-2/3 flex flex-col lg:flex-row justify-center items-center gap-20 lg:gap-0 mt-10">
-        {[ShareParkingFirst, SearchParkingSecond, CalcRouteThird].map(
+        {videos.map(
           (videoSrc, index) => (
             <div
               key={index}
@@ -67,22 +67,18 @@ export default function FindingPark() {
                 <div className="lg:w-2/3 h-full absolute">
                   <img src={iPhone} className="w-full" alt="iPhone" />
                 </div>
-                {/* <div className=""> */}
-                  <video
-                    playsInline
-                    ref={
-                      index === 0 ? firstRef : index === 1 ? secRef : thirdRef
-                    }
-                    src={videoSrc}
-                    className="w-11/12 p-[0.4em] mt-[5.5px] lg:p-0 lg:w-7/12 mx-auto lg:mt-3"
-                    preload="auto"
-                    muted
-                    autoPlay={index === 0} // Only autoplay the first video initially
-                  />
-                {/* </div> */}
+                <video
+                  playsInline
+                  ref={index === 0 ? firstRef : index === 1 ? secRef : thirdRef}
+                  src={videoSrc}
+                  className="w-11/12 p-[0.4em] mt-[5.5px] lg:p-0 lg:w-7/12 mx-auto lg:mt-3"
+                  preload="auto"
+                  muted
+                  autoPlay={index === 0}
+                />
               </div>
             </div>
-          ),
+          )
         )}
       </div>
     </div>

@@ -44,9 +44,8 @@ export default function Pricing() {
               <div
                 key={title + price}
                 className="pricing-item grid lg:block p-5 my-20 lg:my-0 w-full rounded-xl shadow-xl bg-white bg-opacity-70 min-h-[350px] md:min-h-[650px] lg:min-h-[350px] 2xl:min-h-[450px] h-full lg:h-4/5 hover:scale-105 duration-300 relative"
-                style={{ maxWidth: '100%', overflow: 'hidden' }}
               >
-                {isRecommended && (
+                {isRecommended == true && (
                   <div className="flex absolute top-0 justify-center items-center w-full left-0 mx-auto">
                     <h2 className="text-center w-fit px-3 py-2 bg-white bg-opacity-40 border-[2px] rounded-xl absolute -top-3 text-indigo-700 text-3xl lg:text-base z-20">
                       {t("pricing.sec.recommended")}
@@ -55,21 +54,21 @@ export default function Pricing() {
                 )}
                 <div
                   className={`w-full lg:h-2/6 ${
-                    title === t("pricing.first.title")
+                    title == t("pricing.first.title")
                       ? "bg-indigo-600"
-                      : title === t("pricing.sec.title")
+                      : title == t("pricing.sec.title")
                       ? "bg-red-400"
                       : "bg-amber-300"
                   } rounded-lg text-center flex items-center justify-center relative`}
                 >
                   <div className="coin-item duration-200 absolute w-full flex justify-center items-center">
-                    <img
-                      src="/Images/coins.png"
-                      width={75}
-                      className="mx-auto w-1/4 lg:w-1/5 -z-10 animate-spin"
-                      alt=""
-                    />
-                  </div>
+                  <img
+                    src="/Images/coins.png"
+                    width={75}
+                    className="mx-auto w-1/4 lg:w-1/5 -z-10 animate-spin"
+                    alt=""
+                  />
+                </div>
                   <h2 className="text-black uppercase font-semibold text-4xl lg:text-xl">
                     {title}
                   </h2>
@@ -84,6 +83,9 @@ export default function Pricing() {
                     <h2 className="text-amber-500 font-semibold text-5xl lg:text-3xl xl:text-3xl flex items-center justify-center w-full gap-1">
                       {coins}
                       <img width={30} src="/Images/coins.png" alt="" />
+                      {/* <span className="block text-amber-500 font-bold text-xl">
+                        {t("pricing.pickyCoins")}
+                      </span> */}
                     </h2>
                   </div>
                 </div>
