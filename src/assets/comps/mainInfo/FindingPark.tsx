@@ -5,6 +5,7 @@ import CalcRouteThird from "/Videos/simulatorVideos/CalcRouteThird.mp4";
 import ShareParkingFirst from "/Videos/simulatorVideos/ShareParkingFirst.mp4";
 import SearchParkingSecond from "/Videos/simulatorVideos/SearchParkingSecond.mp4";
 import iPhone from "/Videos/simulatorVideos/iPhone.png";
+import { LazyLoadComponent } from "react-lazy-load-image-component";
 
 export default function FindingPark() {
   const firstRef = useRef<HTMLVideoElement>(null);
@@ -25,7 +26,7 @@ export default function FindingPark() {
       const video = ref.current;
       if (video) {
         video.addEventListener("ended", () => handleVideoEnd(index));
-        
+
         if (index === currentVideo) {
           video.play();
         } else {
@@ -53,20 +54,20 @@ export default function FindingPark() {
         </h2>
       </div>
       <div className="lg:h-1/2 w-full lg:w-2/3 flex flex-col lg:flex-row justify-center items-center gap-20 lg:gap-0 mt-10">
-        {videos.map(
-          (videoSrc, index) => (
-            <div
-              key={index}
-              className={`w-1/2 duration-200 ${
-                currentVideo === index
-                  ? "scale-110 grayscale-[0]"
-                  : "scale-100 grayscale-[40%]"
-              }`}
-            >
-              <div className="w-full flex justify-center items-center relative">
-                <div className="lg:w-2/3 h-full absolute">
-                  <img src={iPhone} className="w-full" alt="iPhone" />
-                </div>
+        {videos.map((videoSrc, index) => (
+          <div
+            key={index}
+            className={`w-1/2 duration-200 ${
+              currentVideo === index
+                ? "scale-110 grayscale-[0]"
+                : "scale-100 grayscale-[40%]"
+            }`}
+          >
+            <div className="w-full flex justify-center items-center relative">
+              <div className="lg:w-2/3 h-full absolute">
+                <img src={iPhone} className="w-full" alt="iPhone" />
+              </div>
+              <LazyLoadComponent >
                 <video
                   playsInline
                   ref={index === 0 ? firstRef : index === 1 ? secRef : thirdRef}
@@ -76,10 +77,10 @@ export default function FindingPark() {
                   muted
                   autoPlay={index === 0}
                 />
-              </div>
+              </LazyLoadComponent>
             </div>
-          )
-        )}
+          </div>
+        ))}
       </div>
     </div>
   );
