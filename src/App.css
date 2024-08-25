@@ -378,6 +378,27 @@ nav .carProgress:where([dir="rtl"], [dir="rtl"] *) {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
+@keyframes bounce {
+  0%, 100% {
+      transform: translateY(-25%);
+      animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+  50% {
+      transform: none;
+      animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+
+.pricing-item .coin-item{
+  transition: 0.3s;
+  z-index: -10;
+}
+
+.pricing-item:hover .coin-item{
+  animation: bounce 1s infinite;
+  height: 1000px;
+}
+
 .picky-coins h2 {
   text-shadow: rgba(255, 255, 255, 0.4) 1px 1px 10px;
 }

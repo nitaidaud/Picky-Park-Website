@@ -47,7 +47,7 @@ export default function Pricing() {
               >
                 {isRecommended == true && (
                   <div className="flex absolute top-0 justify-center items-center w-full left-0 mx-auto">
-                    <h2 className="text-center w-fit px-3 py-2 bg-white bg-opacity-40 border-[2px] rounded-xl absolute -top-3 text-indigo-700 text-3xl lg:text-base">
+                    <h2 className="text-center w-fit px-3 py-2 bg-white bg-opacity-40 border-[2px] rounded-xl absolute -top-3 text-indigo-700 text-3xl lg:text-base z-20">
                       {t("pricing.sec.recommended")}
                     </h2>
                   </div>
@@ -59,8 +59,16 @@ export default function Pricing() {
                       : title == t("pricing.sec.title")
                       ? "bg-red-400"
                       : "bg-amber-300"
-                  } rounded-lg text-center flex items-center justify-center`}
+                  } rounded-lg text-center flex items-center justify-center relative`}
                 >
+                  <div className="coin-item duration-200 absolute w-full flex justify-center items-center">
+                  <img
+                    src="/Images/coins.png"
+                    width={100}
+                    className="mx-auto -z-10 animate-spin"
+                    alt=""
+                  />
+                </div>
                   <h2 className="text-black uppercase font-semibold text-4xl lg:text-xl">
                     {title}
                   </h2>
