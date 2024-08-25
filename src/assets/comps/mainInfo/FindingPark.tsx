@@ -1,10 +1,12 @@
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
-
 import CalcRouteThird from "/Videos/simulatorVideos/CalcRouteThird.mp4";
 import ShareParkingFirst from "/Videos/simulatorVideos/ShareParkingFirst.mp4";
 import SearchParkingSecond from "/Videos/simulatorVideos/SearchParkingSecond.mp4";
 import iPhone from "/Videos/simulatorVideos/iPhone.png";
+import firstPoster from "/Videos/simulatorVideos/firstPoster.png"
+import secPoster from '/Videos/simulatorVideos/secPoster.png'
+import thirdPoster from "/Videos/simulatorVideos/thirdPoster.png"
 
 export default function FindingPark() {
   const firstRef = useRef<HTMLVideoElement>(null);
@@ -67,6 +69,7 @@ export default function FindingPark() {
                 <img src={iPhone} className="w-full" alt="iPhone" />
               </div>
               <video
+                poster={`${index == 0 ? firstPoster : index == 1 ? secPoster : thirdPoster}`}
                 playsInline
                 ref={index === 0 ? firstRef : index === 1 ? secRef : thirdRef}
                 src={videoSrc}
