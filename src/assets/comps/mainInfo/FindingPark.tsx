@@ -17,23 +17,14 @@ export default function FindingPark() {
   useEffect(() => {
     const videoRefs = [firstRef, secRef, thirdRef];
 
+    // Add 'ended' event listeners to each video to manage the playback order.
     videoRefs.forEach((ref) => {
       ref.current?.addEventListener("ended", () => {
         setCurrentVideo(currentVideo == 0 ? 1 : currentVideo == 1 ? 2 : 0);
       });
     });
 
-    return () => {
-      videoRefs.forEach((ref) => {
-        ref.current?.removeEventListener("ended", () => {});
-      });
-    };
-  }, [currentVideo]);
-
-  useEffect(() => {
-    const videoRefs = [firstRef, secRef, thirdRef];
-    console.log("currentvid:", currentVideo);
-
+    // Manage video playback based on the currentVideo state.
     videoRefs.forEach((ref, index) => {
       if (index === currentVideo) {
         ref.current?.play();
@@ -42,6 +33,13 @@ export default function FindingPark() {
         ref.current!.currentTime = 0;
       }
     });
+
+    // Cleanup the event listeners when the component unmounts.
+    return () => {
+      videoRefs.forEach((ref) => {
+        ref.current?.removeEventListener("ended", () => {});
+      });
+    };
   }, [currentVideo]);
 
   return (
@@ -58,9 +56,7 @@ export default function FindingPark() {
         {/* The correct order for video playback */}
         <div
           className={`w-1/2 duration-200 ${
-            currentVideo === 0
-              ? "scale-110 grayscale-[0]"
-              : "scale-100 grayscale-[40%]"
+            currentVideo === 0 ? "scale-110 grayscale-[0]" : "scale-100 grayscale-[40%]"
           }`}
         >
           <div className="w-full flex justify-center items-center relative">
@@ -83,9 +79,7 @@ export default function FindingPark() {
 
         <div
           className={`w-1/2 duration-200 ${
-            currentVideo === 1
-              ? "scale-110 grayscale-[0]"
-              : "scale-100 grayscale-[40%]"
+            currentVideo === 1 ? "scale-110 grayscale-[0]" : "scale-100 grayscale-[40%]"
           }`}
         >
           <div className="w-full flex justify-center items-center relative">
@@ -107,9 +101,7 @@ export default function FindingPark() {
 
         <div
           className={`w-1/2 duration-200 ${
-            currentVideo === 2
-              ? "scale-110 grayscale-[0]"
-              : "scale-100 grayscale-[40%]"
+            currentVideo === 2 ? "scale-110 grayscale-[0]" : "scale-100 grayscale-[40%]"
           }`}
         >
           <div className="w-full flex justify-center items-center relative">
