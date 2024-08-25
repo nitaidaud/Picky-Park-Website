@@ -22,7 +22,7 @@ export default function PersonalInfo(props: { team: Employee[] }) {
           return (
             <div
               key={name + role}
-              className={`h-full mx-auto w-full md:w-4/5 lg:w-1/2 xl:w-full grid justify-center items-center gap-10 bg-white bg-opacity-30 my-16 lg:m-5 rounded-xl shadow-xl drop-shadow-xl ${
+              className={`h-full mx-auto w-full md:w-4/5 lg:w-1/2 xl:w-full grid justify-center items-center gap-10 bg-white bg-opacity-30 my-16 lg:m-5 rounded-xl shadow-xl drop-shadow-xl hover:bg-blue-500 hover:bg-opacity-50 ${
                 name == t("ourTeam.nitai.name") ? "xl:order-first" : ""
               } hover:shadow-2xl duration-200`}
             >
@@ -30,7 +30,7 @@ export default function PersonalInfo(props: { team: Employee[] }) {
                 <img
                   src={image}
                   alt="img"
-                  className=" w-full xl:w-2/3 max-w-64 lg:min-w-40 lg:max-w-40 mx-auto rounded-full border-2 border-purple-400"
+                  className=" w-full xl:w-2/3 max-w-64 lg:min-w-40 lg:max-w-40 mx-auto rounded-full"
                 />
               </div>
               <div className="w-full text-center flex flex-col justify-center items-center">
