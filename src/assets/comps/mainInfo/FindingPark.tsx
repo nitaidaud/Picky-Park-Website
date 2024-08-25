@@ -141,10 +141,6 @@ export default function FindingPark() {
             </div>
             <div>
               <video
-                onLoadStart={(e) => {
-                  e.currentTarget.play();
-                  e.currentTarget.pause();
-                }}
                 playsInline
                 onTimeUpdate={(e) => {
                   setSecDuration(Number(e.currentTarget.duration.toFixed()));
@@ -178,10 +174,6 @@ export default function FindingPark() {
             <div>
               <video
                 playsInline
-                onLoadStart={(e) => {
-                  e.currentTarget.play();
-                  e.currentTarget.pause();
-                }}
                 onTimeUpdate={(e) => {
                   setThirdDuration(Number(e.currentTarget.duration.toFixed()));
                   setThirdCurrentTime(
