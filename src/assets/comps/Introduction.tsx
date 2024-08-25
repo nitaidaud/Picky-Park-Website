@@ -38,9 +38,6 @@ export default function Introduction() {
       <MeetPicky />
       <FindingPark />
       <Pricing />
-      {/* <ParkingSolution /> */}
-      {/* <LoyaltyAchievements /> */}
-      {/* <SecurityInfo /> */}
     </div>
   );
 }
