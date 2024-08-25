@@ -1,46 +1,40 @@
 import MeetPicky from "./mainInfo/MeetPicky";
 import FindingPark from "./mainInfo/FindingPark";
 import Pricing from "./mainInfo/Pricing";
+import { useEffect, useRef, useState } from "react";
 
 export default function Introduction() {
-  // const elementRef = useRef<HTMLDivElement>(null);
-  // const [size, setSize] = useState<number>(
-  //   Number(elementRef.current?.style.backgroundSize.substring(0, 3)),
-  // );
-  // const [backgroundSize, setBackgroundSize] = useState(size);
+  const minScale = 100;
+  const maxScale = 150;
+  const [scale, setScale] = useState(minScale);
+  const containerRef = useRef<HTMLImageElement>(null);
 
-  // const handleScroll = () => {
-  //   const scrollTop = window.pageYOffset;
-  //   const documentHeight =
-  //     document.documentElement.scrollHeight - window.innerHeight;
-  //   const scrollFraction = documentHeight / scrollTop;
+  useEffect(() => {
+    const handleScroll = () => {
+      if (!containerRef.current) return;
 
-  //   let newSize = 0;
-    
-  //   if (scrollFraction < 100) {
-  //     console.log(scrollFraction);
-  //     if (size > 100) newSize = 90 + scrollFraction * 100;
-  //     else newSize = 350 + scrollFraction * 100;
-  //   } else {
-  //     if (size > 100) newSize = 140 - (scrollFraction - 0.5) * 100;
-  //     else newSize = 400 - (scrollFraction - 0.5) * 100;
-  //   }
-  //   setSize(newSize);
+      const scrollPosition = window.pageYOffset;
+      const maxScroll =
+        document.documentElement.scrollHeight - window.innerHeight;
+      const scrollPercentage = scrollPosition / maxScroll;
 
-  //   setBackgroundSize(newSize);
-  // };
+      const newScale = minScale + (maxScale - minScale) * scrollPercentage;
+      setScale(newScale);
+    };
 
-  // useEffect(() => {
-  //   window.addEventListener("scroll", handleScroll);
-  // }, []);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [minScale, maxScale]);
 
   return (
-    <div
-      className="intro-slide flex flex-col mx-auto xl:bg-fixed"
-      // style={{
-      //   backgroundSize: `${backgroundSize}%`,
-      // }}
-    >
+    <div className="intro-slide flex flex-col mx-auto xl:bg-fixed">
+      <img
+        ref={containerRef}
+        style={{ scale: ` ${scale}%` }}
+        className="fixed w-full h-full top-0 left-0 -z-10 bg-scroll"
+        src="/Images/streetBg.jpeg"
+        alt=""
+      />
       <MeetPicky />
       <FindingPark />
       <Pricing />
