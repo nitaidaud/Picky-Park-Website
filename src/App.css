@@ -60,27 +60,27 @@ body {
   /* background-attachment: fixed; */
 }
 
-.intro-slide {
+/* .intro-slide {
   background: url("/Images/streetBg.jpeg");
   background-position: center;
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   background-size: cover;
   animation: zoom-in 5s cubic-bezier(1, 4, 1, -4);
   animation-timeline: View();
   animation-play-state: running;
   -moz-animation-play-state: paused !important;
-}
+} */
 
-@media not all and (min-resolution:.001dpcm) {
+/* @media not all and (min-resolution:.001dpcm) {
   @supports (-webkit-appearance:none) {
     .intro-slide {
       animation: none !important;
     }
   }
-}
+} */
 
-/* .intro-slide::before {
+.intro-slide::before {
   content: "";
   position: fixed;
   top: 0;
@@ -91,7 +91,7 @@ body {
   background-size: cover !important;
   background-position: center !important;
   z-index: -1;
-} */
+}
 
 @media only screen and (max-width: 1180px) {
   .intro-slide {
