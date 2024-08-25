@@ -60,25 +60,50 @@ body {
   /* background-attachment: fixed; */
 }
 
-.intro-slide {
+/* .intro-slide {
   background: url("/Images/streetBg.jpeg");
   background-position: center;
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   background-size: cover;
   animation: zoom-in 5s cubic-bezier(1, 4, 1, -4);
   animation-timeline: View();
   animation-play-state: running;
   -moz-animation-play-state: paused !important;
-  /* -webkit-animation-play-state: paused !important; */
+} */
+
+.intro-slide::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('/Images/streetBg.jpeg');
+  background-size: cover !important;
+  background-position: center !important;
+  z-index: -1;
 }
 
-@media only screen and (max-width: 640px) {
-  .intro-slide {
+@media only screen and (max-width: 1180px) {
+  /* .intro-slide {
+    background: none !important;
     background: url("/Images/mobileBgFixed.jpeg") fixed !important;
     background-position: center !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
+  } */
+  .intro-slide::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/Images/mobileBgFixed.jpeg');
+    background-size: cover !important;
+    background-position: center !important;
+    z-index: -1;
   }
 }
 /* @media (max-width: 768px) {
