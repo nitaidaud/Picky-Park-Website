@@ -38,7 +38,7 @@ export default function Pricing() {
             {t("pricing.title")}
           </h2>
         </div>
-        <div className="pricing-container lg:flex justify-center items-start h-fit w-3/4 2xl:w-2/3 mx-auto lg:gap-5 2xl:gap-10">
+        <div className="pricing-container lg:flex justify-center items-start h-fit w-3/4 2xl:w-2/3 mx-auto lg:gap-5 2xl:gap-10 2xl:h-[50%]">
           {pricingCards.map(({ title, price, isRecommended, coins }) => {
             return (
               <div

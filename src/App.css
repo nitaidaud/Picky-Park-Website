@@ -118,11 +118,6 @@ body {
     z-index: -1;
   }
 }
-/* @media (max-width: 768px) {
-  .intro-slide {
-    background-size: 200%;
-  }
-} */
 
 .second-slide {
   background-color: #59b5ff;
@@ -218,7 +213,7 @@ nav .carProgress:where([dir="rtl"], [dir="rtl"] *) {
   transform: rotateY(0deg);
 }
 
-.btn-container:hover { 
+.btn-container:hover {
   transform: scale(115%);
 }
 
@@ -379,24 +374,32 @@ nav .carProgress:where([dir="rtl"], [dir="rtl"] *) {
 }
 
 @keyframes bounce {
-  0%, 100% {
-      transform: translateY(-25%);
-      animation-timing-function: cubic-bezier(0.8,0,1,1);
+  0%,
+  100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
   }
   50% {
-      transform: none;
-      animation-timing-function: cubic-bezier(0,0,0.2,1);
+    transform: none;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
 }
 
-.pricing-item .coin-item{
+.pricing-item .coin-item {
   transition: 0.3s;
   z-index: -10;
 }
 
-.pricing-item:hover .coin-item{
+.pricing-item:hover .coin-item {
   animation: bounce 1s infinite;
   height: 1000px;
+}
+
+@media (min-width: 3000px) {
+  .pricing-item:hover .coin-item {
+    animation: bounce 1s infinite;
+    height: 2000px;
+  }
 }
 
 .picky-coins h2 {
