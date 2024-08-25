@@ -7,7 +7,7 @@ export default function FirstSlide() {
 
   return (
     <div className="min-h-fit h-screen relative">
-      <img src="/src/assets/Images/firstSlideBg.png" className="fixed z-[-9]" alt="" />
+      <img src="/Images/firstSlideBg.png" className="fixed z-[-9]" alt="" />
       <div className="h-full w-full flex justify-start items-center">
         <div className="lg:w-2/3 mx-auto">
           <h2 className="uppercase text-center text-8xl lg:text-start md:text-8xl 2xl:text-balance w-full xl:w-1/2">
