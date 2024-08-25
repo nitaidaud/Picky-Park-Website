@@ -4,8 +4,6 @@ import SearchParkingSecond from "/Videos/simulatorVideos/SearchParkingSecond.mp4
 import iPhone from "/Videos/simulatorVideos/iPhone.png";
 import { useEffect, useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faSpinner } from "@fortawesome/free-solid-svg-icons";
 
 export default function FindingPark() {
   const firstRef = useRef<HTMLVideoElement>(null);
@@ -112,8 +110,7 @@ export default function FindingPark() {
               <img src={iPhone} className="w-full" alt="iPhone" />
             </div>
             <div>
-            {!ShareParkingFirst && <FontAwesomeIcon icon={faSpinner} spin/> }
-              {ShareParkingFirst && <video
+              <video
                 playsInline
                 onTimeUpdate={(e) => {
                   setFirstDuration(Number(e.currentTarget.duration.toFixed()));
@@ -126,9 +123,9 @@ export default function FindingPark() {
                 className={`w-11/12  p-[0.4em] mt-[5.5px] lg:p-0 lg:w-7/12 mx-auto lg:mt-3`}
                 autoPlay={true}
                 width={50}
-                // preload="auto"
+                preload="auto"
                 muted
-              />}
+              />
             </div>
           </div>
         </div>
@@ -143,8 +140,8 @@ export default function FindingPark() {
               <img src={iPhone} className="w-full" alt="iPhone" />
             </div>
             <div>
-            {!SearchParkingSecond && <FontAwesomeIcon icon={faSpinner} spin/> }
-              {SearchParkingSecond && <video
+              <video
+                onLoadStart={(e) => e.currentTarget.pause()}
                 playsInline
                 onTimeUpdate={(e) => {
                   setSecDuration(Number(e.currentTarget.duration.toFixed()));
@@ -155,11 +152,11 @@ export default function FindingPark() {
                 ref={secRef}
                 src={SearchParkingSecond}
                 className="w-11/12 p-[0.4em] mt-[5.5px] lg:p-0 lg:w-7/12 mx-auto lg:mt-3"
-                // autoPlay={true}
+                autoPlay={true}
                 preload="auto"
                 width={50}
                 muted
-              />}
+              />
             </div>
           </div>
         </div>
@@ -176,9 +173,9 @@ export default function FindingPark() {
               <img src={iPhone} className="w-full" alt="iPhone" />
             </div>
             <div>
-              {!CalcRouteThird && <FontAwesomeIcon icon={faSpinner} spin/> }
-              {CalcRouteThird && <video
+              <video
                 playsInline
+                onLoadStart={(e) => e.currentTarget.pause()}
                 onTimeUpdate={(e) => {
                   setThirdDuration(Number(e.currentTarget.duration.toFixed()));
                   setThirdCurrentTime(
@@ -189,9 +186,10 @@ export default function FindingPark() {
                 src={CalcRouteThird}
                 className="w-11/12 p-[0.4em] mt-[5.5px] lg:p-0 lg:w-7/12 mx-auto lg:mt-3"
                 preload="auto"
+                autoPlay={true}
                 width={50}
                 muted
-              />}
+              />
             </div>
           </div>
         </div>
