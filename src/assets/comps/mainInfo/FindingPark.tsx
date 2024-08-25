@@ -4,9 +4,9 @@ import CalcRouteThird from "/Videos/simulatorVideos/CalcRouteThird.mp4";
 import ShareParkingFirst from "/Videos/simulatorVideos/ShareParkingFirst.mp4";
 import SearchParkingSecond from "/Videos/simulatorVideos/SearchParkingSecond.mp4";
 import iPhone from "/Videos/simulatorVideos/iPhone.png";
-import firstPoster from "/Videos/simulatorVideos/firstPoster.png"
-import secPoster from '/Videos/simulatorVideos/secPoster.png'
-import thirdPoster from "/Videos/simulatorVideos/thirdPoster.png"
+import firstPoster from "/Videos/simulatorVideos/firstPoster.png";
+import secPoster from "/Videos/simulatorVideos/secPoster.png";
+import thirdPoster from "/Videos/simulatorVideos/thirdPoster.png";
 
 export default function FindingPark() {
   const firstRef = useRef<HTMLVideoElement>(null);
@@ -26,6 +26,8 @@ export default function FindingPark() {
     videoRefs.forEach((ref, index) => {
       const video = ref.current;
       if (video) {
+        video.poster =
+          index == 0 ? firstPoster : index == 1 ? secPoster : thirdPoster;
         video.addEventListener("ended", () => handleVideoEnd(index));
 
         if (index === currentVideo) {
@@ -69,7 +71,13 @@ export default function FindingPark() {
                 <img src={iPhone} className="w-full" alt="iPhone" />
               </div>
               <video
-                poster={`${index == 0 ? firstPoster : index == 1 ? secPoster : thirdPoster}`}
+                poster={`${
+                  index == 0
+                    ? firstPoster
+                    : index == 1
+                    ? secPoster
+                    : thirdPoster
+                }`}
                 playsInline
                 ref={index === 0 ? firstRef : index === 1 ? secRef : thirdRef}
                 src={videoSrc}
