@@ -148,7 +148,7 @@ export default function IntroductionInfo() {
           <a href="https://youtu.be/D4Kqnb4NbXY?si=kMx8FW3rqdO0A1Qa" target="_blank">
             <video
               src={video}
-              className="mx-auto mt-32 lg:mt-10 lg:w-3/5 xl:w-full rounded-2xl"
+              className="mx-auto mt-32 lg:mt-10 w-3/5 xl:w-full rounded-2xl"
               autoPlay={true}
               preload="auto"
               muted
