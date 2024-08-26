@@ -17,6 +17,7 @@ const resources = {
         description: "Find your parking now.",
         download: "Available for iOS",
       },
+      supportUs: "Support Us",
       features: {
         firstFeature: {
           title: "Easy Way To Park",
@@ -146,6 +147,7 @@ const resources = {
         description: "מצאו את החנייה שלכם עכשיו.",
         download: "זמין להורדה",
       },
+      supportUs: "תמכו בנו :)",
       features: {
         firstFeature: {
           title: "חנייה בקלות",
