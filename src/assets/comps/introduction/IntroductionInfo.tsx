@@ -162,7 +162,7 @@ export default function IntroductionInfo() {
       <div className="w-full flex flex-col items-center justify-center mb-10 gap-6">
         <div>
           <h2 className="support-us text-6xl font-semibold bg-clip-text">
-            Support Us
+            {t("supportUs")}
           </h2>
         </div>
         <div className="w-4/5 lg:w-[90%] flex justify-center items-center">
