@@ -244,6 +244,16 @@ nav .carProgress:where([dir="rtl"], [dir="rtl"] *) {
   font-size: 0.7em;
 }
 
+/* .support-us{
+  background-image: linear-gradient(
+    344deg,
+    rgb(166, 146, 255) 5%,
+    rgb(119, 88, 255) 50%,
+    #5d00ff 80%
+  );
+  -webkit-text-fill-color: transparent;
+} */
+
 /* .introduction::before {
   position: absolute;
   content: "";
