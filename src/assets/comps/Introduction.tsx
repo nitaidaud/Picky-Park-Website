@@ -42,7 +42,7 @@ export default function Introduction() {
       <img
         ref={containerRef}
         style={{ scale: ` ${scale}%` }}
-        className="fixed -z-[100] h-full w-full top-0 left-0"
+        className="fixed -z-[100] h-full w-full top-0 left-0 mt-[10%]"
         src="/Images/streetBg.jpeg"
         alt=""
       />
