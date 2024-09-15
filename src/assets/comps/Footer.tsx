@@ -26,14 +26,12 @@ export default function Footer() {
       //   "https://media.licdn.com/dms/image/D4D03AQEylbfXyhuWRw/profile-displayphoto-shrink_200_200/0/1719038456904?e=1728518400&v=beta&t=_3bphE5Jh4fQed23JQZec4Yr68OUWRw0iURVkdrP5LU",
       linkedIn: "https://www.linkedin.com/in/nitai-daud/",
     },
-    {
-      // name: "Omer Levin",
-      // role: "Product Leader",
-      name: t("ourTeam.omer.name"),
-      role: t("ourTeam.omer.role"),
-      image: "/Images/omerPic.jpg",
-      linkedIn: "https://www.linkedin.com/in/omer-levin-990548222/",
-    },
+    // {
+    //   name: t("ourTeam.omer.name"),
+    //   role: t("ourTeam.omer.role"),
+    //   image: "/Images/omerPic.jpg",
+    //   linkedIn: "https://www.linkedin.com/in/omer-levin-990548222/",
+    // },
   ];
 
   return (

@@ -22,7 +22,7 @@ export default function PersonalInfo(props: { team: Employee[] }) {
           return (
             <div
               key={name + role}
-              className={`h-full mx-auto w-full md:w-4/5 lg:w-1/2 xl:w-full grid justify-center items-center gap-10 bg-white bg-opacity-30 my-16 lg:m-5 rounded-xl shadow-xl drop-shadow-xl hover:bg-blue-500 duration-200 hover:bg-opacity-50 ${
+              className={`h-full min-w-fit mx-auto w-full md:w-4/5 lg:w-1/2 xl:w-1/2 grid justify-center items-center gap-10 bg-white bg-opacity-30 my-16 lg:m-5 rounded-xl shadow-xl drop-shadow-xl hover:bg-blue-500 duration-200 hover:bg-opacity-50 ${
                 name == t("ourTeam.nitai.name") ? "xl:order-first" : ""
               } hover:shadow-2xl`}
             >

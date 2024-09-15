@@ -12,7 +12,7 @@ export default function FirstSlide() {
         <img src="/Images/firstSlideBg.png" alt="" className="fixed top-10 -z-10"/>
       </div> */}
         <div className="lg:w-2/3 mx-auto">
-          <h2 className="uppercase text-center text-8xl lg:text-start md:text-8xl 2xl:text-balance w-full xl:w-1/2">
+          <h2 className="uppercase text-center text-8xl lg:text-start md:text-8xl 2xl:text-balance w-full min-w-fit xl:min-w-min xl:w-1/2">
             {t("welcomeMsg.bigTitle")}
             {/* stop driving{" "} */}
             <span className="text-6xl font-bold w-full text-orange-300">

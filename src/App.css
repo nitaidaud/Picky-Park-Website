@@ -31,7 +31,7 @@ body {
   background-attachment: fixed;
   /* background-color: rgb(99 102 241); */
   background-color: #59b5ff;
-  z-index: -10;
+  /* z-index: -10; */
 }
 
 @keyframes zoom-out {
