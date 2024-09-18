@@ -1,4 +1,5 @@
 // import { LazyLoadImage } from "react-lazy-load-image-component";
+import gpdrImg from "../../../../public/Images/GDPRImg.png";
 
 export default function GdprCompliance() {
   return (
@@ -14,9 +15,10 @@ export default function GdprCompliance() {
       </p>
 
       <img
-      loading="lazy"
+        loading="lazy"
         className="w-1/2 m-auto"
-        src="..\..\Images\GDPRImg.png"
+        // src="..\..\Images\GDPRImg.png"
+        src={gpdrImg}
         alt="GDPRImg"
       />
 

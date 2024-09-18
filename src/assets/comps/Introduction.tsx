@@ -1,6 +1,7 @@
 import MeetPicky from "./mainInfo/MeetPicky";
 import FindingPark from "./mainInfo/FindingPark";
 import Pricing from "./mainInfo/Pricing";
+import streetBg from '../../../public/Images/streetBg.jpeg'
 import { useEffect, useRef, useState } from "react";
 
 export default function Introduction() {
@@ -24,10 +25,14 @@ export default function Introduction() {
       let newScale;
       if (scrollPercentage < midPoint) {
         // Zoom in until the mid-point
-        newScale = minScale + (maxScale - minScale) * (scrollPercentage / midPoint);
+        newScale =
+          minScale + (maxScale - minScale) * (scrollPercentage / midPoint);
       } else {
         // Zoom out after the mid-point
-        newScale = maxScale - (maxScale - minScale) * ((scrollPercentage - midPoint) / (1 - midPoint));
+        newScale =
+          maxScale -
+          (maxScale - minScale) *
+            ((scrollPercentage - midPoint) / (1 - midPoint));
       }
 
       setScale(newScale);
@@ -40,10 +45,12 @@ export default function Introduction() {
   return (
     <div className="flex flex-col mx-auto intro-slide">
       <img
+        loading="lazy"
         ref={containerRef}
         style={{ scale: ` ${scale}%` }}
         className="fixed -z-[100] h-full w-full top-0 left-0 mt-[10%]"
-        src="/Images/streetBg.jpeg"
+        // src="/Images/streetBg.jpeg"
+        src={streetBg}
         alt=""
       />
       <MeetPicky />

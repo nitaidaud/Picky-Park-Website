@@ -1,6 +1,8 @@
 // import FooterLinks from "./Footer/FooterLinks";
 import { useTranslation } from "react-i18next";
 import { Employee } from "../models/Employee";
+import noamPic from "../../../public/Images/noamPic.jpg";
+import nitaiPic from "../../../public/Images/nitaiPic.jpg";
 import PersonalInfo from "./Footer/PersonalInfo";
 // import PrivacyAndTerms from "./Footer/PrivacyAndTerms";
 
@@ -12,7 +14,8 @@ export default function Footer() {
       // role: "Founder & CEO",
       name: t("ourTeam.noam.name"),
       role: t("ourTeam.noam.role"),
-      image: "/Images/noamPic.jpg",
+      // image: "/Images/noamPic.jpg",
+      image: noamPic,
       linkedIn: "https://www.linkedin.com/in/noamcohenn/",
     },
     {
@@ -20,8 +23,8 @@ export default function Footer() {
       // role: "Software Developer",
       name: t("ourTeam.nitai.name"),
       role: t("ourTeam.nitai.role"),
-      image:
-        "/Images/nitaiPic.jpg",
+      // image: "/Images/nitaiPic.jpg",
+      image: nitaiPic,
       // image:
       //   "https://media.licdn.com/dms/image/D4D03AQEylbfXyhuWRw/profile-displayphoto-shrink_200_200/0/1719038456904?e=1728518400&v=beta&t=_3bphE5Jh4fQed23JQZec4Yr68OUWRw0iURVkdrP5LU",
       linkedIn: "https://www.linkedin.com/in/nitai-daud/",

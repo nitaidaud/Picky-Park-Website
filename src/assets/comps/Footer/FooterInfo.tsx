@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import FooterLinks from "./FooterLinks";
 import DownloadBtn from "./DownloadBtn";
 import { useTranslation } from "react-i18next";
+import pickyLogo from "../../../../public/Images/pickyLogoImgFixed.png";
+import gpdrImg from "../../../../public/Images/GDPRImg1.png";
 
 export default function FooterInfo() {
   const { t } = useTranslation();
@@ -13,7 +15,8 @@ export default function FooterInfo() {
         <div className="my-12 w-full  flex flex-col items-center justify-between gap-3">
           <div>
             <img
-              src="..\Images\pickyLogoImgFixed.png"
+              // src="..\Images\pickyLogoImgFixed.png"
+              src={pickyLogo}
               alt="Picky logo Image"
               width={150}
             />
@@ -26,7 +29,8 @@ export default function FooterInfo() {
           >
             <div className="my-auto rounded-lg">
               <img
-                src="..\Images\GDPRImg1.png"
+                // src="..\Images\GDPRImg1.png"
+                src={gpdrImg}
                 alt="GDPRImg logo"
                 width={150}
                 className="my-auto"

@@ -28,8 +28,6 @@ export default function PersonalInfo(props: { team: Employee[] }) {
             >
               <div className="mt-20 m-auto h-full w-full animate-block snap-start">
                 <img
-                  loading="lazy"
-                  
                   src={image}
                   alt="img"
                   className=" w-full xl:w-2/3 max-w-64 lg:min-w-40 lg:max-w-40 mx-auto rounded-full"

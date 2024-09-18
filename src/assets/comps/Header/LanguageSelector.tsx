@@ -3,6 +3,8 @@ import { Language } from "../../models/Language";
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import enIcon from "../../../../public/Images/en.png";
+import heIcon from "../../../../public/Images/he.png";
 
 export default function LanguageSelector(props: {
   setDir: (dir: string) => void;
@@ -15,13 +17,15 @@ export default function LanguageSelector(props: {
     {
       name: "English",
       symbol: "en",
-      flag: "Images/en.png",
+      // flag: "Images/en.png",
+      flag: enIcon,
       dir: "ltr",
     },
     {
       name: "עברית",
       symbol: "he",
-      flag: "Images/he.png",
+      // flag: "Images/he.png",
+      flag: heIcon,
       dir: "rtl",
     },
   ];
@@ -47,7 +51,10 @@ export default function LanguageSelector(props: {
   }, [i18n, selectedLanguage.symbol]);
 
   return (
-    <div dir="ltr" className="z-20 relative text-left order-first xl:order-last">
+    <div
+      dir="ltr"
+      className="z-20 relative text-left order-first xl:order-last"
+    >
       <div className="flex items-center">
         <button
           id="language-selector"
@@ -63,7 +70,9 @@ export default function LanguageSelector(props: {
           />
           {selectedLanguage.name}
           <FontAwesomeIcon
-            className={`arrow-icon duration-200 ${isOpen ? "-rotate-180" : ""} ms-2`}
+            className={`arrow-icon duration-200 ${
+              isOpen ? "-rotate-180" : ""
+            } ms-2`}
             icon={faChevronDown}
           />
         </button>

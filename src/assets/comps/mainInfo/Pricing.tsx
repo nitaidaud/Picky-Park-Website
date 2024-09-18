@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import coinsImg from '../../../../public/Images/coins.png'
 
 export default function Pricing() {
   const { t } = useTranslation();
@@ -63,7 +64,8 @@ export default function Pricing() {
                 >
                   <div className="coin-item duration-200 absolute w-full flex justify-center items-center">
                   <img
-                    src="/Images/coins.png"
+                    // src="/Images/coins.png"
+                    src={coinsImg}
                     width={75}
                     className="mx-auto w-1/4 lg:w-1/5 -z-10 animate-spin"
                     alt=""
@@ -82,7 +84,10 @@ export default function Pricing() {
                   <div className="flex items-center justify-center w-full h-2/3">
                     <h2 className="text-amber-500 font-semibold text-5xl lg:text-3xl xl:text-3xl flex items-center justify-center w-full gap-1">
                       {coins}
-                      <img width={30} src="/Images/coins.png" alt="" />
+                      <img width={30}
+                        // src="/Images/coins.png"
+                        src={coinsImg}
+                        alt="" />
                       {/* <span className="block text-amber-500 font-bold text-xl">
                         {t("pricing.pickyCoins")}
                       </span> */}
