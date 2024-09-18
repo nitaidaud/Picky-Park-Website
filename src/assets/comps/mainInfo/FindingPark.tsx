@@ -78,7 +78,6 @@ export default function FindingPark() {
                     ? secPoster
                     : thirdPoster
                 }`}
-                playsInline
                 ref={index === 0 ? firstRef : index === 1 ? secRef : thirdRef}
                 src={videoSrc}
                 className="w-11/12 p-[0.4em] mt-[5.5px] lg:p-0 lg:w-7/12 mx-auto lg:mt-3"

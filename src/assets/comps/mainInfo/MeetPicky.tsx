@@ -1,5 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { ReactTyped } from "react-typed";
+import divider from '../../../../public/Images/divider.png'
+import pickyLogo from '../../../../public/Images/pickyLogoTyping.png'
 export default function MeetPicky() {
 
   const {t} = useTranslation()
@@ -8,7 +10,8 @@ export default function MeetPicky() {
     <div className="relative h-screen">
       <div className="w-full absolute -top-6 left-0">
         <img
-          src="/Images/divider.png"
+          // src="/Images/divider.png"
+          src={divider}
           alt="divider"
           className="w-full max-h-14"
         />
@@ -17,7 +20,8 @@ export default function MeetPicky() {
         <div className="flex justify-center items-center h-full gap-4">
           <div>
             <img
-              src="../Images/pickyLogoTyping.png"
+              // src="../Images/pickyLogoTyping.png"
+              src={pickyLogo}
               alt="picky logo"
               width={60}
               className="mb-10 animate-pulse"

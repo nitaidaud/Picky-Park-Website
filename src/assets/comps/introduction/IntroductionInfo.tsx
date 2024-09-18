@@ -10,6 +10,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import Partners from "./Partners";
 import { useTranslation } from "react-i18next";
+import { LazyLoadComponent } from "react-lazy-load-image-component";
 
 export default function IntroductionInfo() {
   const { t } = useTranslation();
@@ -148,13 +149,17 @@ export default function IntroductionInfo() {
             href="https://youtu.be/D4Kqnb4NbXY?si=kMx8FW3rqdO0A1Qa"
             target="_blank"
           >
-            <video
-              src={video}
-              className="mx-auto mt-32 lg:mt-10 w-3/5 xl:w-full rounded-2xl"
-              autoPlay={true}
-              preload="auto"
-              muted
-              loop
+            <LazyLoadComponent
+              children={
+                <video
+                  src={video}
+                  className="mx-auto mt-32 lg:mt-10 w-3/5 xl:w-full rounded-2xl"
+                  autoPlay={true}
+                  preload="auto"
+                  muted
+                  loop
+                />
+              }
             />
           </a>
         </div>

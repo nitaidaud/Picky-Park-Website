@@ -7,6 +7,8 @@ import HeaderLink from "./HeaderLink";
 import { navLinks } from "../../models/navLinks";
 import { useTranslation } from "react-i18next";
 import LanguageSelector from "./LanguageSelector";
+import pickyLogo from '../../../../public/Images/pickyLogoImgFixed.png'
+import carProgressBar from '../../../../public/Images/carProgressBar.png'
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -85,7 +87,8 @@ export default function Navbar() {
           {/* <div> */}
           <img
             loading="lazy"
-            src="..\Images\pickyLogoImgFixed.png"
+            // src="..\Images\pickyLogoImgFixed.png"
+            src={pickyLogo}
             alt="Picky Logo"
             className="w-24 rtl:"
             width={130}
@@ -142,7 +145,8 @@ export default function Navbar() {
             style={{ width: `${progressBar}%` }}
           ></div>
           <img
-            src="/Images/carProgressBar.png"
+            // src="/Images/carProgressBar.png"
+            src={carProgressBar}
             className="carProgress h-4"
             alt=""
           />
