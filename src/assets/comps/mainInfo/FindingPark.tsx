@@ -84,6 +84,7 @@ export default function FindingPark() {
                 preload="auto"
                 muted
                 autoPlay={index === 0}
+                playsInline
               />
             </div>
           </div>
