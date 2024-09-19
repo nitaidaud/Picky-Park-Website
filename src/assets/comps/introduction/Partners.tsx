@@ -1,7 +1,7 @@
 import PartnerImg from "./PartnerImg";
 import googleLogo from "../../../../public/Partners/Logos/GoogleLogo.png";
-import appwriteLogo from "../../../../public/Partners/Logos/GoogleLogo.png";
-import EDA2Logo from "../../../../public/Partners/Logos/GoogleLogo.png";
+import appwriteLogo from "../../../../public/Partners/Logos/appwrite.png";
+import EDA2Logo from "../../../../public/Partners/Logos/EDA2.png";
 
 export default function Partners() {
   // const partners = [
