@@ -144,7 +144,7 @@ export default function IntroductionInfo() {
             </div>
           </div>
         </div>
-        <div className="w-full">
+        <div className="w-full hidden lg:block">
           <a
             href="https://youtu.be/D4Kqnb4NbXY?si=kMx8FW3rqdO0A1Qa"
             target="_blank"
@@ -162,28 +162,6 @@ export default function IntroductionInfo() {
               }
             />
           </a>
-        </div>
-      </div>
-      <div className="w-full flex flex-col items-center justify-center mb-10 gap-6">
-        <div>
-          <h2 className="support-us text-6xl font-semibold bg-clip-text">
-            {t("supportUs")}
-          </h2>
-        </div>
-        <div className="w-4/5 lg:w-[90%] flex justify-center items-center">
-          <iframe
-            width={1024}
-            height={372}
-            className="mx-auto rounded-xl hidden lg:block"
-            src="https://headstart.co.il/embed?id=80379&size=full&language=1&lang=he"
-          ></iframe>
-
-          <iframe
-            width="244"
-            height="293"
-            className="block lg:hidden"
-            src="https://headstart.co.il/embed?id=80379&size=mini&language=1&lang=he"
-          ></iframe>
         </div>
       </div>
     </div>

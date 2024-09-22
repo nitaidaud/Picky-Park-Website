@@ -7,7 +7,7 @@ import HeaderLink from "./HeaderLink";
 import { navLinks } from "../../models/navLinks";
 import { useTranslation } from "react-i18next";
 import LanguageSelector from "./LanguageSelector";
-import pickyLogo from '../../../../public/Images/pickyLogoImgFixed.png'
+// import pickyLogo from '../../../../public/Images/pickyLogoImgFixed.png'
 import carProgressBar from '../../../../public/Images/carProgressBar.png'
 
 export default function Navbar() {
@@ -88,7 +88,8 @@ export default function Navbar() {
           <img
             loading="lazy"
             // src="..\Images\pickyLogoImgFixed.png"
-            src={pickyLogo}
+            // src={pickyLogo}
+            src="https://i.ibb.co/jWShT1N/image.png"
             alt="Picky Logo"
             className="w-24 rtl:"
             width={130}
