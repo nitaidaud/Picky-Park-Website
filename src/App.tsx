@@ -24,7 +24,7 @@ function App() {
       loop: true,
       lazyLoad: true,
       autoplay: true,
-      // autoplayTimeout: 1000,
+      autoplayTimeout: 2000,
       autoplaySpeed: 1000,
       slideTransition: "linear",
       fluidSpeed: true,
