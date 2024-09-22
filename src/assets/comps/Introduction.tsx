@@ -48,7 +48,7 @@ export default function Introduction() {
         loading="lazy"
         ref={containerRef}
         style={{ scale: ` ${scale}%` }}
-        className="fixed -z-[100] h-full w-full top-0 left-0 mt-[10%]"
+        className="fixed -z-[100] h-full w-full top-0 left-0 mt-[10%] hidden lg:block"
         // src="/Images/streetBg.jpeg"
         src={streetBg}
         alt=""
