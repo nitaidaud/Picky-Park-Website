@@ -1,5 +1,4 @@
 import { Outlet, Route, Routes } from "react-router-dom";
-import GDPRInfo from "./GDPR/GDPRInfo";
 import Main from "./Main";
 import ContactUs from "./Contact-Us/ContactUs";
 import Navbar from "./Header/Navbar";
@@ -26,7 +25,6 @@ export default function AppRouts() {
         <Route index element={<Main />} />
         <Route path="/ContactUs" element={<ContactUs />} />
         <Route path="/AboutUs" element={<AboutUs />} />
-        <Route path="/GDPR" element={<GDPRInfo />} />
       </Route>
     </Routes>
   );

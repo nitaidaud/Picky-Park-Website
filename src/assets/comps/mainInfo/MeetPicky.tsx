@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { ReactTyped } from "react-typed";
-import divider from '../../../../public/Images/divider.png'
-import pickyLogo from '../../../../public/Images/pickyLogoTyping.png'
+import divider from '/Images/divider.png'
+import pickyLogo from '/Images/pickyLogoTyping.png'
 export default function MeetPicky() {
 
   const {t} = useTranslation()
@@ -10,7 +10,6 @@ export default function MeetPicky() {
     <div className="relative h-screen">
       <div className="w-full absolute -top-6 left-0">
         <img
-          // src="/Images/divider.png"
           src={divider}
           alt="divider"
           className="w-full max-h-14"
@@ -20,7 +19,6 @@ export default function MeetPicky() {
         <div className="flex justify-center items-center h-full gap-4">
           <div>
             <img
-              // src="../Images/pickyLogoTyping.png"
               src={pickyLogo}
               alt="picky logo"
               width={60}
@@ -31,8 +29,6 @@ export default function MeetPicky() {
             <h2 className="p-3 bg-white rounded-xl text-black font-semibold">
               <ReactTyped
                 strings={[
-                  // "How Is The Traffic Today?",
-                  // "Finding Your Parking Now...",
                   t("findingPark.firstTyping"),
                   t("findingPark.secTyping"),
                 ]}

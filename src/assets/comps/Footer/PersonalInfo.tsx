@@ -13,7 +13,6 @@ export default function PersonalInfo(props: { team: Employee[] }) {
     >
       <div className="w-full">
         <h2 className="text-6xl font-bold text-white drop-shadow-xl">
-          {/* Meet Our Team: */}
           {t("ourTeam.title")}
         </h2>
       </div>
@@ -30,7 +29,7 @@ export default function PersonalInfo(props: { team: Employee[] }) {
                 <img
                   src={image}
                   alt="img"
-                  className=" w-full xl:w-2/3 max-w-64 lg:min-w-40 lg:max-w-40 mx-auto rounded-full"
+                  className=" w-full xl:w-2/3 max-w-64 lg:min-w-40 lg:max-w-40 mx-auto rounded-full max-h-[239px]"
                 />
               </div>
               <div className="w-full text-center flex flex-col justify-center items-center">

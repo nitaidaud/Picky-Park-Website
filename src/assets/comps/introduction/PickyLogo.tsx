@@ -39,32 +39,7 @@ export default function PickyLogo() {
               </a>
             </div>
           </div>
-          <div  className="flex justify-center xl:justify-end items-center w-full relative h-1/3">
-          {/* <div className="w-full absolute"> */}
-          {/* <img
-            loading="lazy"
-            className="w-2/3"
-            src="..\..\Images\parkingImg.png"
-            alt="logo"
-          /> */}
-
-          {/* <div className="hidden 2xl:flex absolute bg-black h-10 w-36 right-3 bottom-3 rounded-full items-center text-balance hover:scale-110 duration-300 hover:bg-slate-500 play-text uppercase font-semibold">
-              Press space to start
-            </div> */}
-
-          {/* <div>
-              <iframe
-                src="https://my.spline.design/911lapstogocopy-7cc0cfafba0fca15b5569de6d5fae99e/"
-                // src="https://my.spline.design/911lapstogo-164067615931c022b15d8f226f7d8457/"
-                className="hidden 2xl:block"
-                frameBorder="0"
-                title="parking game"
-                loading="lazy"
-                width="750px"
-                height="600px"
-              ></iframe>
-            </div> */}
-          </div>
+          <div className="flex justify-center xl:justify-end items-center w-full relative h-1/3"></div>
         </div>
       </div>
     </>

@@ -1,5 +1,4 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import video from "../../Videos/";
 import video from "/Videos/introVidReduced.mp4";
 import {
   faCompass,
@@ -38,12 +37,10 @@ export default function IntroductionInfo() {
 
                 <div className="flex flex-col text-start">
                   <div>
-                    {/* <h2>Easy Way To Park</h2> */}
                     <h2>{t("features.firstFeature.title")}</h2>
                   </div>
                   <div className="text-xs opacity-80">
                     <p className="capitalize">
-                      {/* Picky takes the stress out of parking */}
                       {t("features.firstFeature.description")}
                     </p>
                   </div>
@@ -61,12 +58,10 @@ export default function IntroductionInfo() {
 
                 <div className="flex flex-col text-start">
                   <div>
-                    {/* <h2>Find Parking Around You</h2> */}
                     <h2>{t("features.secFeature.title")}</h2>
                   </div>
                   <div className="text-xs opacity-80">
                     <p className="capitalize">
-                      {/* Picky providing real-time information on available parking spaces */}
                       {t("features.secFeature.description")}
                     </p>
                   </div>
@@ -84,12 +79,10 @@ export default function IntroductionInfo() {
 
                 <div className="flex flex-col text-start">
                   <div>
-                    {/* <h2>Sharing Parkings</h2> */}
                     <h2>{t("features.thirdFeature.title")}</h2>
                   </div>
                   <div className="text-xs opacity-80">
                     <p className="capitalize">
-                      {/* Choose Between A Lot Of available Parkings */}
                       {t("features.thirdFeature.description")}
                     </p>
                   </div>
@@ -107,12 +100,10 @@ export default function IntroductionInfo() {
 
                 <div className="flex flex-col text-start">
                   <div>
-                    {/* <h2>Explore Your Next Park</h2> */}
                     <h2>{t("features.fourthFeature.title")}</h2>
                   </div>
                   <div className="text-xs opacity-80">
                     <p className="capitalize">
-                      {/* guiding you to the closest and most convenient spots effortlessly */}
                       {t("features.fourthFeature.description")}
                     </p>
                   </div>
@@ -130,12 +121,10 @@ export default function IntroductionInfo() {
 
                 <div className="flex flex-col text-start">
                   <div>
-                    {/* <h2>User Friendly Interface</h2> */}
                     <h2>{t("features.fifthFeature.title")}</h2>
                   </div>
                   <div className="text-xs opacity-80">
                     <p className="capitalize">
-                      {/* The app's user-friendly interface ensures a smooth experience */}
                       {t("features.fifthFeature.description")}
                     </p>
                   </div>
