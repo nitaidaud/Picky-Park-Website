@@ -19,6 +19,7 @@
     "@icon/font-awesome": "^4.7.0-2",
     "@splinetool/react-spline": "^2.2.6",
     "@splinetool/runtime": "^1.3.1",
+    "@vercel/speed-insights": "^1.0.12",
     "aos": "^2.3.4",
     "dotenv": "^16.4.5",
     "font-awesome-icons": "^1.6.0",

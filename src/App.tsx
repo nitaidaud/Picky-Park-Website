@@ -1,4 +1,5 @@
 import "./App.css";
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { BrowserRouter as Router } from "react-router-dom";
 import AppRouts from "./assets/comps/AppRouts";
 import { useEffect, useMemo } from "react";
@@ -42,6 +43,7 @@ function App() {
     <>
       <Router>
         <AppRouts />
+        <SpeedInsights/>
       </Router>
     </>
   );
