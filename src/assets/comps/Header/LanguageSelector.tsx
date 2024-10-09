@@ -3,8 +3,8 @@ import { Language } from "../../models/Language";
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
-import enIcon from "../../../../public/Images/en.png";
-import heIcon from "../../../../public/Images/he.png";
+import enIcon from "/Images/en.png";
+import heIcon from "/Images/he.png";
 
 export default function LanguageSelector(props: {
   setDir: (dir: string) => void;
@@ -61,7 +61,6 @@ export default function LanguageSelector(props: {
           type="button"
           className="inline-flex justify-center items-center w-fit mx-auto xl:w-full rounded-md px-4 py-2 lg:text-sm font-medium xl:text-gray-700 xl:hover:bg-gray-50 "
         >
-          {/* <span className="rtl:ms-2 ltr:me-2">{selectedLanguage.flag}</span> */}
           <img
             width={100}
             className="rtl:ms-2 ltr:me-2 max-w-[30px]"
@@ -96,15 +95,12 @@ export default function LanguageSelector(props: {
                   setDir(lang.dir);
                 }}
               >
-                {/* <span className="mr-2">{lang.flag}</span> */}
-                {/* <span className="mr-2"> */}
                 <img
                   width={100}
                   className="mr-2 max-w-[30px]"
                   src={lang.flag}
                   alt="flag"
                 />
-                {/* </span> */}
                 {lang.name}
               </button>
             ))}

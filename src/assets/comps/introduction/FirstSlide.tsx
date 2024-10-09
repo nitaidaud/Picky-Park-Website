@@ -8,18 +8,14 @@ export default function FirstSlide() {
   return (
     <div className="min-h-fit h-screen first-slide 2xl:bg-fixed">
       <div className="h-3/5 md:h-full w-full flex justify-start items-center ">
-      {/* <div className="relative max-h-screen">
-        <img src="/Images/firstSlideBg.png" alt="" className="fixed top-10 -z-10"/>
-      </div> */}
         <div className="lg:w-2/3 mx-auto">
           <h2 className="uppercase text-center text-8xl lg:text-start md:text-8xl 2xl:text-balance w-full min-w-fit xl:min-w-min xl:w-1/2">
             {t("welcomeMsg.bigTitle")}
-            {/* stop driving{" "} */}
+
             <span className="text-6xl font-bold w-full text-orange-300">
               {" "}
               <br />
               {t("welcomeMsg.tinyTitle")}
-              {/* in circles */}
             </span>
           </h2>
           <h2
@@ -28,7 +24,6 @@ export default function FirstSlide() {
             style={{ fontFamily: "Sora", letterSpacing: "0.5em" }}
           >
             {t("welcomeMsg.description")}
-            {/* Find your parking now. */}
           </h2>
           <div className="apple-btn-style mt-10 mx-auto lg:mx-0 min-w-fit md:w-1/2 max-w-56 px-4 py-3 rounded-2xl duration-300">
             <a
@@ -40,7 +35,6 @@ export default function FirstSlide() {
               <FontAwesomeIcon
                 icon={faApple}
                 className="pb-1 max-h-7"
-                // fontSize="35px"
                 fontSize={"2.5em"}
               />
               <div>{t("welcomeMsg.download")}</div>

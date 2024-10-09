@@ -15,7 +15,6 @@ export default function FooterLinks(props: {
   
   return (
     <div className="grid gap-14 mx-auto">
-      {/* <div className="divider mb-6" /> */}
 
       <div
         className={`contact-links flex w-full m-auto justify-center items-center gap-${gap}`}

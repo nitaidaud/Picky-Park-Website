@@ -270,28 +270,6 @@ export default function ContactUs() {
           </div>
         </form>
       </div>
-
-      <div className="w-fit h-full relative">
-        <iframe
-          src="https://my.spline.design/911lapstogocopy-7cc0cfafba0fca15b5569de6d5fae99e/"
-          // src="https://my.spline.design/911lapstogo-164067615931c022b15d8f226f7d8457/"
-          className="mx-auto max-w-full"
-          frameBorder="0"
-          title="parking game"
-          loading="lazy"
-          width="750px"
-          height="600px"
-          draggable={false}
-          contentEditable={false}
-          
-        ></iframe>
-        <div className="flex absolute bg-black h-14 w-52 right-5 bottom-5 lg:h-10 lg:w-36 min-w-fit lg:right-3 lg:bottom-3 rounded-full items-center text-balance hover:scale-110 duration-300 hover:bg-slate-500 play-text uppercase font-semibold">
-          <h2 className="flex justify-center w-full">
-            {" "}
-            Press space <br /> to start{" "}
-          </h2>
-        </div>
-      </div>
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import ourTeam from '../../../../public/Images/ourTeam.jpg'
+import ourTeam from '/Images/ourTeam.jpg'
 
 export default function AboutUs() {
   const { t } = useTranslation();
@@ -23,7 +23,6 @@ export default function AboutUs() {
           </div>
           <div className="h-full flex w-full">
             <img
-              // src="/Images/ourTeam.jpg"
               src={ourTeam}
               className="m-auto h-[90%] max-h-[410px] rounded-lg"
               alt=""

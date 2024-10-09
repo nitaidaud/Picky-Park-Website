@@ -12,9 +12,6 @@
 
 html {
   scroll-behavior: smooth;
-  /* letter-spacing: 0.25em; */
-  /* scroll-snap-type: y proximity; */
-  /* scroll-snap-type: y mandatory; */
   scroll-snap-stop: normal;
 }
 
@@ -29,9 +26,7 @@ html {
 body {
   line-height: 1;
   background-attachment: fixed;
-  /* background-color: rgb(99 102 241); */
   background-color: #59b5ff;
-  /* z-index: -10; */
 }
 
 @keyframes zoom-out {
@@ -48,28 +43,7 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
 }
-
-/* .intro-slide {
-  background: url("/Images/streetBg.jpeg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  animation: zoom-in 5s cubic-bezier(1, 4, 1, -4);
-  animation-timeline: View();
-  animation-play-state: running;
-  -moz-animation-play-state: paused !important;
-} */
-
-/* @media not all and (min-resolution:.001dpcm) {
-  @supports (-webkit-appearance:none) {
-    .intro-slide {
-      animation: none !important;
-    }
-  }
-} */
 
 @keyframes zoom-in {
   from {
@@ -80,31 +54,7 @@ body {
   }
 }
 
-/* .intro-slide::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("/Images/streetBg.jpeg");
-  background-size: cover;
-  background-position: center !important;
-  z-index: -1;
-  animation-range: cover 0% cover 100%;
-  animation: zoom-in linear;
-  animation-timeline: view();
-  animation-iteration-count: 1;
-} */
-
 @media only screen and (max-width: 1180px) {
-  /* .intro-slide {
-    background: none !important;
-    background: url("/Images/mobileBgFixed.jpeg") fixed !important;
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
-  } */
   .intro-slide::before {
     content: "";
     position: fixed;
@@ -137,7 +87,7 @@ body {
   background-image: linear-gradient(
     15deg,
     #0073ff 20%,
-    #d12ceb 80% /* rgba(255, 255, 255, 0.6) 100% */
+    #d12ceb 80%
   );
   -webkit-text-fill-color: transparent;
 }
@@ -244,25 +194,6 @@ nav .carProgress:where([dir="rtl"], [dir="rtl"] *) {
   font-size: 0.7em;
 }
 
-/* .support-us{
-  background-image: linear-gradient(
-    344deg,
-    rgb(166, 146, 255) 5%,
-    rgb(119, 88, 255) 50%,
-    #5d00ff 80%
-  );
-  -webkit-text-fill-color: transparent;
-} */
-
-/* .introduction::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  left: 0;
-  z-index: -10;
-} */
-
 .picky-park-title {
   background-image: linear-gradient(
     145deg,
@@ -325,14 +256,6 @@ nav .carProgress:where([dir="rtl"], [dir="rtl"] *) {
 }
 
 .owl-carousel {
-  /* background-image: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0),
-    rgba(255, 255, 255, 0.9),
-    rgba(255, 255, 255, 0.9),
-    rgba(0, 0, 0, 0)
-  ); */
-  /* position: absolute !important; */
   min-height: fit-content !important;
   background-color: rgba(255, 255, 255, 0.5);
   left: 0;
@@ -340,7 +263,6 @@ nav .carProgress:where([dir="rtl"], [dir="rtl"] *) {
 
 .owl-stage-outer {
   width: 100%;
-  /* height: 120px; */
   margin: 0 auto !important;
 }
 
@@ -440,12 +362,10 @@ nav .carProgress:where([dir="rtl"], [dir="rtl"] *) {
   letter-spacing: normal;
   color: white;
   z-index: 100;
-  /* background: rgba(0, 0, 0, 0.3); */
   background: rgba(255, 255, 255, 0.3);
 }
 
 .footer-copyright {
-  /* background: rgba(0, 0, 0, 0.3); */
   background: rgba(255, 255, 255, 0.3);
 }
 
