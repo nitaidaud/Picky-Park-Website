@@ -33,7 +33,7 @@
     "react-router-dom": "^6.23.0",
     "react-slick": "^0.30.2",
     "react-typed": "^2.0.12",
-    "sweetalert2": "^11.12.4",
+    "sweetalert2": "^11.14.4",
     "tiny-slider": "^2.9.4"
   },
   "devDependencies": {
