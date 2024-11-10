@@ -2,7 +2,7 @@
 import { useTranslation } from "react-i18next";
 import { Employee } from "../models/Employee";
 import noamPic from "/Images/noamPic.jpg";
-import nitaiPic from "/Images/nitaiPicNew.jpg";
+import nitaiPic from "/Images/nitaiNewProfile.jpg";
 import PersonalInfo from "./Footer/PersonalInfo";
 // import PrivacyAndTerms from "./Footer/PrivacyAndTerms";
 
