@@ -5,6 +5,8 @@ import Navbar from "./Header/Navbar";
 import { useTranslation } from "react-i18next";
 import AboutUs from "./AboutUs/AboutUs";
 import FooterInfo from "./Footer/FooterInfo";
+import PrivacyPolicy from "./PrivacyAndEula/privacyPolicy";
+import TermsOfUse from "./PrivacyAndEula/termsOfUse";
 
 export default function AppRouts() {
   const { i18n } = useTranslation();
@@ -25,6 +27,8 @@ export default function AppRouts() {
         <Route index element={<Main />} />
         <Route path="/ContactUs" element={<ContactUs />} />
         <Route path="/AboutUs" element={<AboutUs />} />
+        <Route path="/PrivacyPolicy" element={<PrivacyPolicy />} />
+        <Route path="/TermsOfUse" element={<TermsOfUse />} />
       </Route>
     </Routes>
   );
